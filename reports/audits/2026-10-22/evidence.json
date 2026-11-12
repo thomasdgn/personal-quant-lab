@@ -1,0 +1,201 @@
+{
+  "audit_date": "2026-10-22",
+  "scope": "Code local, configurations personnelles, donnees locales et scenarios synthetiques ; aucun ordre ni notification externe.",
+  "user_confirmed": {
+    "monthly_eur": 100,
+    "orientation": "ETF avec achats/ventes tactiques"
+  },
+  "verification": {
+    "pytest_fast": {
+      "passed": 516,
+      "deselected": 26,
+      "seconds": 49.98
+    },
+    "pytest_slow": {
+      "passed": 26,
+      "deselected": 516,
+      "warnings": 1,
+      "seconds": 86.86
+    },
+    "ruff": "All checks passed",
+    "mypy": "Success: no issues found in 55 source files"
+  },
+  "fees": [
+    {
+      "order_eur": 100,
+      "configured_eur": 1.99,
+      "discovery_standard_capped_eur": 0.5,
+      "note": "Exemple tarif Decouverte hors offre partenaire, frais de courtage seuls."
+    },
+    {
+      "order_eur": 150,
+      "configured_eur": 1.99,
+      "discovery_standard_capped_eur": 0.75,
+      "note": "Exemple tarif Decouverte hors offre partenaire, frais de courtage seuls."
+    },
+    {
+      "order_eur": 500,
+      "configured_eur": 1.99,
+      "discovery_standard_capped_eur": 1.99,
+      "note": "Exemple tarif Decouverte hors offre partenaire, frais de courtage seuls."
+    },
+    {
+      "order_eur": 1000,
+      "configured_eur": 1.99,
+      "discovery_standard_capped_eur": 5.0,
+      "note": "Exemple tarif Decouverte hors offre partenaire, frais de courtage seuls."
+    }
+  ],
+  "planner_synthetic_cases": [
+    {
+      "contribution": 100,
+      "fee_case": "configured_fees",
+      "quotes_synthetic_or_illustrative": true,
+      "orders": {
+        "PAEEM.PA": {
+          "parts_a_acheter": 0,
+          "montant": 0.0,
+          "frais": 0.0
+        },
+        "WPEA.PA": {
+          "parts_a_acheter": 0,
+          "montant": 0.0,
+          "frais": 0.0
+        }
+      },
+      "cash_after": 100.0
+    },
+    {
+      "contribution": 100,
+      "fee_case": "zero_fees_for_minimum_probe",
+      "quotes_synthetic_or_illustrative": true,
+      "orders": {
+        "PAEEM.PA": {
+          "parts_a_acheter": 1,
+          "montant": 30.0,
+          "frais": 0.0
+        },
+        "WPEA.PA": {
+          "parts_a_acheter": 9,
+          "montant": 63.611999999999995,
+          "frais": 0.0
+        }
+      },
+      "cash_after": 6.388000000000012
+    },
+    {
+      "contribution": 150,
+      "fee_case": "zero_fees_for_minimum_probe",
+      "quotes_synthetic_or_illustrative": true,
+      "orders": {
+        "PAEEM.PA": {
+          "parts_a_acheter": 1,
+          "montant": 30.0,
+          "frais": 0.0
+        },
+        "WPEA.PA": {
+          "parts_a_acheter": 16,
+          "montant": 113.088,
+          "frais": 0.0
+        }
+      },
+      "cash_after": 6.91200000000002
+    }
+  ],
+  "turnover_drift_probe": {
+    "weights_target": {
+      "A": 0.5,
+      "B": 0.5
+    },
+    "A_return_month_2": 0.2,
+    "B_return_month_2": 0,
+    "A_drifted_weight": 0.5454545454545454,
+    "next_month_engine_turnover": 0.0,
+    "next_month_engine_cost": 0.0,
+    "economic_rebalance_per_100_eur_initial": {
+      "sell_A": 5,
+      "buy_B": 5,
+      "gross_traded": 10,
+      "one_way_fee_10bps_eur": 0.01
+    }
+  },
+  "notify_wrong_policy_probe": {
+    "followed": "allocation_fixe",
+    "allocation_unchanged": true,
+    "events": [
+      {
+        "level": "INFO",
+        "code": "REPORT_READY",
+        "title": "Quant lab : rapport 2026-09 disponible",
+        "message": "Signal 2026-08-31 - Momentum : B - exposition proposée 100%. Décision manuelle à renseigner."
+      },
+      {
+        "level": "WARNING",
+        "code": "SELECTION_CHANGED",
+        "title": "Quant lab : changement d'actif",
+        "message": "Actif Momentum : A -> B (2026-09)."
+      }
+    ]
+  },
+  "notify_duplicate_probe": {
+    "same_event_twice_mock_transport_calls": 2,
+    "external_network_calls": 0
+  },
+  "local_data": {
+    "last_observation": "2026-09-25",
+    "report_metadata": {
+      "schema_version": "1.4",
+      "report_month": "2026-09",
+      "report_date": "2026-09-25",
+      "signal_date": "2026-08-31",
+      "last_observation": "2026-09-25",
+      "generated_at": "2026-10-22T12:00:00",
+      "freshness_reference": "2026-10-22",
+      "history_start": "2015-01-31",
+      "history_end": "2026-08-31",
+      "reference_currency": "EUR",
+      "data_mode": "local",
+      "pipeline_status": "OK_WITH_WARNINGS"
+    },
+    "data_age_days": 27,
+    "alerts": [
+      {
+        "code": "STALE_DATA",
+        "level": "WARNING"
+      },
+      {
+        "code": "DATA_NOT_REFRESHED",
+        "level": "INFO"
+      },
+      {
+        "code": "ASSET_EXCLUDED",
+        "level": "WARNING"
+      },
+      {
+        "code": "PARTIAL_MONTH",
+        "level": "INFO"
+      },
+      {
+        "code": "REDUCED_EXPOSURE",
+        "level": "WARNING"
+      },
+      {
+        "code": "HIGH_VOLATILITY",
+        "level": "WARNING"
+      },
+      {
+        "code": "MOMENTUM_VT_DIVERGENCE",
+        "level": "INFO"
+      }
+    ]
+  },
+  "portfolio_files": {
+    "recorded_transaction_rows": 0,
+    "positions_file_exists": false,
+    "notify_config_exists": false
+  },
+  "configs": {
+    "profile_monthly": 100.0,
+    "patrimoine_monthly": 150
+  }
+}

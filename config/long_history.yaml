@@ -1,0 +1,33 @@
+# Historique long (recherche uniquement) : chaque ETF PEA est prolongé dans le passé
+# par des proxys de même exposition, du plus récent au plus ancien. Les mois
+# issus d'un proxy sont SYNTHÉTIQUES et signalés comme tels partout.
+# Les séries en USD sont converties en EUR avec EURUSD=X (disponible depuis 2003-12).
+# Utilisé par : python main.py refresh-data --long ; python main.py research --long ;
+#               python main.py stress
+fx_ticker: "EURUSD=X"
+start: "2003-12-01"
+chains:
+  CW8.PA:
+    - {ticker: EUNL.DE, currency: EUR, note: "iShares Core MSCI World (capitalisant)"}
+    # dividend_yield_pct calibré le 2026-09-25 sur la période commune avec CW8/EUNL (écart de suivi
+    # ETF - indice : -0,55 pt/an avec 2,0 % ; -1,04 pt/an avec 2,5 %) : 1,5 %/an ramène l'écart à ~0.
+    # C'est le dividende net de l'indice diminué des frais de l'ETF, pas le dividende brut.
+    - {ticker: "^990100-USD-STRD", currency: USD, dividend_yield_pct: 1.5,
+       note: "indice MSCI World prix (sans dividendes) + rendement de dividende net de frais estimé 1,5 %/an (calibré)"}
+  PUST.PA:
+    - {ticker: QQQ, currency: USD, note: "Invesco QQQ (Nasdaq-100) ; PUST.PA se comporte comme le Nasdaq-100"}
+  ESE.PA:
+    - {ticker: SPY, currency: USD, note: "SPDR S&P 500 (même indice que ESE.PA)"}
+  PAEEM.PA:
+    - {ticker: EEM, currency: USD, note: "iShares MSCI Emerging Markets"}
+  PCEU.PA:
+    - {ticker: EXSA.DE, currency: EUR, note: "iShares STOXX Europe 600"}
+    - {ticker: VGK, currency: USD, note: "Vanguard FTSE Europe"}
+  PAASI.PA:
+    - {ticker: AAXJ, currency: USD, note: "iShares MSCI All Country Asia ex Japan (proche de l'Asie émergente)"}
+    - {ticker: EEM, currency: USD, note: "iShares MSCI Emerging Markets (avant 2008)"}
+  # OBLI.PA est devenu un fonds monétaire (€STR) vers 2024-11 : cette chaîne obligataire décrit
+  # l'ancien produit, pas l'actuel (voir config/assets.yaml > OBLI.PA > fiche > alertes).
+  OBLI.PA:
+    - {ticker: IEAG.AS, currency: EUR, note: "iShares Core Euro Aggregate Bond"}
+    - {ticker: IBGL.AS, currency: EUR, note: "iShares Euro Govt Bond 15-30y (duration longue, plus volatile)"}

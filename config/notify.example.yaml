@@ -1,0 +1,9 @@
+# Modèle de configuration des notifications push (ntfy, https://ntfy.sh).
+# Copier en config/notify.yaml (ignoré par Git). Rien n'est envoyé tant que
+# enabled vaut false, ni sans l'option --notify de run-month.
+# 1. Installer l'application ntfy sur le téléphone et s'abonner au sujet choisi.
+# 2. Choisir un sujet long et difficile à deviner (il fait office de mot de passe).
+enabled: false
+server: https://ntfy.sh
+topic: ""
+min_level: INFO        # INFO (tout), WARNING (changements), CRITICAL (problèmes seulement)

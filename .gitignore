@@ -1,0 +1,64 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Data (kept local)
+data/raw/
+data/processed/
+
+# Outils locaux
+.claude/settings.local.json
+.agents/
+.ruff_cache/
+
+# DonnÃ©es personnelles (jamais versionnÃ©es)
+config/holdings.yaml
+config/positions.yaml
+config/notify.yaml
+config/transactions.csv
+config/pending_orders.csv
+config/profil.yaml
+config/reconciliation.json
+config/releve*.yaml
+!config/releve.example.yaml
+reports/portfolio_report.md
+
+# Journaux d'exÃ©cution automatisÃ©e
+logs/
+.claude/launch.json
+htmlcov/
+.coverage
+
+# Plans de versement (contiennent les positions personnelles)
+reports/contributions/
+
+# Exports HTML (rÃ©gÃ©nÃ©rables avec --html, volumineux)
+reports/monthly/*.html
+.mypy_cache/
+.hypothesis/
+.test_runs/
+reports/experiments.sqlite3*
+reports/watch/
+reports/consultations/
+
+# Plans d'investissement simulÃ©s (montants personnels du profil)
+reports/plans/
+
+# Version publique : exclusions supplémentaires
+reports/monthly/
+reports/paper_trading/
+reports/patrimoine_report.md
+config/broker.yaml
+docs/AUDIT_PEA_BOURSO_*.md
+docs/CONSULTATIONS_PEA.md
+docs/MASTER_PROMPT*.md
+.claude/
+docs/PEA_BOURSO_IMPLEMENTATION.md

@@ -1,0 +1,57 @@
+# COPIE FIGÉE pour les tests (config du 2026-09-25) : les tests ne dépendent jamais des choix personnels
+# faits dans config/. Ne pas modifier sans raison ; voir tests/conftest.py.
+profil:
+  horizon_ans: 30
+  versement_mensuel_eur: 400
+  tolerance_derivation_pct: 5
+  inflation_pct: 2.0        # hypothèse pour la valeur réelle des projections
+
+# Fiscalité simplifiée des gains (projections, DCA, crypto) — pas un conseil fiscal.
+# Taux 2026 vérifiés le 2026-09-25 (LFSS 2026 : CSG +1,4 point sur les revenus du capital ;
+# assurance-vie, PEL et CEL exclus). À revérifier à chaque loi de finances.
+fiscalite:
+  prelevements_sociaux_pct: 18.6   # PEA de plus de 5 ans : seuls les prélèvements sociaux (17,2 % avant 2026)
+  flat_tax_pct: 31.4               # PEA de moins de 5 ans, CTO et crypto : prélèvement forfaitaire unique (30 % avant 2026)
+  av_prelevements_sociaux_pct: 17.2  # assurance-vie : épargnée par la hausse de 2026
+
+# Règles du PEA (main.py portfolio) : date d'ouverture au format AAAA-MM-JJ.
+pea:
+  date_ouverture: null            # ex. 2024-03-15 — jalon fiscal des 5 ans
+  plafond_versements_eur: 150000
+
+enveloppes:
+  - id: pea
+    label: PEA
+    type: actions
+    actif: true
+    notes: "Enveloppe principale long terme"
+  - id: livret_a
+    label: Livret A
+    type: liquidites
+    actif: true
+    notes: "Épargne de précaution — plein"
+  - id: ldds
+    label: LDDS
+    type: liquidites
+    actif: true
+    notes: "Épargne de précaution — plein"
+  - id: cto
+    label: CTO
+    type: actions
+    actif: false
+    notes: "Non ouvert — prêt à activer"
+  - id: assurance_vie
+    label: Assurance vie
+    type: mixte
+    actif: false
+    notes: "Non ouvert — prêt à activer"
+
+allocation_cible_pct:
+  actions: 100
+  liquidites: 0
+  mixte: 0
+
+commentaire: >
+  Livrets pleins et matelas de sécurité constitué.
+  Toute la capacité d'investissement mensuelle va sur le PEA.
+  Revoir si un CTO ou une assurance vie est ouvert.

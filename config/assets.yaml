@@ -1,0 +1,228 @@
+# Format : universe est une liste d'actifs décrits par ticker, name, category,
+# universe_active, role (optionnel) et notes.
+# role : candidate (classé par le Momentum), defensive (obligataire, classé
+# seulement si strategy_params.yaml > universe.defensive_as_candidates vaut true),
+# cash_proxy (monétaire, jamais classé : son rendement rémunère la poche cash).
+# Sans champ role, l'actif est candidate.
+# exposure (optionnel) : exposition économique (ex. msci_world). Plusieurs tickers peuvent
+# implémenter la même exposition ; vehicle_priority (1 = préféré) départage, et le plan de
+# versement bascule sur le véhicule suivant si une part du préféré dépasse le budget.
+# proxy (optionnel) : ticker de même exposition servant à prolonger un historique court
+# (données marquées « synthétiques », écart de suivi mesuré : `python main.py vehicles`).
+# fiche (optionnel, v6) : identité vérifiée sur la fiche du produit — isin (clé de contrôle
+# vérifiée), nom officiel, indice, frais courants (ter_pct), éligibilité PEA (true / false /
+# null = non confirmée), date et source de vérification, alertes. `python main.py universe`.
+# Categories utilisées : monde, us, emergents, europe, europe_croissance, emergents_asie,
+# obligataire, obligations_souveraines, obligations_corporate, monetaire. universe_active
+# contrôle l'inclusion dans le pipeline ; un actif indisponible reste documenté avec false.
+universe:
+  - ticker: CW8.PA
+    name: MSCI World
+    category: monde
+    role: candidate
+    exposure: msci_world
+    universe_active: true
+    notes: ""
+    fiche:
+      isin: LU1681043599
+      nom_officiel: "Amundi MSCI World Swap UCITS ETF EUR Acc"
+      indice: "MSCI World"
+      ter_pct: 0.38
+      pea: true
+      replication: synthetique
+      verifie_le: "2026-09-25"
+      source: "justETF, fiche produit"
+
+  - ticker: ESE.PA
+    name: S&P 500
+    category: us
+    role: candidate
+    exposure: sp500
+    universe_active: true
+    notes: "Libellé corrigé le 2026-09-25 : suit le S&P 500 classique, pas une version ESG (fiche produit)."
+    fiche:
+      isin: FR0011550185
+      nom_officiel: "BNP Paribas Easy S&P 500 UCITS ETF EUR C"
+      indice: "S&P 500"
+      ter_pct: 0.14
+      pea: true
+      replication: synthetique
+      verifie_le: "2026-09-25"
+      source: "justETF, fiche produit"
+
+  - ticker: WPEA.PA
+    name: MSCI World PEA synthétique
+    category: monde
+    role: candidate
+    exposure: msci_world
+    vehicle_priority: 2
+    proxy: CW8.PA
+    universe_active: true
+    notes: "Historique court depuis 2024-04-02."
+    fiche:
+      isin: IE0002XZSHO1
+      nom_officiel: "iShares MSCI World Swap PEA UCITS ETF EUR (Acc)"
+      indice: "MSCI World"
+      ter_pct: 0.20
+      pea: true
+      replication: synthetique
+      verifie_le: "2026-09-25"
+      source: "justETF, fiche produit"
+
+  - ticker: PAEEM.PA
+    name: MSCI EM PEA (filtre ESG / transition)
+    category: emergents
+    role: candidate
+    exposure: msci_em
+    universe_active: true
+    notes: "Indice émergents avec filtres ESG et transition climatique (pas le MSCI EM standard)."
+    fiche:
+      isin: FR0013412020
+      nom_officiel: "Amundi PEA Emergent (MSCI Emerging) ESG Transition UCITS ETF Acc"
+      indice: "MSCI EM ex-Egypt ESG Broad CTB Select"
+      ter_pct: 0.30
+      pea: true
+      replication: synthetique
+      verifie_le: "2026-09-25"
+      source: "justETF, fiche produit"
+
+  - ticker: PUST.PA
+    name: Nasdaq-100 PEA
+    category: us
+    role: candidate
+    exposure: nasdaq100
+    universe_active: true
+    notes: "Libellé corrigé le 2026-09-23 (comportement) et confirmé le 2026-09-25 (fiche produit) : Nasdaq-100. Le S&P 500 PEA est PSP5.PA (ligne inactive)."
+    fiche:
+      isin: FR0011871110
+      nom_officiel: "Amundi PEA Nasdaq-100 UCITS ETF Acc"
+      indice: "Nasdaq-100"
+      ter_pct: 0.30
+      pea: true
+      replication: synthetique
+      verifie_le: "2026-09-25"
+      source: "justETF, fiche produit"
+
+  - ticker: PSP5.PA
+    name: S&P 500 PEA
+    category: us
+    role: candidate
+    exposure: sp500
+    vehicle_priority: 2
+    universe_active: false
+    notes: "Ajouté inactif le 2026-09-23 : S&P 500 PEA (cotation depuis 2015). L'activer change l'univers des stratégies : décision humaine."
+    fiche:
+      isin: FR0011871128
+      nom_officiel: "Amundi PEA S&P 500 UCITS ETF Acc"
+      indice: "S&P 500"
+      ter_pct: 0.12
+      pea: true
+      replication: synthetique
+      verifie_le: "2026-09-25"
+      source: "justETF, fiche produit"
+
+  - ticker: PCEU.PA
+    name: MSCI Europe
+    category: europe
+    role: candidate
+    exposure: msci_europe
+    universe_active: true
+    notes: ""
+    fiche:
+      isin: FR0013412038
+      nom_officiel: "Amundi PEA MSCI Europe UCITS ETF Acc"
+      indice: "MSCI Europe"
+      ter_pct: 0.15
+      pea: true
+      replication: synthetique
+      verifie_le: "2026-09-25"
+      source: "justETF, fiche produit"
+
+  - ticker: PAASI.PA
+    name: MSCI EM Asia PEA (filtre ESG)
+    category: emergents_asie
+    role: candidate
+    exposure: msci_em_asia
+    universe_active: true
+    notes: "Libellé corrigé le 2026-09-23 (comportement) et confirmé le 2026-09-25 (fiche produit) : Asie émergente avec filtre ESG, hors charbon thermique. Remplace PXPM.PA, indisponible sur yfinance."
+    fiche:
+      isin: FR0013412012
+      nom_officiel: "Amundi PEA Asie Emergente (MSCI Emerging Asia) Screened UCITS ETF EUR (C/D)"
+      indice: "MSCI EM Asia Screened Select ex Thermal Coal"
+      ter_pct: 0.30
+      pea: true
+      replication: synthetique
+      verifie_le: "2026-09-25"
+      source: "justETF, fiche produit"
+
+  - ticker: GWT.PA
+    name: MSCI Europe Growth
+    category: europe_croissance
+    role: candidate
+    exposure: msci_europe_growth
+    universe_active: true
+    notes: "Libellé corrigé le 2026-09-25 : ce ticker est Amundi MSCI Europe Growth (distribuant), et non un MSCI World Small Cap. Historique court depuis 2024-04-25."
+    fiche:
+      isin: LU1598688189
+      nom_officiel: "Amundi MSCI Europe Growth UCITS ETF Dist"
+      indice: "MSCI Europe Growth"
+      ter_pct: 0.35
+      pea: true
+      replication: physique
+      verifie_le: "2026-09-25"
+      source: "justETF et Yahoo Finance"
+      alertes:
+        - "Était décrit à tort comme MSCI World Small Cap : les résultats qui l'incluent portent en réalité sur les valeurs de croissance européennes."
+
+  - ticker: OBLI.PA
+    name: Euro court terme (€STR), ex-obligations d'État
+    category: monetaire
+    role: defensive
+    exposure: euro_aggregate_bonds
+    universe_active: true
+    notes: "Changement d'indice constaté le 2026-09-25 : fonds d'obligations d'État euro jusqu'à ~2024-11, puis monétaire €STR (volatilité passée d'environ 5 %/an à moins de 1 %/an). Rôle defensive conservé en attendant une décision humaine."
+    fiche:
+      isin: FR0013346681
+      nom_officiel: "Amundi PEA Euro Court Terme UCITS ETF Acc"
+      indice: "Solactive €STR Overnight (auparavant obligations d'État euro)"
+      ter_pct: 0.25
+      pea: true
+      replication: synthetique
+      verifie_le: "2026-09-25"
+      source: "justETF, Fortuneo, Boursorama ; date du changement déduite des prix"
+      alertes:
+        - "N'est plus un fonds obligataire depuis ~2024-11 : les stratégies 60/40, 80/20 et dual momentum détiennent en pratique du monétaire dans leur poche « obligataire »."
+        - "Historique long prolongé par des proxys obligataires : il ne représente plus le produit actuel."
+
+  - ticker: GOVF.PA
+    name: EuroMTS All-Maturity
+    category: obligations_souveraines
+    role: defensive
+    universe_active: false
+    notes: "UNAVAILABLE sur yfinance au 2026-08-03."
+
+  - ticker: CRPE.PA
+    name: EUR Corporate Bond Amundi
+    category: obligations_corporate
+    role: defensive
+    universe_active: false
+    notes: "UNAVAILABLE sur yfinance au 2026-08-03."
+
+  - ticker: CSH2.PA
+    name: Smart Overnight Return
+    category: monetaire
+    role: cash_proxy
+    exposure: euro_overnight
+    universe_active: true
+    notes: "Historique court depuis 2025-03-17."
+    fiche:
+      isin: LU1190417599
+      nom_officiel: "Amundi Smart Overnight Return UCITS ETF Acc"
+      indice: "€STR capitalisé"
+      ter_pct: 0.10
+      pea: null
+      replication: synthetique
+      verifie_le: "2026-09-25"
+      source: "justETF, fiche produit"
+      alertes:
+        - "Éligibilité PEA non confirmée par la fiche : sert seulement à rémunérer la poche cash des backtests. Dans un PEA, OBLI.PA (monétaire éligible) est l'équivalent achetable."

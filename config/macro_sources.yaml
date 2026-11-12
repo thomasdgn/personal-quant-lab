@@ -1,0 +1,8 @@
+# Catalogue de sources, pas de données économiques inventées.
+sources:
+  - {id: alfred, url: "https://fred.stlouisfed.org/docs/api/fred/alfred.html", use: "versions historiques US ; clé API à fournir si nécessaire"}
+  - {id: ecb, url: "https://data.ecb.europa.eu/", use: "taux et statistiques monétaires européennes"}
+  - {id: eurostat, url: "https://ec.europa.eu/eurostat", use: "inflation et activité européennes"}
+mode: context_only
+# Un filtre ne sera évalué que si ces paramètres ET des observations réelles existent.
+research_filter: null

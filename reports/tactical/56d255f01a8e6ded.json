@@ -1,0 +1,3860 @@
+{
+  "campaign_id": "56d255f01a8e6ded",
+  "provenance": {
+    "code_sha256": "f8cf8aabf125d8f82e6b47a22fef21d565ddfd02f8c327285be9c4e3f39cc21c",
+    "inputs_sha256": "fdc2a5450569491561a71097259d220f9af3ee5a614474795396dc6970d4f699",
+    "data_end": "2026-09-30",
+    "price_basis": "adjusted_research_proxy",
+    "tariff": "barème actuel constant, pas les tarifs historiques",
+    "monthly": 100.0,
+    "initial": 1000.0,
+    "drawdown_objective": 0.3,
+    "excluded_vehicles": {
+      "WPEA.PA": "Historique incomplet : 2025-12-22, 2025-12-29, 2025-12-30, 2025-12-31, 2026-01-02"
+    }
+  },
+  "variants": 64,
+  "cumulative_unique_trials": 252,
+  "start": "2019-05-02",
+  "end": "2026-09-30",
+  "results": [
+    {
+      "final_value": 17579.8448908844,
+      "contributed": 9900.0,
+      "cagr_twr": 0.12754360277368115,
+      "volatility": 0.1509326694738103,
+      "sharpe": 0.8571847518727918,
+      "max_drawdown": -0.3146843189372558,
+      "recovery_days": 617,
+      "cash_fraction": 0.04070743703939874,
+      "orders": 23,
+      "fees": 53.40672654724122,
+      "name": "equity_cash_w1.0_band0.05",
+      "trial_id": "69055ad93af5600be23502e4b799c5d625aecd7ff6ac4c8f7a017c278cf1e2c3",
+      "parameters": {
+        "name": "equity_cash_w1.0_band0.05",
+        "family": "cash_mix",
+        "world": 1.0,
+        "band": 0.05,
+        "mode": "bands"
+      },
+      "risk_objective_met_in_sample": false,
+      "final_real_value": 15139.245050477095,
+      "dsr": 0.8587848765899305,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": 0.0,
+        "low": 0.0,
+        "high": 0.0,
+        "prob_positive": 0.0,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": 0.0,
+        "low": 0.0,
+        "high": 0.0,
+        "prob_positive": 0.0,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 3,
+        "median_sharpe": 0.8480548864557117,
+        "worst_sharpe": 0.8374279061069418
+      }
+    },
+    {
+      "final_value": 17579.8448908844,
+      "contributed": 9900.0,
+      "cagr_twr": 0.12754360277368115,
+      "volatility": 0.1509326694738103,
+      "sharpe": 0.8571847518727918,
+      "max_drawdown": -0.3146843189372558,
+      "recovery_days": 617,
+      "cash_fraction": 0.04070743703939874,
+      "orders": 23,
+      "fees": 53.40672654724122,
+      "name": "equity_cash_w1.0_band0.1",
+      "trial_id": "e49346c6cdca6a3bb75eb287819fbae60d4244091d92656b1eb7e4ca5de67a19",
+      "parameters": {
+        "name": "equity_cash_w1.0_band0.1",
+        "family": "cash_mix",
+        "world": 1.0,
+        "band": 0.1,
+        "mode": "bands"
+      },
+      "risk_objective_met_in_sample": false,
+      "final_real_value": 15139.245050477095,
+      "dsr": 0.8587848765899305,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": 0.0,
+        "low": 0.0,
+        "high": 0.0,
+        "prob_positive": 0.0,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": 0.0,
+        "low": 0.0,
+        "high": 0.0,
+        "prob_positive": 0.0,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 3,
+        "median_sharpe": 0.8480548864557117,
+        "worst_sharpe": 0.8374279061069418
+      }
+    },
+    {
+      "final_value": 17579.8448908844,
+      "contributed": 9900.0,
+      "cagr_twr": 0.12754360277368115,
+      "volatility": 0.1509326694738103,
+      "sharpe": 0.8571847518727918,
+      "max_drawdown": -0.3146843189372558,
+      "recovery_days": 617,
+      "cash_fraction": 0.04070743703939874,
+      "orders": 23,
+      "fees": 53.40672654724122,
+      "name": "world",
+      "trial_id": "344baf1dbe10bd24c7ccde4408585bc0c26f883418c0786f443951f162b7a7ad",
+      "parameters": {
+        "name": "world",
+        "family": "fixed",
+        "world": 1.0,
+        "mode": "contribution"
+      },
+      "risk_objective_met_in_sample": false,
+      "final_real_value": 15139.245050477095,
+      "dsr": 0.8587848765899305,
+      "status": "exploratory",
+      "parameter_neighborhood": {
+        "count": 2,
+        "median_sharpe": 0.7883833381129943,
+        "worst_sharpe": 0.78729412521465
+      }
+    },
+    {
+      "final_value": 17385.559944650653,
+      "contributed": 9900.0,
+      "cagr_twr": 0.12213004464911226,
+      "volatility": 0.14010299151300695,
+      "sharpe": 0.878332566468383,
+      "max_drawdown": -0.2627385797391314,
+      "recovery_days": 709,
+      "cash_fraction": 0.07766150558125122,
+      "orders": 55,
+      "fees": 210.8613314418793,
+      "name": "momentum_l12_n1_core0.8",
+      "trial_id": "801df881e33d2d1b412f7c0530958a88a29b2c50304d6dc9c755f3b969f26e88",
+      "parameters": {
+        "name": "momentum_l12_n1_core0.8",
+        "family": "momentum",
+        "lookback": 12,
+        "ma": 10,
+        "top_n": 1,
+        "core": 0.8,
+        "mode": "target"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 14971.932572528178,
+      "dsr": 0.8637909532011367,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": 0.0033948363369690204,
+        "low": -0.11656811373775415,
+        "high": 0.09289117088193241,
+        "prob_positive": 0.445,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": 0.0033948363369690204,
+        "low": -0.23663938348058955,
+        "high": 0.20709812051298157,
+        "prob_positive": 0.445,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 5,
+        "median_sharpe": 0.8643009198945765,
+        "worst_sharpe": 0.7199782397472543
+      }
+    },
+    {
+      "final_value": 17171.445015431404,
+      "contributed": 9900.0,
+      "cagr_twr": 0.11999947249940734,
+      "volatility": 0.13899966529690339,
+      "sharpe": 0.8707682613473958,
+      "max_drawdown": -0.2687965907586187,
+      "recovery_days": 709,
+      "cash_fraction": 0.07946171227081443,
+      "orders": 75,
+      "fees": 295.1570963850021,
+      "name": "momentum_l12_n2_core0.8",
+      "trial_id": "7b94dc7a71493ed115af129c1c7817126d974f4bc36525343a4738f11008f140",
+      "parameters": {
+        "name": "momentum_l12_n2_core0.8",
+        "family": "momentum",
+        "lookback": 12,
+        "ma": 10,
+        "top_n": 2,
+        "core": 0.8,
+        "mode": "target"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 14787.543096822588,
+      "dsr": 0.8597991359849824,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": -0.0025580982395198015,
+        "low": -0.08864070012668208,
+        "high": 0.05596266041134067,
+        "prob_positive": 0.371,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": -0.0025580982395198015,
+        "low": -0.167618088865179,
+        "high": 0.1415437101356477,
+        "prob_positive": 0.371,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 5,
+        "median_sharpe": 0.8672163773090257,
+        "worst_sharpe": 0.8277598317575369
+      }
+    },
+    {
+      "final_value": 17153.846369509698,
+      "contributed": 9900.0,
+      "cagr_twr": 0.11585470096539807,
+      "volatility": 0.13521420388732738,
+      "sharpe": 0.8643009198945765,
+      "max_drawdown": -0.22825719025608648,
+      "recovery_days": 752,
+      "cash_fraction": 0.13203169638597562,
+      "orders": 68,
+      "fees": 452.2530910921097,
+      "name": "momentum_l12_n1_core0.5",
+      "trial_id": "ede8220177e4ab62d3e4aefcf632be0eb8a17448ad2a373677fe5745d3e3285d",
+      "parameters": {
+        "name": "momentum_l12_n1_core0.5",
+        "family": "momentum",
+        "lookback": 12,
+        "ma": 10,
+        "top_n": 1,
+        "core": 0.5,
+        "mode": "target"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 14772.387660877675,
+      "dsr": 0.8502889166356662,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": -0.021890978208872203,
+        "low": -0.2827899750239232,
+        "high": 0.16391271539511246,
+        "prob_positive": 0.367,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": -0.021890978208872203,
+        "low": -0.48205990314253044,
+        "high": 0.3953205192351184,
+        "prob_positive": 0.367,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 5,
+        "median_sharpe": 0.8548332882255401,
+        "worst_sharpe": 0.7199782397472543
+      }
+    },
+    {
+      "final_value": 17104.30768334484,
+      "contributed": 9900.0,
+      "cagr_twr": 0.11354355781183179,
+      "volatility": 0.14772832764933963,
+      "sharpe": 0.7894725510113385,
+      "max_drawdown": -0.31282137338449767,
+      "recovery_days": 780,
+      "cash_fraction": 0.05278668376188033,
+      "orders": 34,
+      "fees": 52.95495665454864,
+      "name": "fixed_85_15_bands",
+      "trial_id": "01a0d64c6e2be1b5c43fb57033a64a440b474492d5bb76606056de3deca83086",
+      "parameters": {
+        "name": "fixed_85_15_bands",
+        "family": "fixed",
+        "world": 0.85,
+        "mode": "bands"
+      },
+      "risk_objective_met_in_sample": false,
+      "final_real_value": 14729.726402261147,
+      "dsr": 0.8172080856573057,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": -0.06595160701738823,
+        "low": -0.17025134685424373,
+        "high": 0.02706025753848756,
+        "prob_positive": 0.11,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": -0.06595160701738823,
+        "low": -0.2999904848091119,
+        "high": 0.1285852609430707,
+        "prob_positive": 0.11,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 1,
+        "median_sharpe": 0.8571847518727918,
+        "worst_sharpe": 0.8571847518727918
+      }
+    },
+    {
+      "final_value": 17081.47983224726,
+      "contributed": 9900.0,
+      "cagr_twr": 0.12118371254384797,
+      "volatility": 0.13776821267235648,
+      "sharpe": 0.8848451777108127,
+      "max_drawdown": -0.25948874753550777,
+      "recovery_days": 707,
+      "cash_fraction": 0.08699261396399453,
+      "orders": 54,
+      "fees": 315.4513000693322,
+      "name": "momentum_l6_n1_core0.8",
+      "trial_id": "0e08dfa70c726e11006650fd38c5a1ea78eddaf65ac307a7c0c5598794b8108b",
+      "parameters": {
+        "name": "momentum_l6_n1_core0.8",
+        "family": "momentum",
+        "lookback": 6,
+        "ma": 10,
+        "top_n": 1,
+        "core": 0.8,
+        "mode": "target"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 14710.067728712711,
+      "dsr": 0.8691981050838602,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": 0.016366570582269535,
+        "low": -0.08908386863990175,
+        "high": 0.09508815410494798,
+        "prob_positive": 0.535,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": 0.016366570582269535,
+        "low": -0.16068892661783835,
+        "high": 0.19005382194324888,
+        "prob_positive": 0.535,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 5,
+        "median_sharpe": 0.8548332882255401,
+        "worst_sharpe": 0.6818923964948175
+      }
+    },
+    {
+      "final_value": 17072.40008415032,
+      "contributed": 9900.0,
+      "cagr_twr": 0.10461393899649352,
+      "volatility": 0.1518114082636805,
+      "sharpe": 0.7199782397472543,
+      "max_drawdown": -0.24401681708087697,
+      "recovery_days": 806,
+      "cash_fraction": 0.1767365669946066,
+      "orders": 61,
+      "fees": 769.9629205341339,
+      "name": "momentum_l12_n1_core0.0",
+      "trial_id": "b59b11cdddbe007c20184626a15735c951c1ea7a96ff61bfe51dd706bc430b94",
+      "parameters": {
+        "name": "momentum_l12_n1_core0.0",
+        "family": "momentum",
+        "lookback": 12,
+        "ma": 10,
+        "top_n": 1,
+        "core": 0.0,
+        "mode": "target"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 14702.248516865882,
+      "dsr": 0.7232652147069653,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": -0.20059651374596377,
+        "low": -0.67197503081152,
+        "high": 0.13193979166187234,
+        "prob_positive": 0.143,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": -0.20059651374596377,
+        "low": -1.0763038798582767,
+        "high": 0.4236701407078954,
+        "prob_positive": 0.143,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 5,
+        "median_sharpe": 0.8277598317575369,
+        "worst_sharpe": 0.5615738662910855
+      }
+    },
+    {
+      "final_value": 17055.738461057663,
+      "contributed": 9900.0,
+      "cagr_twr": 0.11308563215302403,
+      "volatility": 0.14759939992527263,
+      "sharpe": 0.78729412521465,
+      "max_drawdown": -0.31282137338449767,
+      "recovery_days": 780,
+      "cash_fraction": 0.05364396520624996,
+      "orders": 30,
+      "fees": 50.892859895706174,
+      "name": "fixed_85_15",
+      "trial_id": "67088a946ce569bbae9d61859f70754f0d0ae03ef28ea1396fea8afffa64e287",
+      "parameters": {
+        "name": "fixed_85_15",
+        "family": "fixed",
+        "world": 0.85,
+        "mode": "contribution"
+      },
+      "risk_objective_met_in_sample": false,
+      "final_real_value": 14687.900017405049,
+      "dsr": 0.8158731051648624,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": -0.06760720332944536,
+        "low": -0.1709389585057121,
+        "high": 0.024336475534653984,
+        "prob_positive": 0.108,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": -0.06760720332944536,
+        "low": -0.2973370107520823,
+        "high": 0.12756180531444478,
+        "prob_positive": 0.108,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 1,
+        "median_sharpe": 0.8571847518727918,
+        "worst_sharpe": 0.8571847518727918
+      }
+    },
+    {
+      "final_value": 16986.99530948973,
+      "contributed": 9900.0,
+      "cagr_twr": 0.11832970321084701,
+      "volatility": 0.13766410040799915,
+      "sharpe": 0.8672163773090257,
+      "max_drawdown": -0.2593405924619321,
+      "recovery_days": 709,
+      "cash_fraction": 0.08455899269820454,
+      "orders": 69,
+      "fees": 323.64364944124225,
+      "name": "momentum_l6_n2_core0.8",
+      "trial_id": "2c601d3c6943ea5ec0038fac0220d9931a2e9cc33bc88be673c1b3a25ddd671c",
+      "parameters": {
+        "name": "momentum_l6_n2_core0.8",
+        "family": "momentum",
+        "lookback": 6,
+        "ma": 10,
+        "top_n": 2,
+        "core": 0.8,
+        "mode": "target"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 14628.700438365036,
+      "dsr": 0.8597015765268808,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": -0.003700540434295574,
+        "low": -0.10066875868174835,
+        "high": 0.06947491496138078,
+        "prob_positive": 0.373,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": -0.003700540434295574,
+        "low": -0.17200895812132927,
+        "high": 0.15645301910617118,
+        "prob_positive": 0.373,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 5,
+        "median_sharpe": 0.8677475576390133,
+        "worst_sharpe": 0.7252881537272029
+      }
+    },
+    {
+      "final_value": 16914.71229335308,
+      "contributed": 9900.0,
+      "cagr_twr": 0.11619081009114263,
+      "volatility": 0.1374797143327838,
+      "sharpe": 0.8545247996834472,
+      "max_drawdown": -0.27055975529740983,
+      "recovery_days": 709,
+      "cash_fraction": 0.08661821903394651,
+      "orders": 83,
+      "fees": 355.3955061769486,
+      "name": "momentum_l9_n2_core0.8",
+      "trial_id": "ded76ff2967efd34112f214104686a47ff3725f27ee52a716bc63f8502f62c58",
+      "parameters": {
+        "name": "momentum_l9_n2_core0.8",
+        "family": "momentum",
+        "lookback": 9,
+        "ma": 10,
+        "top_n": 2,
+        "core": 0.8,
+        "mode": "target"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 14566.4524321356,
+      "dsr": 0.8528317416517,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": -0.01419943849422256,
+        "low": -0.11494834243947272,
+        "high": 0.04970154799056633,
+        "prob_positive": 0.332,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": -0.01419943849422256,
+        "low": -0.24740522029652384,
+        "high": 0.12250834033259657,
+        "prob_positive": 0.332,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 5,
+        "median_sharpe": 0.8471155778780558,
+        "worst_sharpe": 0.6822798813324075
+      }
+    },
+    {
+      "final_value": 16875.332245683672,
+      "contributed": 9900.0,
+      "cagr_twr": 0.11511474245875819,
+      "volatility": 0.13793237165402078,
+      "sharpe": 0.8452909199873091,
+      "max_drawdown": -0.2627385797391314,
+      "recovery_days": 737,
+      "cash_fraction": 0.08495433265164498,
+      "orders": 56,
+      "fees": 244.613799238205,
+      "name": "momentum_l9_n1_core0.8",
+      "trial_id": "cb9b8a6c07156c7a6dfaa1ff217657f4cc19198761daeefded675a0767ba7318",
+      "parameters": {
+        "name": "momentum_l9_n1_core0.8",
+        "family": "momentum",
+        "lookback": 9,
+        "ma": 10,
+        "top_n": 1,
+        "core": 0.8,
+        "mode": "target"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 14532.539494025676,
+      "dsr": 0.8464305641510851,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": -0.024861932178888102,
+        "low": -0.15894285282559711,
+        "high": 0.07083469987657132,
+        "prob_positive": 0.297,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": -0.024861932178888102,
+        "low": -0.316330299882331,
+        "high": 0.1489413993015474,
+        "prob_positive": 0.297,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 5,
+        "median_sharpe": 0.8545247996834472,
+        "worst_sharpe": 0.5615738662910855
+      }
+    },
+    {
+      "final_value": 16848.09598762512,
+      "contributed": 9900.0,
+      "cagr_twr": 0.11582730552681264,
+      "volatility": 0.12961156234310645,
+      "sharpe": 0.8957371507720686,
+      "max_drawdown": -0.2217543491015187,
+      "recovery_days": 749,
+      "cash_fraction": 0.13162580442969107,
+      "orders": 76,
+      "fees": 634.8160511779785,
+      "name": "momentum_l12_n2_core0.5",
+      "trial_id": "cd9e430c06f7a3a3fcfac01b4ef43fc79315d81137a2877b6e6ecacf9313b4de",
+      "parameters": {
+        "name": "momentum_l12_n2_core0.5",
+        "family": "momentum",
+        "lookback": 12,
+        "ma": 10,
+        "top_n": 2,
+        "core": 0.5,
+        "mode": "target"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 14509.084430140543,
+      "dsr": 0.8705196625812811,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": 0.015741245303116713,
+        "low": -0.15782884639866912,
+        "high": 0.1436424490089129,
+        "prob_positive": 0.457,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": 0.015741245303116713,
+        "low": -0.27047802569215595,
+        "high": 0.3191465689828638,
+        "prob_positive": 0.457,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 5,
+        "median_sharpe": 0.8643009198945765,
+        "worst_sharpe": 0.8277598317575369
+      }
+    },
+    {
+      "final_value": 16465.35275787115,
+      "contributed": 9900.0,
+      "cagr_twr": 0.10714712443872187,
+      "volatility": 0.13123176392941033,
+      "sharpe": 0.8277598317575369,
+      "max_drawdown": -0.23240952197348919,
+      "recovery_days": 805,
+      "cash_fraction": 0.20244022622058153,
+      "orders": 87,
+      "fees": 1151.6133285164835,
+      "name": "momentum_l12_n2_core0.0",
+      "trial_id": "41ea035e331b833b45398ce917e76f5b9640b3597114967e5531a3ab1385d230",
+      "parameters": {
+        "name": "momentum_l12_n2_core0.0",
+        "family": "momentum",
+        "lookback": 12,
+        "ma": 10,
+        "top_n": 2,
+        "core": 0.0,
+        "mode": "target"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 14179.477224694663,
+      "dsr": 0.8242123387247546,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": -0.07067806655161701,
+        "low": -0.3769635390046658,
+        "high": 0.14685768509708597,
+        "prob_positive": 0.244,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": -0.07067806655161701,
+        "low": -0.6300238323964102,
+        "high": 0.42771364916241117,
+        "prob_positive": 0.244,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 5,
+        "median_sharpe": 0.7252881537272029,
+        "worst_sharpe": 0.6822798813324075
+      }
+    },
+    {
+      "final_value": 16384.70107510758,
+      "contributed": 9900.0,
+      "cagr_twr": 0.10987019987763524,
+      "volatility": 0.12966947695240197,
+      "sharpe": 0.8548332882255401,
+      "max_drawdown": -0.22057289248248957,
+      "recovery_days": 749,
+      "cash_fraction": 0.14854533716549118,
+      "orders": 66,
+      "fees": 704.375432460785,
+      "name": "momentum_l6_n1_core0.5",
+      "trial_id": "ec8671af4c7d4d2aa5b8c913298897cd5bd58ef9f408c67a853d6444031fb3bf",
+      "parameters": {
+        "name": "momentum_l6_n1_core0.5",
+        "family": "momentum",
+        "lookback": 6,
+        "ma": 10,
+        "top_n": 1,
+        "core": 0.5,
+        "mode": "target"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 14110.022369053464,
+      "dsr": 0.8444904705420346,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": -0.029544513487752777,
+        "low": -0.2682493896340828,
+        "high": 0.1582923765687189,
+        "prob_positive": 0.338,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": -0.029544513487752777,
+        "low": -0.43193243964054945,
+        "high": 0.36936412178947176,
+        "prob_positive": 0.338,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 5,
+        "median_sharpe": 0.8643009198945765,
+        "worst_sharpe": 0.6818923964948175
+      }
+    },
+    {
+      "final_value": 16351.519345087054,
+      "contributed": 9900.0,
+      "cagr_twr": 0.10896142785752438,
+      "volatility": 0.126316979076744,
+      "sharpe": 0.8677475576390133,
+      "max_drawdown": -0.22504141717412995,
+      "recovery_days": 755,
+      "cash_fraction": 0.14745369712948972,
+      "orders": 76,
+      "fees": 725.5537845668792,
+      "name": "momentum_l6_n2_core0.5",
+      "trial_id": "b0f820a505127fd90d1fd1533d45c7e42e8c2206eb12228d047ae5bcf06a9379",
+      "parameters": {
+        "name": "momentum_l6_n2_core0.5",
+        "family": "momentum",
+        "lookback": 6,
+        "ma": 10,
+        "top_n": 2,
+        "core": 0.5,
+        "mode": "target"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 14081.447239688132,
+      "dsr": 0.852889120384933,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": -0.016341661723700995,
+        "low": -0.21212900549600947,
+        "high": 0.1447973928480773,
+        "prob_positive": 0.345,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": -0.016341661723700995,
+        "low": -0.3494094196535057,
+        "high": 0.30261603585033525,
+        "prob_positive": 0.345,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 5,
+        "median_sharpe": 0.8548332882255401,
+        "worst_sharpe": 0.7252881537272029
+      }
+    },
+    {
+      "final_value": 16211.37497871399,
+      "contributed": 9900.0,
+      "cagr_twr": 0.10513146885525115,
+      "volatility": 0.1077523423589091,
+      "sharpe": 0.9654414623809331,
+      "max_drawdown": -0.1661423622888597,
+      "recovery_days": 741,
+      "cash_fraction": 0.28162840528600963,
+      "orders": 24,
+      "fees": 278.6710723114013,
+      "name": "trend_ma12_mom12_volNone",
+      "trial_id": "5eddf3c6357cd7e36cbbd1f207d20a20ee557a6b20ff70a24b25f2b57e8efb7f",
+      "parameters": {
+        "name": "trend_ma12_mom12_volNone",
+        "family": "trend",
+        "ma": 12,
+        "lookback": 12,
+        "target_vol": null,
+        "mode": "target"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 13960.75903577424,
+      "dsr": 0.8916283284022066,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": 0.04873598353307729,
+        "low": -0.2707934992761735,
+        "high": 0.27870578202331175,
+        "prob_positive": 0.57,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": 0.04873598353307729,
+        "low": -0.6025081569485405,
+        "high": 0.508450219190901,
+        "prob_positive": 0.57,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 7,
+        "median_sharpe": 0.7846572211269877,
+        "worst_sharpe": 0.7115799380812053
+      }
+    },
+    {
+      "final_value": 16147.142287405017,
+      "contributed": 9900.0,
+      "cagr_twr": 0.10606393417719961,
+      "volatility": 0.12636953733840778,
+      "sharpe": 0.8471155778780558,
+      "max_drawdown": -0.22202164272237135,
+      "recovery_days": 750,
+      "cash_fraction": 0.14879922179939992,
+      "orders": 90,
+      "fees": 821.6844833774568,
+      "name": "momentum_l9_n2_core0.5",
+      "trial_id": "325e87420a85aad6b4eb84cc16f57055dec4672e56d54c5643ab4d8922fd39c7",
+      "parameters": {
+        "name": "momentum_l9_n2_core0.5",
+        "family": "momentum",
+        "lookback": 9,
+        "ma": 10,
+        "top_n": 2,
+        "core": 0.5,
+        "mode": "target"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 13905.443732367756,
+      "dsr": 0.8450834923408963,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": -0.02560822762502135,
+        "low": -0.2481598980652638,
+        "high": 0.12716306966094099,
+        "prob_positive": 0.349,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": -0.02560822762502135,
+        "low": -0.4861503151402678,
+        "high": 0.2990364492427999,
+        "prob_positive": 0.349,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 5,
+        "median_sharpe": 0.8545247996834472,
+        "worst_sharpe": 0.6822798813324075
+      }
+    },
+    {
+      "final_value": 16126.554986721518,
+      "contributed": 9900.0,
+      "cagr_twr": 0.10226818064086163,
+      "volatility": 0.1312813048574599,
+      "sharpe": 0.7945127349644097,
+      "max_drawdown": -0.2250817970965766,
+      "recovery_days": 755,
+      "cash_fraction": 0.1486603489450488,
+      "orders": 66,
+      "fees": 508.2388775286675,
+      "name": "momentum_l9_n1_core0.5",
+      "trial_id": "2a4521360e062ce6009a3dabad25093ceefc40a676d7309549c40a99efb03014",
+      "parameters": {
+        "name": "momentum_l9_n1_core0.5",
+        "family": "momentum",
+        "lookback": 9,
+        "ma": 10,
+        "top_n": 1,
+        "core": 0.5,
+        "mode": "target"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 13887.714554897198,
+      "dsr": 0.8057273340502913,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": -0.08907481695290154,
+        "low": -0.39481661010907365,
+        "high": 0.1371361093446862,
+        "prob_positive": 0.241,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": -0.08907481695290154,
+        "low": -0.6708196677446913,
+        "high": 0.29337147764284666,
+        "prob_positive": 0.241,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 5,
+        "median_sharpe": 0.8471155778780558,
+        "worst_sharpe": 0.5615738662910855
+      }
+    },
+    {
+      "final_value": 15847.269211746216,
+      "contributed": 9900.0,
+      "cagr_twr": 0.0981519587703541,
+      "volatility": 0.10506590148144855,
+      "sharpe": 0.9281793630394878,
+      "max_drawdown": -0.1555899803011429,
+      "recovery_days": 745,
+      "cash_fraction": 0.2974837524917144,
+      "orders": 27,
+      "fees": 269.21720793151854,
+      "name": "trend_ma12_mom12_vol0.15",
+      "trial_id": "37259e298eb191673b534cde6be8e6fa13b14b506046961498872efa08e1d7df",
+      "parameters": {
+        "name": "trend_ma12_mom12_vol0.15",
+        "family": "trend",
+        "ma": 12,
+        "lookback": 12,
+        "target_vol": 0.15,
+        "mode": "target"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 13647.201864784904,
+      "dsr": 0.8704463613227007,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": 0.01696880476747964,
+        "low": -0.2892898691231152,
+        "high": 0.23597964553495243,
+        "prob_positive": 0.512,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": 0.01696880476747964,
+        "low": -0.5932027286891106,
+        "high": 0.4740535033444281,
+        "prob_positive": 0.512,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 7,
+        "median_sharpe": 0.757781864239112,
+        "worst_sharpe": 0.6882457070120416
+      }
+    },
+    {
+      "final_value": 15480.809456710816,
+      "contributed": 9900.0,
+      "cagr_twr": 0.09855923486180562,
+      "volatility": 0.11699040429038512,
+      "sharpe": 0.8480548864557117,
+      "max_drawdown": -0.2465553557678022,
+      "recovery_days": 699,
+      "cash_fraction": 0.2439939602482329,
+      "orders": 15,
+      "fees": 33.98659431457519,
+      "name": "equity_cash_w0.8_band0.05",
+      "trial_id": "1c9dfbc12f8990745ee9d64ea8ffb1ff895332bb4b5c1ae930ecfec6f9ba4f88",
+      "parameters": {
+        "name": "equity_cash_w0.8_band0.05",
+        "family": "cash_mix",
+        "world": 0.8,
+        "band": 0.05,
+        "mode": "bands"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 13331.61750854889,
+      "dsr": 0.8505392833211152,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": -0.0197045874682642,
+        "low": -0.06797532197617355,
+        "high": 0.014010658599255158,
+        "prob_positive": 0.178,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": -0.0197045874682642,
+        "low": -0.1564691941927663,
+        "high": 0.05104466920179527,
+        "prob_positive": 0.178,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 3,
+        "median_sharpe": 0.8480548864557117,
+        "worst_sharpe": 0.8374279061069418
+      }
+    },
+    {
+      "final_value": 15480.809456710816,
+      "contributed": 9900.0,
+      "cagr_twr": 0.09855923486180562,
+      "volatility": 0.11699040429038512,
+      "sharpe": 0.8480548864557117,
+      "max_drawdown": -0.2465553557678022,
+      "recovery_days": 699,
+      "cash_fraction": 0.2439939602482329,
+      "orders": 15,
+      "fees": 33.98659431457519,
+      "name": "equity_cash_w0.8_band0.1",
+      "trial_id": "02de2158eff38a0b3987f6fa803369d7aebe9854b0c4da64581343017ab9d74b",
+      "parameters": {
+        "name": "equity_cash_w0.8_band0.1",
+        "family": "cash_mix",
+        "world": 0.8,
+        "band": 0.1,
+        "mode": "bands"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 13331.61750854889,
+      "dsr": 0.8505392833211152,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": -0.0197045874682642,
+        "low": -0.06797532197617355,
+        "high": 0.014010658599255158,
+        "prob_positive": 0.178,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": -0.0197045874682642,
+        "low": -0.1564691941927663,
+        "high": 0.05104466920179527,
+        "prob_positive": 0.178,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 3,
+        "median_sharpe": 0.8480548864557117,
+        "worst_sharpe": 0.8374279061069418
+      }
+    },
+    {
+      "final_value": 15376.047823851119,
+      "contributed": 9900.0,
+      "cagr_twr": 0.093191428819275,
+      "volatility": 0.14350883341797133,
+      "sharpe": 0.6818923964948175,
+      "max_drawdown": -0.25780282915655106,
+      "recovery_days": 804,
+      "cash_fraction": 0.21483928116341763,
+      "orders": 63,
+      "fees": 1250.6337585997578,
+      "name": "momentum_l6_n1_core0.0",
+      "trial_id": "789e449a52c3c22dab6cef9a29aeded15ee5b8b6130382038c9d01ee95f834f3",
+      "parameters": {
+        "name": "momentum_l6_n1_core0.0",
+        "family": "momentum",
+        "lookback": 6,
+        "ma": 10,
+        "top_n": 1,
+        "core": 0.0,
+        "mode": "target"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 13241.399873433493,
+      "dsr": 0.6941366067040191,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": -0.23543782372377065,
+        "low": -0.6847662282590506,
+        "high": 0.10614325453393836,
+        "prob_positive": 0.123,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": -0.23543782372377065,
+        "low": -1.0057220998899807,
+        "high": 0.4731969344493379,
+        "prob_positive": 0.123,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 5,
+        "median_sharpe": 0.7252881537272029,
+        "worst_sharpe": 0.5615738662910855
+      }
+    },
+    {
+      "final_value": 15294.627023665435,
+      "contributed": 9900.0,
+      "cagr_twr": 0.08908313793017775,
+      "volatility": 0.12667917749000823,
+      "sharpe": 0.7252881537272029,
+      "max_drawdown": -0.2344546307892188,
+      "recovery_days": 813,
+      "cash_fraction": 0.23845886483632056,
+      "orders": 87,
+      "fees": 1287.0454883890152,
+      "name": "momentum_l6_n2_core0.0",
+      "trial_id": "2b6669e3b27f92c186ba769a2c731093fd1eb7a168b35212b010b8bf0695dd79",
+      "parameters": {
+        "name": "momentum_l6_n2_core0.0",
+        "family": "momentum",
+        "lookback": 6,
+        "ma": 10,
+        "top_n": 2,
+        "core": 0.0,
+        "mode": "target"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 13171.282676503266,
+      "dsr": 0.7337879852524273,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": -0.19008589432898948,
+        "low": -0.5497743726654191,
+        "high": 0.058012277988900775,
+        "prob_positive": 0.106,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": -0.19008589432898948,
+        "low": -0.8414011036530817,
+        "high": 0.34128283023947975,
+        "prob_positive": 0.106,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 5,
+        "median_sharpe": 0.8277598317575369,
+        "worst_sharpe": 0.6818923964948175
+      }
+    },
+    {
+      "final_value": 15100.030659027097,
+      "contributed": 9900.0,
+      "cagr_twr": 0.08359306368232966,
+      "volatility": 0.09938502694788248,
+      "sharpe": 0.843439686314232,
+      "max_drawdown": -0.1531601564754096,
+      "recovery_days": 749,
+      "cash_fraction": 0.3466293201612986,
+      "orders": 29,
+      "fees": 262.70609634399415,
+      "name": "trend_ma12_mom12_vol0.12",
+      "trial_id": "b33be5bf51e30c32360991b07cc0aee8073352ef0a1a17e8afab81876f116e0a",
+      "parameters": {
+        "name": "trend_ma12_mom12_vol0.12",
+        "family": "trend",
+        "ma": 12,
+        "lookback": 12,
+        "target_vol": 0.12,
+        "mode": "target"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 13003.702014189266,
+      "dsr": 0.8104285615623061,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": -0.0789768930284066,
+        "low": -0.3838041496059794,
+        "high": 0.15597259992960288,
+        "prob_positive": 0.278,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": -0.0789768930284066,
+        "low": -0.6912186688021829,
+        "high": 0.40673892970790243,
+        "prob_positive": 0.278,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 7,
+        "median_sharpe": 0.7244907499712454,
+        "worst_sharpe": 0.6196044538873337
+      }
+    },
+    {
+      "final_value": 15028.639111329561,
+      "contributed": 9900.0,
+      "cagr_twr": 0.07600874220897236,
+      "volatility": 0.14760545596627564,
+      "sharpe": 0.5615738662910855,
+      "max_drawdown": -0.25764540929034996,
+      "recovery_days": 862,
+      "cash_fraction": 0.21204804463032098,
+      "orders": 60,
+      "fees": 852.682224462986,
+      "name": "momentum_l9_n1_core0.0",
+      "trial_id": "cb88a05157cf0cf23c1672f7253e7b545c4d1f8976603320c7bf3c2ab3befe07",
+      "parameters": {
+        "name": "momentum_l9_n1_core0.0",
+        "family": "momentum",
+        "lookback": 9,
+        "ma": 10,
+        "top_n": 1,
+        "core": 0.0,
+        "mode": "target"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 12942.221714343945,
+      "dsr": 0.5576375317357077,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": -0.3711662852582204,
+        "low": -0.9226842034029646,
+        "high": 0.05327789478459593,
+        "prob_positive": 0.076,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": -0.3711662852582204,
+        "low": -1.3671063524145148,
+        "high": 0.2816707504465873,
+        "prob_positive": 0.076,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 5,
+        "median_sharpe": 0.7199782397472543,
+        "worst_sharpe": 0.6818923964948175
+      }
+    },
+    {
+      "final_value": 14842.679359318263,
+      "contributed": 9900.0,
+      "cagr_twr": 0.08261495907153193,
+      "volatility": 0.125949536174628,
+      "sharpe": 0.6822798813324075,
+      "max_drawdown": -0.23107099806341747,
+      "recovery_days": 806,
+      "cash_fraction": 0.23710206724989177,
+      "orders": 92,
+      "fees": 1446.1730986819266,
+      "name": "momentum_l9_n2_core0.0",
+      "trial_id": "39b34eff0b2b686aa3699bd84d83342649b90da89410024b0c97ab7d235b49c0",
+      "parameters": {
+        "name": "momentum_l9_n2_core0.0",
+        "family": "momentum",
+        "lookback": 9,
+        "ma": 10,
+        "top_n": 2,
+        "core": 0.0,
+        "mode": "target"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 12782.078648651437,
+      "dsr": 0.704139067092693,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": -0.22233940366578164,
+        "low": -0.6542903449431594,
+        "high": 0.07371592397133458,
+        "prob_positive": 0.099,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": -0.22233940366578164,
+        "low": -1.0074628618299108,
+        "high": 0.3551421325269012,
+        "prob_positive": 0.099,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 5,
+        "median_sharpe": 0.8277598317575369,
+        "worst_sharpe": 0.5615738662910855
+      }
+    },
+    {
+      "final_value": 14614.927390243529,
+      "contributed": 9900.0,
+      "cagr_twr": 0.07804187242989302,
+      "volatility": 0.10200699682090497,
+      "sharpe": 0.7748707585059504,
+      "max_drawdown": -0.15541230586486277,
+      "recovery_days": 779,
+      "cash_fraction": 0.33600253832845955,
+      "orders": 27,
+      "fees": 560.7648399810791,
+      "name": "trend_ma12_mom9_volNone",
+      "trial_id": "245a9014a66e27a5c04fae10f876ba468b893fbf54e335dc472d22c7ace756f5",
+      "parameters": {
+        "name": "trend_ma12_mom9_volNone",
+        "family": "trend",
+        "ma": 12,
+        "lookback": 9,
+        "target_vol": null,
+        "mode": "target"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 12585.945355556289,
+      "dsr": 0.7625780190014254,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": -0.14911568636546024,
+        "low": -0.5499203918985539,
+        "high": 0.11555989810016278,
+        "prob_positive": 0.184,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": -0.14911568636546024,
+        "low": -0.8695624691584217,
+        "high": 0.4243449357141289,
+        "prob_positive": 0.184,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 7,
+        "median_sharpe": 0.7244907499712454,
+        "worst_sharpe": 0.5797142377403924
+      }
+    },
+    {
+      "final_value": 14459.056072601317,
+      "contributed": 9900.0,
+      "cagr_twr": 0.07413971600487135,
+      "volatility": 0.10025287614949774,
+      "sharpe": 0.7511278782068952,
+      "max_drawdown": -0.1523351534793379,
+      "recovery_days": 766,
+      "cash_fraction": 0.34992517533519074,
+      "orders": 29,
+      "fees": 541.7587467346191,
+      "name": "trend_ma12_mom9_vol0.15",
+      "trial_id": "e966c3e40f04f29432ef6bb22e07f39211caf92468c0805a22e0aee152fcf0e0",
+      "parameters": {
+        "name": "trend_ma12_mom9_vol0.15",
+        "family": "trend",
+        "ma": 12,
+        "lookback": 9,
+        "target_vol": 0.15,
+        "mode": "target"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 12451.713564048856,
+      "dsr": 0.7366894719889883,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": -0.1803704662269051,
+        "low": -0.5777910760973042,
+        "high": 0.09208610041065031,
+        "prob_positive": 0.141,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": -0.1803704662269051,
+        "low": -0.9030137899705705,
+        "high": 0.3978465747250542,
+        "prob_positive": 0.141,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 7,
+        "median_sharpe": 0.7244907499712454,
+        "worst_sharpe": 0.5625660474524249
+      }
+    },
+    {
+      "final_value": 14341.073823165892,
+      "contributed": 9900.0,
+      "cagr_twr": 0.07135762785423871,
+      "volatility": 0.08989181404281382,
+      "sharpe": 0.7983818673353794,
+      "max_drawdown": -0.14945278945026053,
+      "recovery_days": 750,
+      "cash_fraction": 0.41972619374231906,
+      "orders": 36,
+      "fees": 258.0512073516846,
+      "name": "trend_ma12_mom12_vol0.1",
+      "trial_id": "89ae59121fe757d2d862cf3d1cc0bbcc44d455202bea87f3dca071f2f827705c",
+      "parameters": {
+        "name": "trend_ma12_mom12_vol0.1",
+        "family": "trend",
+        "ma": 12,
+        "lookback": 12,
+        "target_vol": 0.1,
+        "mode": "target"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 12350.110723017217,
+      "dsr": 0.765980762250663,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": -0.1360822436103173,
+        "low": -0.446330378249252,
+        "high": 0.11241191002650862,
+        "prob_positive": 0.175,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": -0.1360822436103173,
+        "low": -0.765314243079513,
+        "high": 0.3497232244644732,
+        "prob_positive": 0.175,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 7,
+        "median_sharpe": 0.6617917542686984,
+        "worst_sharpe": 0.5714776804762659
+      }
+    },
+    {
+      "final_value": 14239.441826812743,
+      "contributed": 9900.0,
+      "cagr_twr": 0.06810618187059392,
+      "volatility": 0.09567931601567317,
+      "sharpe": 0.7244907499712454,
+      "max_drawdown": -0.1506048916130125,
+      "recovery_days": 766,
+      "cash_fraction": 0.38810727577361037,
+      "orders": 32,
+      "fees": 469.3002386169434,
+      "name": "trend_ma12_mom9_vol0.12",
+      "trial_id": "5d7ceba7d1afc06c9cab4c3d665f3bf07a1a252830e9b0a31043357c557eb830",
+      "parameters": {
+        "name": "trend_ma12_mom9_vol0.12",
+        "family": "trend",
+        "ma": 12,
+        "lookback": 9,
+        "target_vol": 0.12,
+        "mode": "target"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 12262.588238756996,
+      "dsr": 0.7053446010014237,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": -0.21759443646353527,
+        "low": -0.6172633647903468,
+        "high": 0.05958702140934689,
+        "prob_positive": 0.102,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": -0.21759443646353527,
+        "low": -1.008655994772851,
+        "high": 0.3715332505628664,
+        "prob_positive": 0.102,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 7,
+        "median_sharpe": 0.6771568107380997,
+        "worst_sharpe": 0.5294646287190391
+      }
+    },
+    {
+      "final_value": 14138.090366226195,
+      "contributed": 9900.0,
+      "cagr_twr": 0.08168938428511385,
+      "volatility": 0.10541042336617809,
+      "sharpe": 0.7846572211269877,
+      "max_drawdown": -0.1661423622888597,
+      "recovery_days": 779,
+      "cash_fraction": 0.31540174868498605,
+      "orders": 27,
+      "fees": 481.02386106872564,
+      "name": "trend_ma10_mom12_volNone",
+      "trial_id": "d7054aa725cf1b029947a40be1a67867b8dccab8ba0611d7b22902ad65f69d38",
+      "parameters": {
+        "name": "trend_ma10_mom12_volNone",
+        "family": "trend",
+        "ma": 10,
+        "lookback": 12,
+        "target_vol": null,
+        "mode": "target"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 12175.307343642891,
+      "dsr": 0.7930712761893809,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": -0.10912996487781679,
+        "low": -0.46213280065253604,
+        "high": 0.14447850368016202,
+        "prob_positive": 0.258,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": -0.10912996487781679,
+        "low": -0.792025752613353,
+        "high": 0.4270867612102715,
+        "prob_positive": 0.258,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 7,
+        "median_sharpe": 0.6578569969153563,
+        "worst_sharpe": 0.5797142377403924
+      }
+    },
+    {
+      "final_value": 13957.166967315674,
+      "contributed": 9900.0,
+      "cagr_twr": 0.08134501595573163,
+      "volatility": 0.10620726647125849,
+      "sharpe": 0.7766173104628443,
+      "max_drawdown": -0.1661423622888597,
+      "recovery_days": 750,
+      "cash_fraction": 0.30724691465780973,
+      "orders": 24,
+      "fees": 454.60024459838866,
+      "name": "trend_ma12_mom6_volNone",
+      "trial_id": "ad6ff42803e57ebec3926c6f21ddf36a65f72bd74e30ffe382df84579124c1c9",
+      "parameters": {
+        "name": "trend_ma12_mom6_volNone",
+        "family": "trend",
+        "ma": 12,
+        "lookback": 6,
+        "target_vol": null,
+        "mode": "target"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 12019.501437022414,
+      "dsr": 0.7727306098544516,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": -0.14324861513391507,
+        "low": -0.529037337369008,
+        "high": 0.14453926759566063,
+        "prob_positive": 0.213,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": -0.14324861513391507,
+        "low": -0.8913822681011668,
+        "high": 0.4018609377730413,
+        "prob_positive": 0.213,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 7,
+        "median_sharpe": 0.6771568107380997,
+        "worst_sharpe": 0.4759933121669804
+      }
+    },
+    {
+      "final_value": 13820.472735244748,
+      "contributed": 9900.0,
+      "cagr_twr": 0.07475366164683406,
+      "volatility": 0.10232114832217612,
+      "sharpe": 0.7434634077803343,
+      "max_drawdown": -0.1555899803011429,
+      "recovery_days": 797,
+      "cash_fraction": 0.3337861168721951,
+      "orders": 31,
+      "fees": 471.2671634368897,
+      "name": "trend_ma10_mom12_vol0.15",
+      "trial_id": "bbcfaab7d33b7f8d77f5ef387bfd2ddda58195e399997a82cf41f57c73584712",
+      "parameters": {
+        "name": "trend_ma10_mom12_vol0.15",
+        "family": "trend",
+        "ma": 10,
+        "lookback": 12,
+        "target_vol": 0.15,
+        "mode": "target"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 11901.784387233109,
+      "dsr": 0.7571239906155296,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": -0.14934166494130885,
+        "low": -0.4953408412712621,
+        "high": 0.10505549885921593,
+        "prob_positive": 0.188,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": -0.14934166494130885,
+        "low": -0.8071686715297427,
+        "high": 0.37651664571152466,
+        "prob_positive": 0.188,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 7,
+        "median_sharpe": 0.6578569969153563,
+        "worst_sharpe": 0.5625660474524249
+      }
+    },
+    {
+      "final_value": 13809.768352966308,
+      "contributed": 9900.0,
+      "cagr_twr": 0.07652738718111385,
+      "volatility": 0.10255653626723595,
+      "sharpe": 0.757781864239112,
+      "max_drawdown": -0.1555899803011429,
+      "recovery_days": 750,
+      "cash_fraction": 0.3285177630858213,
+      "orders": 28,
+      "fees": 443.98201324462894,
+      "name": "trend_ma12_mom6_vol0.15",
+      "trial_id": "b62d36a1b16727618c99a8c1eacf9e771116a63ab0b8e895fe5a4a6a14e50d46",
+      "parameters": {
+        "name": "trend_ma12_mom6_vol0.15",
+        "family": "trend",
+        "ma": 12,
+        "lookback": 6,
+        "target_vol": 0.15,
+        "mode": "target"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 11892.56608824167,
+      "dsr": 0.7552873942435168,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": -0.16147275423068785,
+        "low": -0.5324890600887046,
+        "high": 0.12431545273463182,
+        "prob_positive": 0.189,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": -0.16147275423068785,
+        "low": -0.9350185571877629,
+        "high": 0.40458582726458997,
+        "prob_positive": 0.189,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 7,
+        "median_sharpe": 0.6771568107380997,
+        "worst_sharpe": 0.4565961196380597
+      }
+    },
+    {
+      "final_value": 13772.647253814695,
+      "contributed": 9900.0,
+      "cagr_twr": 0.07154226802201635,
+      "volatility": 0.08543048808032669,
+      "sharpe": 0.8374279061069418,
+      "max_drawdown": -0.1831072491863971,
+      "recovery_days": 695,
+      "cash_fraction": 0.44552265721231954,
+      "orders": 11,
+      "fees": 24.643334564208985,
+      "name": "equity_cash_w0.6_band0.05",
+      "trial_id": "d388f015bf406faa9bdad7f4829969cccef7efb62b302aa723ce94a8c7951736",
+      "parameters": {
+        "name": "equity_cash_w0.6_band0.05",
+        "family": "cash_mix",
+        "world": 0.6,
+        "band": 0.05,
+        "mode": "bands"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 11860.598490115095,
+      "dsr": 0.845125682142168,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": -0.024301507082655882,
+        "low": -0.06585083467113749,
+        "high": 0.008264460398814483,
+        "prob_positive": 0.122,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": -0.024301507082655882,
+        "low": -0.09349195686974777,
+        "high": 0.043071527946253255,
+        "prob_positive": 0.122,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 3,
+        "median_sharpe": 0.8480548864557117,
+        "worst_sharpe": 0.8374279061069418
+      }
+    },
+    {
+      "final_value": 13772.647253814695,
+      "contributed": 9900.0,
+      "cagr_twr": 0.07154226802201635,
+      "volatility": 0.08543048808032669,
+      "sharpe": 0.8374279061069418,
+      "max_drawdown": -0.1831072491863971,
+      "recovery_days": 695,
+      "cash_fraction": 0.44552265721231954,
+      "orders": 11,
+      "fees": 24.643334564208985,
+      "name": "equity_cash_w0.6_band0.1",
+      "trial_id": "c38c3f0b3683fe646775a1babf25c2dc532441c7ae063a8c78338292da2f0d24",
+      "parameters": {
+        "name": "equity_cash_w0.6_band0.1",
+        "family": "cash_mix",
+        "world": 0.6,
+        "band": 0.1,
+        "mode": "bands"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 11860.598490115095,
+      "dsr": 0.845125682142168,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": -0.024301507082655882,
+        "low": -0.06585083467113749,
+        "high": 0.008264460398814483,
+        "prob_positive": 0.122,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": -0.024301507082655882,
+        "low": -0.09349195686974777,
+        "high": 0.043071527946253255,
+        "prob_positive": 0.122,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 3,
+        "median_sharpe": 0.8480548864557117,
+        "worst_sharpe": 0.8374279061069418
+      }
+    },
+    {
+      "final_value": 13610.538035842894,
+      "contributed": 9900.0,
+      "cagr_twr": 0.07180267050040023,
+      "volatility": 0.10324101197029681,
+      "sharpe": 0.7115799380812053,
+      "max_drawdown": -0.16528047372603527,
+      "recovery_days": 911,
+      "cash_fraction": 0.32656579353396575,
+      "orders": 32,
+      "fees": 602.9287915496826,
+      "name": "trend_ma6_mom12_volNone",
+      "trial_id": "c6a346496ad46bb5f3f386235db05fd01875e9177db2f28b0126d5a615787572",
+      "parameters": {
+        "name": "trend_ma6_mom12_volNone",
+        "family": "trend",
+        "ma": 6,
+        "lookback": 12,
+        "target_vol": null,
+        "mode": "target"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 11720.99480242335,
+      "dsr": 0.711962783689688,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": -0.21065774158171668,
+        "low": -0.5421975215048453,
+        "high": 0.03451207760754554,
+        "prob_positive": 0.086,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": -0.21065774158171668,
+        "low": -0.8677756371172289,
+        "high": 0.3222140896624978,
+        "prob_positive": 0.086,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 7,
+        "median_sharpe": 0.6196044538873337,
+        "worst_sharpe": 0.4759933121669804
+      }
+    },
+    {
+      "final_value": 13543.39751046753,
+      "contributed": 9900.0,
+      "cagr_twr": 0.057078400743485025,
+      "volatility": 0.08831181774694918,
+      "sharpe": 0.6617917542686984,
+      "max_drawdown": -0.1406943408442075,
+      "recovery_days": 766,
+      "cash_fraction": 0.4516980818674216,
+      "orders": 38,
+      "fees": 418.66224295043946,
+      "name": "trend_ma12_mom9_vol0.1",
+      "trial_id": "51562f6a6e60a5eee5054f2fb7d7822627ad83764253c8ae425d90c47723b0ba",
+      "parameters": {
+        "name": "trend_ma12_mom9_vol0.1",
+        "family": "trend",
+        "ma": 12,
+        "lookback": 9,
+        "target_vol": 0.1,
+        "mode": "target"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 11663.175357895574,
+      "dsr": 0.6390098314790313,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": -0.28596189467826194,
+        "low": -0.6889957382605099,
+        "high": 0.011497192244154053,
+        "prob_positive": 0.055,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": -0.28596189467826194,
+        "low": -1.104396386665724,
+        "high": 0.29780722386350245,
+        "prob_positive": 0.055,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 7,
+        "median_sharpe": 0.7244907499712454,
+        "worst_sharpe": 0.47525647742353005
+      }
+    },
+    {
+      "final_value": 13398.469798187254,
+      "contributed": 9900.0,
+      "cagr_twr": 0.06642886356828126,
+      "volatility": 0.09893628449765149,
+      "sharpe": 0.6882457070120416,
+      "max_drawdown": -0.1620474165377388,
+      "recovery_days": 897,
+      "cash_fraction": 0.3483318690109506,
+      "orders": 36,
+      "fees": 577.2977189025879,
+      "name": "trend_ma6_mom12_vol0.15",
+      "trial_id": "08b34b172f878bc37e98cba92fe3db536819fec000f0a901fef017fe69a1a953",
+      "parameters": {
+        "name": "trend_ma6_mom12_vol0.15",
+        "family": "trend",
+        "ma": 6,
+        "lookback": 12,
+        "target_vol": 0.15,
+        "mode": "target"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 11538.367877258825,
+      "dsr": 0.6900780445668143,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": -0.23053390104874139,
+        "low": -0.5607831183011843,
+        "high": 0.010905003934290797,
+        "prob_positive": 0.061,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": -0.23053390104874139,
+        "low": -0.8198250084874306,
+        "high": 0.29123893080304875,
+        "prob_positive": 0.061,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 7,
+        "median_sharpe": 0.6196044538873337,
+        "worst_sharpe": 0.4565961196380597
+      }
+    },
+    {
+      "final_value": 13358.070497146604,
+      "contributed": 9900.0,
+      "cagr_twr": 0.06451885488727149,
+      "volatility": 0.09778721603252463,
+      "sharpe": 0.6771568107380997,
+      "max_drawdown": -0.1531601564754096,
+      "recovery_days": 758,
+      "cash_fraction": 0.3740934560428024,
+      "orders": 31,
+      "fees": 422.66207731628424,
+      "name": "trend_ma12_mom6_vol0.12",
+      "trial_id": "f7fde3121c3fa479b4174c50f233886951253a808fe9312b0f2619170504ad63",
+      "parameters": {
+        "name": "trend_ma12_mom6_vol0.12",
+        "family": "trend",
+        "ma": 12,
+        "lookback": 6,
+        "target_vol": 0.12,
+        "mode": "target"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 11503.577188141906,
+      "dsr": 0.673726080575294,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": -0.25165404382607237,
+        "low": -0.6193063717013784,
+        "high": 0.04164807588348025,
+        "prob_positive": 0.08,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": -0.25165404382607237,
+        "low": -1.0265858482868344,
+        "high": 0.3380650590493354,
+        "prob_positive": 0.08,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 7,
+        "median_sharpe": 0.7244907499712454,
+        "worst_sharpe": 0.4019368465167485
+      }
+    },
+    {
+      "final_value": 13313.540415130614,
+      "contributed": 9900.0,
+      "cagr_twr": 0.062160527431833756,
+      "volatility": 0.09726753369765724,
+      "sharpe": 0.6578569969153563,
+      "max_drawdown": -0.1531601564754096,
+      "recovery_days": 806,
+      "cash_fraction": 0.3784914812035534,
+      "orders": 30,
+      "fees": 433.1652733459473,
+      "name": "trend_ma10_mom12_vol0.12",
+      "trial_id": "01f4f1829817aaa0e307e0ab013196c47a782b08ea4d6ae7756a4ed2f7a9e20b",
+      "parameters": {
+        "name": "trend_ma10_mom12_vol0.12",
+        "family": "trend",
+        "ma": 10,
+        "lookback": 12,
+        "target_vol": 0.12,
+        "mode": "target"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 11465.229192016668,
+      "dsr": 0.6754691753809052,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": -0.24459023909127975,
+        "low": -0.5824435655574837,
+        "high": 0.009773049974346545,
+        "prob_positive": 0.058,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": -0.24459023909127975,
+        "low": -0.8496534589706549,
+        "high": 0.2937538221729424,
+        "prob_positive": 0.058,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 7,
+        "median_sharpe": 0.6196044538873337,
+        "worst_sharpe": 0.508969587228589
+      }
+    },
+    {
+      "final_value": 12980.80098498535,
+      "contributed": 9900.0,
+      "cagr_twr": 0.05538269972281262,
+      "volatility": 0.09237348689968888,
+      "sharpe": 0.6196044538873337,
+      "max_drawdown": -0.16309235003093603,
+      "recovery_days": 897,
+      "cash_fraction": 0.39869375029541976,
+      "orders": 36,
+      "fees": 529.2168372802735,
+      "name": "trend_ma6_mom12_vol0.12",
+      "trial_id": "1ef3d05ccb94927234b7037bea254208e284be991b524b3d3867d7f0bb4c9798",
+      "parameters": {
+        "name": "trend_ma6_mom12_vol0.12",
+        "family": "trend",
+        "ma": 6,
+        "lookback": 12,
+        "target_vol": 0.12,
+        "mode": "target"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 11178.683787197011,
+      "dsr": 0.6154689583739301,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": -0.30996177737006303,
+        "low": -0.6422670583376251,
+        "high": -0.08134351066207705,
+        "prob_positive": 0.019,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": -0.30996177737006303,
+        "low": -0.8579137422434666,
+        "high": 0.21906708142789053,
+        "prob_positive": 0.019,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 7,
+        "median_sharpe": 0.6578569969153563,
+        "worst_sharpe": 0.4019368465167485
+      }
+    },
+    {
+      "final_value": 12962.841480819703,
+      "contributed": 9900.0,
+      "cagr_twr": 0.05587483597364917,
+      "volatility": 0.08837533882738981,
+      "sharpe": 0.6487022655413911,
+      "max_drawdown": -0.14945278945026053,
+      "recovery_days": 758,
+      "cash_fraction": 0.44225958454254793,
+      "orders": 37,
+      "fees": 388.483989151001,
+      "name": "trend_ma12_mom6_vol0.1",
+      "trial_id": "6ca1941e14b44d3c8886fd9e31d41815713e58d90825aa0bb46a60526f3828f4",
+      "parameters": {
+        "name": "trend_ma12_mom6_vol0.1",
+        "family": "trend",
+        "ma": 12,
+        "lookback": 6,
+        "target_vol": 0.1,
+        "mode": "target"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 11163.217590752367,
+      "dsr": 0.631724762184355,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": -0.29439530223440646,
+        "low": -0.6673684009905937,
+        "high": 0.0024549114923835403,
+        "prob_positive": 0.051,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": -0.29439530223440646,
+        "low": -1.0522804985982264,
+        "high": 0.28523034771698275,
+        "prob_positive": 0.051,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 7,
+        "median_sharpe": 0.6771568107380997,
+        "worst_sharpe": 0.3874666108521016
+      }
+    },
+    {
+      "final_value": 12834.032781036374,
+      "contributed": 9900.0,
+      "cagr_twr": 0.0525132413376852,
+      "volatility": 0.08810596737105657,
+      "sharpe": 0.6148658198242746,
+      "max_drawdown": -0.14945278945026053,
+      "recovery_days": 806,
+      "cash_fraction": 0.4464387787868552,
+      "orders": 37,
+      "fees": 396.5031686706543,
+      "name": "trend_ma10_mom12_vol0.1",
+      "trial_id": "aa7b3296cafb4ddf40d69e619457f2bbc8d5f2ecb36709bb920afd3281de067e",
+      "parameters": {
+        "name": "trend_ma10_mom12_vol0.1",
+        "family": "trend",
+        "ma": 10,
+        "lookback": 12,
+        "target_vol": 0.1,
+        "mode": "target"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 11052.291329300293,
+      "dsr": 0.6211631214255007,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": -0.30212817739890585,
+        "low": -0.6472390680015162,
+        "high": -0.022112351009390515,
+        "prob_positive": 0.038,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": -0.30212817739890585,
+        "low": -0.8949449314146372,
+        "high": 0.24168162167662963,
+        "prob_positive": 0.038,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 7,
+        "median_sharpe": 0.6578569969153563,
+        "worst_sharpe": 0.47525647742353005
+      }
+    },
+    {
+      "final_value": 12766.10069190979,
+      "contributed": 9900.0,
+      "cagr_twr": 0.055119532964091444,
+      "volatility": 0.09948118064674438,
+      "sharpe": 0.5797142377403924,
+      "max_drawdown": -0.15541230586486277,
+      "recovery_days": 895,
+      "cash_fraction": 0.3700411788418476,
+      "orders": 30,
+      "fees": 723.9402321624758,
+      "name": "trend_ma10_mom9_volNone",
+      "trial_id": "656c9fc5c2cc9fd11bcd3644a9c31dc77b97567d90dfea18864726ab1a6f439d",
+      "parameters": {
+        "name": "trend_ma10_mom9_volNone",
+        "family": "trend",
+        "ma": 10,
+        "lookback": 9,
+        "target_vol": null,
+        "mode": "target"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 10993.79021336545,
+      "dsr": 0.5990081087040078,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": -0.3274042818480356,
+        "low": -0.7424901307488161,
+        "high": -0.03727836445686765,
+        "prob_positive": 0.027,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": -0.3274042818480356,
+        "low": -1.036584789801659,
+        "high": 0.31445183397005383,
+        "prob_positive": 0.027,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 7,
+        "median_sharpe": 0.6025472896746671,
+        "worst_sharpe": 0.47525647742353005
+      }
+    },
+    {
+      "final_value": 12737.671337493897,
+      "contributed": 9900.0,
+      "cagr_twr": 0.054387965261366356,
+      "volatility": 0.09364636635445214,
+      "sharpe": 0.6025472896746671,
+      "max_drawdown": -0.1605974778988981,
+      "recovery_days": 897,
+      "cash_fraction": 0.4022295171015068,
+      "orders": 31,
+      "fees": 775.3342167053223,
+      "name": "trend_ma6_mom9_volNone",
+      "trial_id": "64c522c9b6f993d57548aebb3f699ae2ad839f87cddb1c4fb9b8bcb26908c307",
+      "parameters": {
+        "name": "trend_ma6_mom9_volNone",
+        "family": "trend",
+        "ma": 6,
+        "lookback": 9,
+        "target_vol": null,
+        "mode": "target"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 10969.307690009839,
+      "dsr": 0.6061368137749739,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": -0.3196674830031728,
+        "low": -0.7464009623557405,
+        "high": -0.01262064236062404,
+        "prob_positive": 0.04,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": -0.3196674830031728,
+        "low": -1.005176537806717,
+        "high": 0.3454268336700493,
+        "prob_positive": 0.04,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 7,
+        "median_sharpe": 0.5773527557885121,
+        "worst_sharpe": 0.4759933121669804
+      }
+    },
+    {
+      "final_value": 12706.933776763917,
+      "contributed": 9900.0,
+      "cagr_twr": 0.05225219494694344,
+      "volatility": 0.09739728557541263,
+      "sharpe": 0.5625660474524249,
+      "max_drawdown": -0.1523351534793379,
+      "recovery_days": 891,
+      "cash_fraction": 0.3851506793391911,
+      "orders": 31,
+      "fees": 698.9826050720216,
+      "name": "trend_ma10_mom9_vol0.15",
+      "trial_id": "b40edddf54f328254a4bc5baa1e3e75eddad983850e64bf7439784bf7fa29601",
+      "parameters": {
+        "name": "trend_ma10_mom9_vol0.15",
+        "family": "trend",
+        "ma": 10,
+        "lookback": 9,
+        "target_vol": 0.15,
+        "mode": "target"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 10942.837407306357,
+      "dsr": 0.5777324370690698,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": -0.34913055942241367,
+        "low": -0.7604832933034671,
+        "high": -0.060285387991185206,
+        "prob_positive": 0.022,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": -0.34913055942241367,
+        "low": -1.1191425954717822,
+        "high": 0.2841177116348624,
+        "prob_positive": 0.022,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 7,
+        "median_sharpe": 0.5797142377403924,
+        "worst_sharpe": 0.47525647742353005
+      }
+    },
+    {
+      "final_value": 12658.40437298584,
+      "contributed": 9900.0,
+      "cagr_twr": 0.05094728098264034,
+      "volatility": 0.09189040293334255,
+      "sharpe": 0.5773527557885121,
+      "max_drawdown": -0.16272443497337974,
+      "recovery_days": 897,
+      "cash_fraction": 0.4168193138637147,
+      "orders": 34,
+      "fees": 754.7697603149414,
+      "name": "trend_ma6_mom9_vol0.15",
+      "trial_id": "d8e7433854098b7c7bc0f33eb8fa069d6ae9809a7419666ed9682b10a6336ad8",
+      "parameters": {
+        "name": "trend_ma6_mom9_vol0.15",
+        "family": "trend",
+        "ma": 6,
+        "lookback": 9,
+        "target_vol": 0.15,
+        "mode": "target"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 10901.045312978447,
+      "dsr": 0.5767437979147548,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": -0.34980705414462676,
+        "low": -0.7586093067681978,
+        "high": -0.046669845344281556,
+        "prob_positive": 0.026,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": -0.34980705414462676,
+        "low": -1.0836082889194438,
+        "high": 0.30431202829487275,
+        "prob_positive": 0.026,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 7,
+        "median_sharpe": 0.5625660474524249,
+        "worst_sharpe": 0.4565961196380597
+      }
+    },
+    {
+      "final_value": 12570.191049346922,
+      "contributed": 9900.0,
+      "cagr_twr": 0.06327726618869689,
+      "volatility": 0.10512637690264905,
+      "sharpe": 0.6260371745574246,
+      "max_drawdown": -0.1661423622888597,
+      "recovery_days": 806,
+      "cash_fraction": 0.32811425209530193,
+      "orders": 26,
+      "fees": 510.6711332702637,
+      "name": "trend_ma10_mom6_volNone",
+      "trial_id": "b84d8727e1518742894113a7f2ff3d6d15800f82bb2b373d586bb261624ce2ad",
+      "parameters": {
+        "name": "trend_ma10_mom6_volNone",
+        "family": "trend",
+        "ma": 10,
+        "lookback": 6,
+        "target_vol": null,
+        "mode": "target"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 10825.078594752218,
+      "dsr": 0.6516569095527511,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": -0.2772218676424568,
+        "low": -0.7274077921995251,
+        "high": 0.04573904122205883,
+        "prob_positive": 0.086,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": -0.2772218676424568,
+        "low": -1.178566219525871,
+        "high": 0.36270501923063525,
+        "prob_positive": 0.086,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 7,
+        "median_sharpe": 0.5797142377403924,
+        "worst_sharpe": 0.4759933121669804
+      }
+    },
+    {
+      "final_value": 12567.960740631102,
+      "contributed": 9900.0,
+      "cagr_twr": 0.047015132114818226,
+      "volatility": 0.09352958646463866,
+      "sharpe": 0.5294646287190391,
+      "max_drawdown": -0.1506048916130125,
+      "recovery_days": 889,
+      "cash_fraction": 0.419652676089704,
+      "orders": 33,
+      "fees": 621.3712295837403,
+      "name": "trend_ma10_mom9_vol0.12",
+      "trial_id": "7e19767ec4bc863862ae4c443e0ee8150ec7310dc2f4e832ebe1bf860ae2a00c",
+      "parameters": {
+        "name": "trend_ma10_mom9_vol0.12",
+        "family": "trend",
+        "ma": 10,
+        "lookback": 9,
+        "target_vol": 0.12,
+        "mode": "target"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 10823.15791852347,
+      "dsr": 0.5317731606154734,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": -0.39466538002403273,
+        "low": -0.8150849459500007,
+        "high": -0.09616003333104606,
+        "prob_positive": 0.015,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": -0.39466538002403273,
+        "low": -1.2400482770551362,
+        "high": 0.2539960158890178,
+        "prob_positive": 0.015,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 7,
+        "median_sharpe": 0.5625660474524249,
+        "worst_sharpe": 0.47525647742353005
+      }
+    },
+    {
+      "final_value": 12538.423346862792,
+      "contributed": 9900.0,
+      "cagr_twr": 0.04653232606126445,
+      "volatility": 0.0844458956645378,
+      "sharpe": 0.5714776804762659,
+      "max_drawdown": -0.15153985167082196,
+      "recovery_days": 895,
+      "cash_fraction": 0.4647366055918107,
+      "orders": 41,
+      "fees": 471.195061340332,
+      "name": "trend_ma6_mom12_vol0.1",
+      "trial_id": "a62222f2ed6554201d4077316f67c280f13b0208a83f2d1eb7c636ea38921b8c",
+      "parameters": {
+        "name": "trend_ma6_mom12_vol0.1",
+        "family": "trend",
+        "ma": 6,
+        "lookback": 12,
+        "target_vol": 0.1,
+        "mode": "target"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 10797.721184286824,
+      "dsr": 0.5557640630617073,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": -0.37005584109800405,
+        "low": -0.6921547008326262,
+        "high": -0.12574395029963029,
+        "prob_positive": 0.008,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": -0.37005584109800405,
+        "low": -0.9203808324425904,
+        "high": 0.15206373128433,
+        "prob_positive": 0.008,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 7,
+        "median_sharpe": 0.6196044538873337,
+        "worst_sharpe": 0.3874666108521016
+      }
+    },
+    {
+      "final_value": 12476.559153747558,
+      "contributed": 9900.0,
+      "cagr_twr": 0.045087340953058996,
+      "volatility": 0.08774003246550276,
+      "sharpe": 0.5377982182363158,
+      "max_drawdown": -0.16030843961732666,
+      "recovery_days": 897,
+      "cash_fraction": 0.45224421544336185,
+      "orders": 36,
+      "fees": 673.0524795532226,
+      "name": "trend_ma6_mom9_vol0.12",
+      "trial_id": "dda6073c5e0beed282ba3c11be36d1fedf30e0c90fe90570a6a6a242587e507b",
+      "parameters": {
+        "name": "trend_ma6_mom9_vol0.12",
+        "family": "trend",
+        "ma": 6,
+        "lookback": 9,
+        "target_vol": 0.12,
+        "mode": "target"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 10744.445561820598,
+      "dsr": 0.5236753386997695,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": -0.40247744488814174,
+        "low": -0.8226541370409096,
+        "high": -0.09779331832685813,
+        "prob_positive": 0.019,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": -0.40247744488814174,
+        "low": -1.1999065013034222,
+        "high": 0.2707803964524252,
+        "prob_positive": 0.019,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 7,
+        "median_sharpe": 0.5773527557885121,
+        "worst_sharpe": 0.4019368465167485
+      }
+    },
+    {
+      "final_value": 12426.732309570312,
+      "contributed": 9900.0,
+      "cagr_twr": 0.0583805155323871,
+      "volatility": 0.1011822006727317,
+      "sharpe": 0.6016124258521445,
+      "max_drawdown": -0.1555899803011429,
+      "recovery_days": 806,
+      "cash_fraction": 0.35126199558882043,
+      "orders": 29,
+      "fees": 495.63365722656255,
+      "name": "trend_ma10_mom6_vol0.15",
+      "trial_id": "6422b65732fe99dd570ba46029e2a128638951e3329dd566fd40945ef8b86b50",
+      "parameters": {
+        "name": "trend_ma10_mom6_vol0.15",
+        "family": "trend",
+        "ma": 10,
+        "lookback": 6,
+        "target_vol": 0.15,
+        "mode": "target"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 10701.536150004205,
+      "dsr": 0.6275672581315821,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": -0.29976933603207,
+        "low": -0.7315466332290744,
+        "high": 0.018881044542196468,
+        "prob_positive": 0.062,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": -0.29976933603207,
+        "low": -1.2244687496944122,
+        "high": 0.3212591521435696,
+        "prob_positive": 0.062,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 7,
+        "median_sharpe": 0.5625660474524249,
+        "worst_sharpe": 0.4565961196380597
+      }
+    },
+    {
+      "final_value": 12153.302131088254,
+      "contributed": 9900.0,
+      "cagr_twr": 0.03873188145142015,
+      "volatility": 0.08643471760365382,
+      "sharpe": 0.47525647742353005,
+      "max_drawdown": -0.1406943408442075,
+      "recovery_days": 884,
+      "cash_fraction": 0.47932872789684816,
+      "orders": 36,
+      "fees": 544.0193105621339,
+      "name": "trend_ma10_mom9_vol0.1",
+      "trial_id": "42e91c1635f6324bc5ae51a5ff0ce3d33e434a57856edca00213dd5e53db5b39",
+      "parameters": {
+        "name": "trend_ma10_mom9_vol0.1",
+        "family": "trend",
+        "ma": 10,
+        "lookback": 9,
+        "target_vol": 0.1,
+        "mode": "target"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 10466.066127263446,
+      "dsr": 0.4653605902849852,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": -0.4598473128339964,
+        "low": -0.8673170265296842,
+        "high": -0.15163031333828247,
+        "prob_positive": 0.004,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": -0.4598473128339964,
+        "low": -1.335665974515853,
+        "high": 0.17577216069058912,
+        "prob_positive": 0.004,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 7,
+        "median_sharpe": 0.5625660474524249,
+        "worst_sharpe": 0.47643021530138574
+      }
+    },
+    {
+      "final_value": 12060.111082183834,
+      "contributed": 9900.0,
+      "cagr_twr": 0.03688438060378796,
+      "volatility": 0.08172059637672124,
+      "sharpe": 0.47643021530138574,
+      "max_drawdown": -0.14968654994930342,
+      "recovery_days": 895,
+      "cash_fraction": 0.5081760401914291,
+      "orders": 40,
+      "fees": 590.3420428161621,
+      "name": "trend_ma6_mom9_vol0.1",
+      "trial_id": "b1966cb6067d0a505e4166d5a6e2a1d632b10f8c33db7e2b5865cdad3a12833f",
+      "parameters": {
+        "name": "trend_ma6_mom9_vol0.1",
+        "family": "trend",
+        "ma": 6,
+        "lookback": 9,
+        "target_vol": 0.1,
+        "mode": "target"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 10385.812738531526,
+      "dsr": 0.45405226672359345,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": -0.47122891457111427,
+        "low": -0.889649245099144,
+        "high": -0.14109005263053997,
+        "prob_positive": 0.006,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": -0.47122891457111427,
+        "low": -1.2975539836421817,
+        "high": 0.18532419723528681,
+        "prob_positive": 0.006,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 7,
+        "median_sharpe": 0.5714776804762659,
+        "worst_sharpe": 0.3874666108521016
+      }
+    },
+    {
+      "final_value": 12008.173056686399,
+      "contributed": 9900.0,
+      "cagr_twr": 0.04621260333119803,
+      "volatility": 0.09634175030856441,
+      "sharpe": 0.508969587228589,
+      "max_drawdown": -0.1531601564754096,
+      "recovery_days": 862,
+      "cash_fraction": 0.39698399024701025,
+      "orders": 31,
+      "fees": 461.165413772583,
+      "name": "trend_ma10_mom6_vol0.12",
+      "trial_id": "8ea5979be3829622d7ff248cb938d860a3c6cb3860fc090c89caf3b903e97f77",
+      "parameters": {
+        "name": "trend_ma10_mom6_vol0.12",
+        "family": "trend",
+        "ma": 10,
+        "lookback": 6,
+        "target_vol": 0.12,
+        "mode": "target"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 10341.085239493617,
+      "dsr": 0.5199325347091898,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": -0.40617665538304903,
+        "low": -0.8236561343639898,
+        "high": -0.09201034361609937,
+        "prob_positive": 0.016,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": -0.40617665538304903,
+        "low": -1.3137282616848778,
+        "high": 0.23639010782275535,
+        "prob_positive": 0.016,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 7,
+        "median_sharpe": 0.6016124258521445,
+        "worst_sharpe": 0.4019368465167485
+      }
+    },
+    {
+      "final_value": 11844.174877197265,
+      "contributed": 9900.0,
+      "cagr_twr": 0.04033095520655672,
+      "volatility": 0.08762932232093786,
+      "sharpe": 0.48720650099598867,
+      "max_drawdown": -0.14945278945026053,
+      "recovery_days": 861,
+      "cash_fraction": 0.45980088430525407,
+      "orders": 35,
+      "fees": 407.0546149902344,
+      "name": "trend_ma10_mom6_vol0.1",
+      "trial_id": "50b38fc6ae37e567ec2819d58ad8eb209f69c2b4142fa1e20c4dd794b673b27f",
+      "parameters": {
+        "name": "trend_ma10_mom6_vol0.1",
+        "family": "trend",
+        "ma": 10,
+        "lookback": 6,
+        "target_vol": 0.1,
+        "mode": "target"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 10199.854833734718,
+      "dsr": 0.48591358539498697,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": -0.43953141541416085,
+        "low": -0.8594040240528965,
+        "high": -0.11308978036621788,
+        "prob_positive": 0.01,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": -0.43953141541416085,
+        "low": -1.311855969571622,
+        "high": 0.1892940647137103,
+        "prob_positive": 0.01,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 7,
+        "median_sharpe": 0.6016124258521445,
+        "worst_sharpe": 0.3874666108521016
+      }
+    },
+    {
+      "final_value": 11718.003759033203,
+      "contributed": 9900.0,
+      "cagr_twr": 0.045532305824090624,
+      "volatility": 0.10308603986484552,
+      "sharpe": 0.4759933121669804,
+      "max_drawdown": -0.23032877588448508,
+      "recovery_days": 1052,
+      "cash_fraction": 0.3395171673152837,
+      "orders": 31,
+      "fees": 645.8895515136719,
+      "name": "trend_ma6_mom6_volNone",
+      "trial_id": "f8bc34f70117b400c273c59fa18243201d6ba383dc7951d76675c5cd867f9a92",
+      "parameters": {
+        "name": "trend_ma6_mom6_volNone",
+        "family": "trend",
+        "ma": 6,
+        "lookback": 6,
+        "target_vol": null,
+        "mode": "target"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 10091.199979949923,
+      "dsr": 0.44805273948743024,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": -0.4753164816868072,
+        "low": -0.9342641660198135,
+        "high": -0.13902877750200981,
+        "prob_positive": 0.012,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": -0.4753164816868072,
+        "low": -1.3494249517852706,
+        "high": 0.2359266947596788,
+        "prob_positive": 0.012,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 7,
+        "median_sharpe": 0.6025472896746671,
+        "worst_sharpe": 0.3874666108521016
+      }
+    },
+    {
+      "final_value": 11614.321636993407,
+      "contributed": 9900.0,
+      "cagr_twr": 0.04167533358615594,
+      "volatility": 0.09850386866168394,
+      "sharpe": 0.4565961196380597,
+      "max_drawdown": -0.21936824059468707,
+      "recovery_days": 1039,
+      "cash_fraction": 0.3651279556274007,
+      "orders": 35,
+      "fees": 619.813433807373,
+      "name": "trend_ma6_mom6_vol0.15",
+      "trial_id": "449b4f6c46f20332410714de1a8a6df6d5a56dac37634d68f4a9d061699d7cfd",
+      "parameters": {
+        "name": "trend_ma6_mom6_vol0.15",
+        "family": "trend",
+        "ma": 6,
+        "lookback": 6,
+        "target_vol": 0.15,
+        "mode": "target"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 10001.911987782945,
+      "dsr": 0.43363162568960034,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": -0.4899241778342751,
+        "low": -0.9178964784598755,
+        "high": -0.16490429641048346,
+        "prob_positive": 0.007,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": -0.4899241778342751,
+        "low": -1.3321279042143983,
+        "high": 0.15686841851551267,
+        "prob_positive": 0.007,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 7,
+        "median_sharpe": 0.5773527557885121,
+        "worst_sharpe": 0.3874666108521016
+      }
+    },
+    {
+      "final_value": 11441.930233261108,
+      "contributed": 9900.0,
+      "cagr_twr": 0.03394072001012982,
+      "volatility": 0.09218509696389154,
+      "sharpe": 0.4019368465167485,
+      "max_drawdown": -0.20892112667017904,
+      "recovery_days": 1037,
+      "cash_fraction": 0.41300054687807386,
+      "orders": 36,
+      "fees": 572.0575291900635,
+      "name": "trend_ma6_mom6_vol0.12",
+      "trial_id": "70c5033242e4aec7e6e39111bf40f6833d6f9f38cdfb852b97675cb3478636a0",
+      "parameters": {
+        "name": "trend_ma6_mom6_vol0.12",
+        "family": "trend",
+        "ma": 6,
+        "lookback": 6,
+        "target_vol": 0.12,
+        "mode": "target"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 9853.4535843159,
+      "dsr": 0.37432196776644805,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": -0.5489540190428661,
+        "low": -0.9570787677250945,
+        "high": -0.24507862151603213,
+        "prob_positive": 0.004,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": -0.5489540190428661,
+        "low": -1.3877037500808516,
+        "high": 0.056385088117827484,
+        "prob_positive": 0.004,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 7,
+        "median_sharpe": 0.508969587228589,
+        "worst_sharpe": 0.3874666108521016
+      }
+    },
+    {
+      "final_value": 11362.606359329222,
+      "contributed": 9900.0,
+      "cagr_twr": 0.029900139509885015,
+      "volatility": 0.08378755390756944,
+      "sharpe": 0.3874666108521016,
+      "max_drawdown": -0.1895062081951676,
+      "recovery_days": 1011,
+      "cash_fraction": 0.47861607687662544,
+      "orders": 38,
+      "fees": 493.0117742156984,
+      "name": "trend_ma6_mom6_vol0.1",
+      "trial_id": "139d739e1a9094eea7b47ad0d27f0f2264eacf63d12d9415958975ba37a107db",
+      "parameters": {
+        "name": "trend_ma6_mom6_vol0.1",
+        "family": "trend",
+        "ma": 6,
+        "lookback": 6,
+        "target_vol": 0.1,
+        "mode": "target"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 9785.142198563533,
+      "dsr": 0.35651750597548665,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": -0.5674829448201948,
+        "low": -0.9698486466468809,
+        "high": -0.27165321112297924,
+        "prob_positive": 0.002,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": -0.5674829448201948,
+        "low": -1.3915152775895518,
+        "high": 0.022204289616466342,
+        "prob_positive": 0.002,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 7,
+        "median_sharpe": 0.47643021530138574,
+        "worst_sharpe": 0.4019368465167485
+      }
+    },
+    {
+      "final_value": 9900.0,
+      "contributed": 9900.0,
+      "cagr_twr": 0.0,
+      "volatility": 0.0,
+      "sharpe": 0.0,
+      "max_drawdown": 0.0,
+      "recovery_days": 0,
+      "cash_fraction": 1.0,
+      "orders": 0,
+      "fees": 0.0,
+      "name": "cash",
+      "trial_id": "89710618eeb947b88e874472716ed33bb6b7bfe4bc11d3333e3cf58cfb96c39b",
+      "parameters": {
+        "name": "cash",
+        "family": "cash_mix",
+        "world": 0.0,
+        "mode": "contribution"
+      },
+      "risk_objective_met_in_sample": true,
+      "final_real_value": 8525.588645974862,
+      "dsr": null,
+      "status": "exploratory",
+      "sharpe_gap_ci90": {
+        "diff": -0.9800621897855905,
+        "low": -1.682456652256337,
+        "high": -0.4696781544485175,
+        "prob_positive": 0.001,
+        "level": 0.9
+      },
+      "sharpe_gap_familywise_ci": {
+        "diff": -0.9800621897855905,
+        "low": -2.607779528124937,
+        "high": 0.025094629048078732,
+        "prob_positive": 0.001,
+        "level": 0.9998015873015873
+      },
+      "bootstrap_tail_resolution_limited": true,
+      "parameter_neighborhood": {
+        "count": 0,
+        "median_sharpe": null,
+        "worst_sharpe": null
+      }
+    }
+  ],
+  "walk_forward": {
+    "choices": [
+      {
+        "test_start": "2022-05-31",
+        "test_end": "2023-04-30",
+        "config": "momentum_l6_n1_core0.5",
+        "train_sharpe": 1.062809729009219,
+        "train_max_drawdown_daily": -0.1983455070677862,
+        "eligible_candidates": 59
+      },
+      {
+        "test_start": "2023-05-31",
+        "test_end": "2024-04-30",
+        "config": "momentum_l6_n1_core0.8",
+        "train_sharpe": 0.6779398004515544,
+        "train_max_drawdown_daily": -0.25948874753550777,
+        "eligible_candidates": 59
+      },
+      {
+        "test_start": "2024-05-31",
+        "test_end": "2025-04-30",
+        "config": "momentum_l6_n1_core0.8",
+        "train_sharpe": 0.8988140349768416,
+        "train_max_drawdown_daily": -0.25948874753550777,
+        "eligible_candidates": 59
+      },
+      {
+        "test_start": "2025-05-31",
+        "test_end": "2026-04-30",
+        "config": "trend_ma12_mom12_volNone",
+        "train_sharpe": 0.8595066063198888,
+        "train_max_drawdown_daily": -0.1661423622888597,
+        "eligible_candidates": 59
+      },
+      {
+        "test_start": "2026-05-31",
+        "test_end": "2026-09-30",
+        "config": "trend_ma12_mom12_volNone",
+        "train_sharpe": 0.9436256289109662,
+        "train_max_drawdown_daily": -0.1661423622888597,
+        "eligible_candidates": 59
+      }
+    ],
+    "account": {
+      "final_value": 8466.618700642586,
+      "contributed": 6300.0,
+      "cagr_twr": 0.09079628034603049,
+      "volatility": 0.10846377792215588,
+      "sharpe": 0.8424121040513081,
+      "max_drawdown": -0.20386595892806358,
+      "recovery_days": 498,
+      "cash_fraction": 0.20753704069857665,
+      "orders": 26,
+      "fees": 133.43439422130587
+    },
+    "benchmark": {
+      "final_value": 9161.239481002807,
+      "contributed": 6300.0,
+      "cagr_twr": 0.12928919109771653,
+      "volatility": 0.12398524944976674,
+      "sharpe": 1.026667349723783,
+      "max_drawdown": -0.20938193456214282,
+      "recovery_days": 318,
+      "cash_fraction": 0.0752245387122667,
+      "orders": 12,
+      "fees": 33.70055195617677
+    },
+    "gap_ci90": {
+      "diff": -0.16752841331273904,
+      "low": -0.3916374756446068,
+      "high": -0.00023365028502520473,
+      "prob_positive": 0.05,
+      "level": 0.9
+    }
+  },
+  "sensitivities": [
+    {
+      "name": "world",
+      "delay": 1,
+      "spread_bps": 0,
+      "final_value": 17584.754390411377,
+      "contributed": 9900.0,
+      "cagr_twr": 0.1276988083831747,
+      "volatility": 0.15086878819723745,
+      "sharpe": 0.858379982333119,
+      "max_drawdown": -0.31451119447960507,
+      "recovery_days": 617,
+      "cash_fraction": 0.04106033237399268,
+      "orders": 23,
+      "fees": 48.49722702026367
+    },
+    {
+      "name": "world",
+      "delay": 2,
+      "spread_bps": 30,
+      "final_value": 17474.43245223999,
+      "contributed": 9900.0,
+      "cagr_twr": 0.1251347900372739,
+      "volatility": 0.15117495083959526,
+      "sharpe": 0.8421539888002525,
+      "max_drawdown": -0.31586052289903443,
+      "recovery_days": 695,
+      "cash_fraction": 0.04187903600027814,
+      "orders": 22,
+      "fees": 59.07749649047853
+    },
+    {
+      "name": "world",
+      "delay": 3,
+      "spread_bps": 50,
+      "final_value": 17472.63064857483,
+      "contributed": 9900.0,
+      "cagr_twr": 0.12568230630340138,
+      "volatility": 0.1509713250095375,
+      "sharpe": 0.8462517982417508,
+      "max_drawdown": -0.3152195572614239,
+      "recovery_days": 695,
+      "cash_fraction": 0.043081894399027015,
+      "orders": 22,
+      "fees": 68.23894981384277
+    },
+    {
+      "name": "momentum_l12_n1_core0.8",
+      "delay": 1,
+      "spread_bps": 0,
+      "final_value": 17411.67479497433,
+      "contributed": 9900.0,
+      "cagr_twr": 0.12259120706449345,
+      "volatility": 0.13999968858877826,
+      "sharpe": 0.8817612132390089,
+      "max_drawdown": -0.26257248903326447,
+      "recovery_days": 707,
+      "cash_fraction": 0.07848609003859344,
+      "orders": 53,
+      "fees": 191.44607275485996
+    },
+    {
+      "name": "momentum_l12_n1_core0.8",
+      "delay": 2,
+      "spread_bps": 30,
+      "final_value": 17259.558941725732,
+      "contributed": 9900.0,
+      "cagr_twr": 0.1189281293066684,
+      "volatility": 0.14012229239862786,
+      "sharpe": 0.8581990799715569,
+      "max_drawdown": -0.264468431297338,
+      "recovery_days": 714,
+      "cash_fraction": 0.07972854459361788,
+      "orders": 65,
+      "fees": 267.60255539035796
+    },
+    {
+      "name": "momentum_l12_n1_core0.8",
+      "delay": 3,
+      "spread_bps": 50,
+      "final_value": 17073.80888739586,
+      "contributed": 9900.0,
+      "cagr_twr": 0.11640131824458066,
+      "volatility": 0.13914630797604646,
+      "sharpe": 0.8472744038021772,
+      "max_drawdown": -0.26281849973061755,
+      "recovery_days": 741,
+      "cash_fraction": 0.08538831463614587,
+      "orders": 59,
+      "fees": 303.45208748817447
+    },
+    {
+      "name": "trend_ma12_mom12_volNone",
+      "delay": 1,
+      "spread_bps": 0,
+      "final_value": 16260.512640838622,
+      "contributed": 9900.0,
+      "cagr_twr": 0.10589977862894151,
+      "volatility": 0.10777572003681762,
+      "sharpe": 0.9715928280759348,
+      "max_drawdown": -0.16533111229985875,
+      "recovery_days": 738,
+      "cash_fraction": 0.2812508608891715,
+      "orders": 23,
+      "fees": 253.17067825317383
+    },
+    {
+      "name": "trend_ma12_mom12_volNone",
+      "delay": 2,
+      "spread_bps": 30,
+      "final_value": 15751.510532012939,
+      "contributed": 9900.0,
+      "cagr_twr": 0.09783802227979543,
+      "volatility": 0.10773505666776897,
+      "sharpe": 0.9051922183212383,
+      "max_drawdown": -0.17350455821938848,
+      "recovery_days": 749,
+      "cash_fraction": 0.28089002649355366,
+      "orders": 25,
+      "fees": 336.04043234252924
+    },
+    {
+      "name": "trend_ma12_mom12_volNone",
+      "delay": 3,
+      "spread_bps": 50,
+      "final_value": 14860.605156021116,
+      "contributed": 9900.0,
+      "cagr_twr": 0.08897607151207043,
+      "volatility": 0.10954261362069091,
+      "sharpe": 0.8194094162075644,
+      "max_drawdown": -0.15805170702675375,
+      "recovery_days": 752,
+      "cash_fraction": 0.2809901317830476,
+      "orders": 26,
+      "fees": 381.3342055511475
+    },
+    {
+      "name": "equity_cash_w0.8_band0.05",
+      "delay": 1,
+      "spread_bps": 0,
+      "final_value": 15443.686830444336,
+      "contributed": 9900.0,
+      "cagr_twr": 0.09822540364493415,
+      "volatility": 0.11719093126104203,
+      "sharpe": 0.8442574187760167,
+      "max_drawdown": -0.2464773776171041,
+      "recovery_days": 699,
+      "cash_fraction": 0.24315281849230527,
+      "orders": 15,
+      "fees": 31.026640014648432
+    },
+    {
+      "name": "equity_cash_w0.8_band0.05",
+      "delay": 2,
+      "spread_bps": 30,
+      "final_value": 15419.976985778809,
+      "contributed": 9900.0,
+      "cagr_twr": 0.09643281227547051,
+      "volatility": 0.1174258147151679,
+      "sharpe": 0.8291376563206297,
+      "max_drawdown": -0.24738476614893934,
+      "recovery_days": 699,
+      "cash_fraction": 0.2409493833802965,
+      "orders": 15,
+      "fees": 40.65936676025391
+    },
+    {
+      "name": "equity_cash_w0.8_band0.05",
+      "delay": 3,
+      "spread_bps": 50,
+      "final_value": 15429.132774276732,
+      "contributed": 9900.0,
+      "cagr_twr": 0.09715092980219775,
+      "volatility": 0.11721173642961363,
+      "sharpe": 0.8359258350764008,
+      "max_drawdown": -0.24673920954231865,
+      "recovery_days": 699,
+      "cash_fraction": 0.24228034844142896,
+      "orders": 15,
+      "fees": 46.918647842407225
+    }
+  ],
+  "start_dates": [
+    {
+      "name": "world",
+      "start_shift_years": 1,
+      "final_value": 14669.785068328858,
+      "contributed": 8700.0,
+      "cagr_twr": 0.15149054108964388,
+      "volatility": 0.13658315695686787,
+      "sharpe": 1.08223294962578,
+      "max_drawdown": -0.21410533451585279,
+      "recovery_days": 617,
+      "cash_fraction": 0.04263183123435608,
+      "orders": 17,
+      "fees": 43.32705325317384
+    },
+    {
+      "name": "world",
+      "start_shift_years": 2,
+      "final_value": 11397.378498931885,
+      "contributed": 7500.0,
+      "cagr_twr": 0.11989374773970662,
+      "volatility": 0.12911482882905315,
+      "sharpe": 0.9256613169194196,
+      "max_drawdown": -0.2096302393176619,
+      "recovery_days": 568,
+      "cash_fraction": 0.06395099897300104,
+      "orders": 15,
+      "fees": 39.57956991577148
+    },
+    {
+      "name": "momentum_l12_n1_core0.8",
+      "start_shift_years": 1,
+      "final_value": 14501.269924443246,
+      "contributed": 8700.0,
+      "cagr_twr": 0.1393965195707949,
+      "volatility": 0.1307088230751774,
+      "sharpe": 1.0455537093046205,
+      "max_drawdown": -0.21786005971980882,
+      "recovery_days": 709,
+      "cash_fraction": 0.09034643057049192,
+      "orders": 46,
+      "fees": 162.6118561811447
+    },
+    {
+      "name": "momentum_l12_n1_core0.8",
+      "start_shift_years": 2,
+      "final_value": 11485.079060865402,
+      "contributed": 7500.0,
+      "cagr_twr": 0.11559631073487964,
+      "volatility": 0.12434643276672042,
+      "sharpe": 0.9259142938137924,
+      "max_drawdown": -0.21229039180154385,
+      "recovery_days": 702,
+      "cash_fraction": 0.1072780353662864,
+      "orders": 35,
+      "fees": 101.54027430915833
+    },
+    {
+      "name": "trend_ma12_mom12_volNone",
+      "start_shift_years": 1,
+      "final_value": 13622.011782562256,
+      "contributed": 8700.0,
+      "cagr_twr": 0.11607197618186404,
+      "volatility": 0.10548217867997456,
+      "sharpe": 1.0747322763595204,
+      "max_drawdown": -0.12752481959533524,
+      "recovery_days": 737,
+      "cash_fraction": 0.29203784321287507,
+      "orders": 18,
+      "fees": 200.68456753540042
+    },
+    {
+      "name": "trend_ma12_mom12_volNone",
+      "start_shift_years": 2,
+      "final_value": 10873.906543670653,
+      "contributed": 7500.0,
+      "cagr_twr": 0.10584251770247444,
+      "volatility": 0.10152994735263829,
+      "sharpe": 1.0235954777154488,
+      "max_drawdown": -0.11433445138170761,
+      "recovery_days": 709,
+      "cash_fraction": 0.2810962239692837,
+      "orders": 15,
+      "fees": 136.6507073059082
+    },
+    {
+      "name": "equity_cash_w0.8_band0.05",
+      "start_shift_years": 1,
+      "final_value": 12995.558387420653,
+      "contributed": 8700.0,
+      "cagr_twr": 0.11463813688797297,
+      "volatility": 0.10720659977606117,
+      "sharpe": 1.0474122985175853,
+      "max_drawdown": -0.1708684083721257,
+      "recovery_days": 699,
+      "cash_fraction": 0.24780587971531232,
+      "orders": 12,
+      "fees": 29.495689727783205
+    },
+    {
+      "name": "equity_cash_w0.8_band0.05",
+      "start_shift_years": 2,
+      "final_value": 10365.700109527588,
+      "contributed": 7500.0,
+      "cagr_twr": 0.09053991283840346,
+      "volatility": 0.10191701124076394,
+      "sharpe": 0.8858765419425793,
+      "max_drawdown": -0.17155257298592608,
+      "recovery_days": 344,
+      "cash_fraction": 0.2633628602241574,
+      "orders": 10,
+      "fees": 26.34469027709961
+    }
+  ],
+  "stress_windows": {
+    "covid_2020": {
+      "world": {
+        "return_twr": -0.10212893885103569,
+        "max_drawdown": -0.31468431893725546
+      },
+      "fixed_85_15": {
+        "return_twr": -0.10204603285216463,
+        "max_drawdown": -0.3128213733844979
+      },
+      "cash": {
+        "return_twr": 0.0,
+        "max_drawdown": 0.0
+      },
+      "fixed_85_15_bands": {
+        "return_twr": -0.10204603285216463,
+        "max_drawdown": -0.3128213733844979
+      },
+      "trend_ma6_mom6_volNone": {
+        "return_twr": -0.07259674464068344,
+        "max_drawdown": -0.1271899784231294
+      },
+      "trend_ma6_mom6_vol0.1": {
+        "return_twr": -0.07649725076569591,
+        "max_drawdown": -0.13123523922957037
+      },
+      "trend_ma6_mom6_vol0.12": {
+        "return_twr": -0.07413665712407269,
+        "max_drawdown": -0.12972924181929313
+      },
+      "trend_ma6_mom6_vol0.15": {
+        "return_twr": -0.07259674464068344,
+        "max_drawdown": -0.1271899784231294
+      },
+      "trend_ma6_mom9_volNone": {
+        "return_twr": -0.07408736862985976,
+        "max_drawdown": -0.12964806299643827
+      },
+      "trend_ma6_mom9_vol0.1": {
+        "return_twr": -0.07758961249873753,
+        "max_drawdown": -0.13299912545255665
+      },
+      "trend_ma6_mom9_vol0.12": {
+        "return_twr": -0.07567540492473968,
+        "max_drawdown": -0.1322603875380287
+      },
+      "trend_ma6_mom9_vol0.15": {
+        "return_twr": -0.07408736862985976,
+        "max_drawdown": -0.12964806299643827
+      },
+      "trend_ma6_mom12_volNone": {
+        "return_twr": -0.07259674464068344,
+        "max_drawdown": -0.1271899784231294
+      },
+      "trend_ma6_mom12_vol0.1": {
+        "return_twr": -0.07649725076569591,
+        "max_drawdown": -0.13123523922957037
+      },
+      "trend_ma6_mom12_vol0.12": {
+        "return_twr": -0.07413665712407269,
+        "max_drawdown": -0.12972924181929313
+      },
+      "trend_ma6_mom12_vol0.15": {
+        "return_twr": -0.07259674464068344,
+        "max_drawdown": -0.1271899784231294
+      },
+      "trend_ma10_mom6_volNone": {
+        "return_twr": -0.07259674464068344,
+        "max_drawdown": -0.1271899784231294
+      },
+      "trend_ma10_mom6_vol0.1": {
+        "return_twr": -0.07649725076569591,
+        "max_drawdown": -0.13123523922957037
+      },
+      "trend_ma10_mom6_vol0.12": {
+        "return_twr": -0.07413665712407269,
+        "max_drawdown": -0.12972924181929313
+      },
+      "trend_ma10_mom6_vol0.15": {
+        "return_twr": -0.07259674464068344,
+        "max_drawdown": -0.1271899784231294
+      },
+      "trend_ma10_mom9_volNone": {
+        "return_twr": -0.07408736862985976,
+        "max_drawdown": -0.12964806299643827
+      },
+      "trend_ma10_mom9_vol0.1": {
+        "return_twr": -0.07758961249873753,
+        "max_drawdown": -0.13299912545255665
+      },
+      "trend_ma10_mom9_vol0.12": {
+        "return_twr": -0.07567540492473968,
+        "max_drawdown": -0.1322603875380287
+      },
+      "trend_ma10_mom9_vol0.15": {
+        "return_twr": -0.07408736862985976,
+        "max_drawdown": -0.12964806299643827
+      },
+      "trend_ma10_mom12_volNone": {
+        "return_twr": -0.07259674464068344,
+        "max_drawdown": -0.1271899784231294
+      },
+      "trend_ma10_mom12_vol0.1": {
+        "return_twr": -0.07649725076569591,
+        "max_drawdown": -0.13123523922957037
+      },
+      "trend_ma10_mom12_vol0.12": {
+        "return_twr": -0.07413665712407269,
+        "max_drawdown": -0.12972924181929313
+      },
+      "trend_ma10_mom12_vol0.15": {
+        "return_twr": -0.07259674464068344,
+        "max_drawdown": -0.1271899784231294
+      },
+      "trend_ma12_mom6_volNone": {
+        "return_twr": -0.07259674464068344,
+        "max_drawdown": -0.1271899784231294
+      },
+      "trend_ma12_mom6_vol0.1": {
+        "return_twr": -0.07649725076569591,
+        "max_drawdown": -0.13123523922957037
+      },
+      "trend_ma12_mom6_vol0.12": {
+        "return_twr": -0.07413665712407269,
+        "max_drawdown": -0.12972924181929313
+      },
+      "trend_ma12_mom6_vol0.15": {
+        "return_twr": -0.07259674464068344,
+        "max_drawdown": -0.1271899784231294
+      },
+      "trend_ma12_mom9_volNone": {
+        "return_twr": -0.07408736862985976,
+        "max_drawdown": -0.12964806299643827
+      },
+      "trend_ma12_mom9_vol0.1": {
+        "return_twr": -0.07758961249873753,
+        "max_drawdown": -0.13299912545255665
+      },
+      "trend_ma12_mom9_vol0.12": {
+        "return_twr": -0.07567540492473968,
+        "max_drawdown": -0.1322603875380287
+      },
+      "trend_ma12_mom9_vol0.15": {
+        "return_twr": -0.07408736862985976,
+        "max_drawdown": -0.12964806299643827
+      },
+      "trend_ma12_mom12_volNone": {
+        "return_twr": -0.07259674464068344,
+        "max_drawdown": -0.1271899784231294
+      },
+      "trend_ma12_mom12_vol0.1": {
+        "return_twr": -0.07649725076569591,
+        "max_drawdown": -0.13123523922957037
+      },
+      "trend_ma12_mom12_vol0.12": {
+        "return_twr": -0.07413665712407269,
+        "max_drawdown": -0.12972924181929313
+      },
+      "trend_ma12_mom12_vol0.15": {
+        "return_twr": -0.07259674464068344,
+        "max_drawdown": -0.1271899784231294
+      },
+      "momentum_l6_n1_core0.0": {
+        "return_twr": -0.05880378375209705,
+        "max_drawdown": -0.11682352474908864
+      },
+      "momentum_l6_n1_core0.5": {
+        "return_twr": -0.06342223383326573,
+        "max_drawdown": -0.1983455070677863
+      },
+      "momentum_l6_n1_core0.8": {
+        "return_twr": -0.07772697635167736,
+        "max_drawdown": -0.25948874753550755
+      },
+      "momentum_l6_n2_core0.0": {
+        "return_twr": -0.06806985153416589,
+        "max_drawdown": -0.1324267425571758
+      },
+      "momentum_l6_n2_core0.5": {
+        "return_twr": -0.06513218972096779,
+        "max_drawdown": -0.20046101177564657
+      },
+      "momentum_l6_n2_core0.8": {
+        "return_twr": -0.07718936015658051,
+        "max_drawdown": -0.2593405924619321
+      },
+      "momentum_l9_n1_core0.0": {
+        "return_twr": -0.07971775587953644,
+        "max_drawdown": -0.1549755369999518
+      },
+      "momentum_l9_n1_core0.5": {
+        "return_twr": -0.07171610907911863,
+        "max_drawdown": -0.21102283728198656
+      },
+      "momentum_l9_n1_core0.8": {
+        "return_twr": -0.07969902226004633,
+        "max_drawdown": -0.2627385797391313
+      },
+      "momentum_l9_n2_core0.0": {
+        "return_twr": -0.07392221071596927,
+        "max_drawdown": -0.1379805854109173
+      },
+      "momentum_l9_n2_core0.5": {
+        "return_twr": -0.07771806362798184,
+        "max_drawdown": -0.2163239680883734
+      },
+      "momentum_l9_n2_core0.8": {
+        "return_twr": -0.08635980628594975,
+        "max_drawdown": -0.2705597552974096
+      },
+      "momentum_l12_n1_core0.0": {
+        "return_twr": -0.07971775587953644,
+        "max_drawdown": -0.1549755369999518
+      },
+      "momentum_l12_n1_core0.5": {
+        "return_twr": -0.07171610907911863,
+        "max_drawdown": -0.21102283728198656
+      },
+      "momentum_l12_n1_core0.8": {
+        "return_twr": -0.07969902226004633,
+        "max_drawdown": -0.2627385797391313
+      },
+      "momentum_l12_n2_core0.0": {
+        "return_twr": -0.07382816653124213,
+        "max_drawdown": -0.13781670593462858
+      },
+      "momentum_l12_n2_core0.5": {
+        "return_twr": -0.07562747154997895,
+        "max_drawdown": -0.21263560900420875
+      },
+      "momentum_l12_n2_core0.8": {
+        "return_twr": -0.0852931151880656,
+        "max_drawdown": -0.26879659075861884
+      },
+      "equity_cash_w0.6_band0.05": {
+        "return_twr": -0.05577291246594207,
+        "max_drawdown": -0.18310724918639731
+      },
+      "equity_cash_w0.6_band0.1": {
+        "return_twr": -0.05577291246594207,
+        "max_drawdown": -0.18310724918639731
+      },
+      "equity_cash_w0.8_band0.05": {
+        "return_twr": -0.0681909071808472,
+        "max_drawdown": -0.2465553557678022
+      },
+      "equity_cash_w0.8_band0.1": {
+        "return_twr": -0.0681909071808472,
+        "max_drawdown": -0.2465553557678022
+      },
+      "equity_cash_w1.0_band0.05": {
+        "return_twr": -0.10212893885103569,
+        "max_drawdown": -0.31468431893725546
+      },
+      "equity_cash_w1.0_band0.1": {
+        "return_twr": -0.10212893885103569,
+        "max_drawdown": -0.31468431893725546
+      }
+    },
+    "rates_2022": {
+      "world": {
+        "return_twr": -0.129518666431218,
+        "max_drawdown": -0.1623396066974686
+      },
+      "fixed_85_15": {
+        "return_twr": -0.1384087073421837,
+        "max_drawdown": -0.15689524225710538
+      },
+      "cash": {
+        "return_twr": 0.0,
+        "max_drawdown": 0.0
+      },
+      "fixed_85_15_bands": {
+        "return_twr": -0.1384087073421837,
+        "max_drawdown": -0.15689524225710538
+      },
+      "trend_ma6_mom6_volNone": {
+        "return_twr": -0.20830867988719004,
+        "max_drawdown": -0.21330598570598802
+      },
+      "trend_ma6_mom6_vol0.1": {
+        "return_twr": -0.15365890090254708,
+        "max_drawdown": -0.15907692680543317
+      },
+      "trend_ma6_mom6_vol0.12": {
+        "return_twr": -0.1746769964671927,
+        "max_drawdown": -0.17974297223633562
+      },
+      "trend_ma6_mom6_vol0.15": {
+        "return_twr": -0.19344444335372846,
+        "max_drawdown": -0.19869035960298587
+      },
+      "trend_ma6_mom9_volNone": {
+        "return_twr": -0.09554480765670803,
+        "max_drawdown": -0.1015573816702231
+      },
+      "trend_ma6_mom9_vol0.1": {
+        "return_twr": -0.08954232460937073,
+        "max_drawdown": -0.095502681371886
+      },
+      "trend_ma6_mom9_vol0.12": {
+        "return_twr": -0.09505244618285769,
+        "max_drawdown": -0.10078214502729166
+      },
+      "trend_ma6_mom9_vol0.15": {
+        "return_twr": -0.09830972217244183,
+        "max_drawdown": -0.10389365574663911
+      },
+      "trend_ma6_mom12_volNone": {
+        "return_twr": -0.1483442908917647,
+        "max_drawdown": -0.1546519904239867
+      },
+      "trend_ma6_mom12_vol0.1": {
+        "return_twr": -0.12103379519977486,
+        "max_drawdown": -0.12724660507752683
+      },
+      "trend_ma6_mom12_vol0.12": {
+        "return_twr": -0.13401267866322997,
+        "max_drawdown": -0.1399678141817725
+      },
+      "trend_ma6_mom12_vol0.15": {
+        "return_twr": -0.14075226551000664,
+        "max_drawdown": -0.14716464963256726
+      },
+      "trend_ma10_mom6_volNone": {
+        "return_twr": -0.08475242693512475,
+        "max_drawdown": -0.12520280362938851
+      },
+      "trend_ma10_mom6_vol0.1": {
+        "return_twr": -0.0827016883292453,
+        "max_drawdown": -0.11786707326758938
+      },
+      "trend_ma10_mom6_vol0.12": {
+        "return_twr": -0.08877762266245082,
+        "max_drawdown": -0.1312432434604679
+      },
+      "trend_ma10_mom6_vol0.15": {
+        "return_twr": -0.08473118595941176,
+        "max_drawdown": -0.12633759667347888
+      },
+      "trend_ma10_mom9_volNone": {
+        "return_twr": -0.09022448292418483,
+        "max_drawdown": -0.13264827376148003
+      },
+      "trend_ma10_mom9_vol0.1": {
+        "return_twr": -0.08022879451532239,
+        "max_drawdown": -0.116153231586403
+      },
+      "trend_ma10_mom9_vol0.12": {
+        "return_twr": -0.08510881035704387,
+        "max_drawdown": -0.12569762067349077
+      },
+      "trend_ma10_mom9_vol0.15": {
+        "return_twr": -0.08766876675684554,
+        "max_drawdown": -0.12763343963147933
+      },
+      "trend_ma10_mom12_volNone": {
+        "return_twr": -0.0852133100150172,
+        "max_drawdown": -0.12587260711881587
+      },
+      "trend_ma10_mom12_vol0.1": {
+        "return_twr": -0.08299981648558397,
+        "max_drawdown": -0.11828503264360091
+      },
+      "trend_ma10_mom12_vol0.12": {
+        "return_twr": -0.08916432034672006,
+        "max_drawdown": -0.13180501773714526
+      },
+      "trend_ma10_mom12_vol0.15": {
+        "return_twr": -0.08515877318081388,
+        "max_drawdown": -0.12696445116182165
+      },
+      "trend_ma12_mom6_volNone": {
+        "return_twr": -0.08475242693512475,
+        "max_drawdown": -0.12520280362938851
+      },
+      "trend_ma12_mom6_vol0.1": {
+        "return_twr": -0.0827016883292453,
+        "max_drawdown": -0.11786707326758938
+      },
+      "trend_ma12_mom6_vol0.12": {
+        "return_twr": -0.08877762266245082,
+        "max_drawdown": -0.1312432434604679
+      },
+      "trend_ma12_mom6_vol0.15": {
+        "return_twr": -0.08473118595941176,
+        "max_drawdown": -0.12633759667347888
+      },
+      "trend_ma12_mom9_volNone": {
+        "return_twr": -0.09022448292418483,
+        "max_drawdown": -0.13264827376148003
+      },
+      "trend_ma12_mom9_vol0.1": {
+        "return_twr": -0.08022879451532239,
+        "max_drawdown": -0.116153231586403
+      },
+      "trend_ma12_mom9_vol0.12": {
+        "return_twr": -0.08510881035704387,
+        "max_drawdown": -0.12569762067349077
+      },
+      "trend_ma12_mom9_vol0.15": {
+        "return_twr": -0.08766876675684554,
+        "max_drawdown": -0.12763343963147933
+      },
+      "trend_ma12_mom12_volNone": {
+        "return_twr": -0.0852133100150172,
+        "max_drawdown": -0.12587260711881587
+      },
+      "trend_ma12_mom12_vol0.1": {
+        "return_twr": -0.08299981648558397,
+        "max_drawdown": -0.11828503264360091
+      },
+      "trend_ma12_mom12_vol0.12": {
+        "return_twr": -0.08916432034672006,
+        "max_drawdown": -0.13180501773714526
+      },
+      "trend_ma12_mom12_vol0.15": {
+        "return_twr": -0.08515877318081388,
+        "max_drawdown": -0.12696445116182165
+      },
+      "momentum_l6_n1_core0.0": {
+        "return_twr": -0.14734889799333528,
+        "max_drawdown": -0.15312002393058188
+      },
+      "momentum_l6_n1_core0.5": {
+        "return_twr": -0.13557594437285359,
+        "max_drawdown": -0.14119137335933907
+      },
+      "momentum_l6_n1_core0.8": {
+        "return_twr": -0.13005468195008396,
+        "max_drawdown": -0.1444641024153921
+      },
+      "momentum_l6_n2_core0.0": {
+        "return_twr": -0.14457444564178668,
+        "max_drawdown": -0.15020717346186074
+      },
+      "momentum_l6_n2_core0.5": {
+        "return_twr": -0.13662441253145274,
+        "max_drawdown": -0.14207281624304302
+      },
+      "momentum_l6_n2_core0.8": {
+        "return_twr": -0.13191077768720438,
+        "max_drawdown": -0.14640563951588426
+      },
+      "momentum_l9_n1_core0.0": {
+        "return_twr": -0.0883009768063292,
+        "max_drawdown": -0.14062608357386064
+      },
+      "momentum_l9_n1_core0.5": {
+        "return_twr": -0.10467718631257572,
+        "max_drawdown": -0.13144481060452762
+      },
+      "momentum_l9_n1_core0.8": {
+        "return_twr": -0.12469830761724998,
+        "max_drawdown": -0.14781733941760355
+      },
+      "momentum_l9_n2_core0.0": {
+        "return_twr": -0.08763713276611229,
+        "max_drawdown": -0.13318026884768275
+      },
+      "momentum_l9_n2_core0.5": {
+        "return_twr": -0.10511909501807803,
+        "max_drawdown": -0.1269501244747837
+      },
+      "momentum_l9_n2_core0.8": {
+        "return_twr": -0.11691208057643843,
+        "max_drawdown": -0.14377111247881957
+      },
+      "momentum_l12_n1_core0.0": {
+        "return_twr": -0.14736689169787875,
+        "max_drawdown": -0.1530243122636883
+      },
+      "momentum_l12_n1_core0.5": {
+        "return_twr": -0.13674071610853666,
+        "max_drawdown": -0.14238643293538344
+      },
+      "momentum_l12_n1_core0.8": {
+        "return_twr": -0.12806061771009503,
+        "max_drawdown": -0.14291966577310022
+      },
+      "momentum_l12_n2_core0.0": {
+        "return_twr": -0.14535353277856888,
+        "max_drawdown": -0.15092464889762902
+      },
+      "momentum_l12_n2_core0.5": {
+        "return_twr": -0.13509305643583602,
+        "max_drawdown": -0.14048973909342233
+      },
+      "momentum_l12_n2_core0.8": {
+        "return_twr": -0.13095113602261133,
+        "max_drawdown": -0.14552874081599654
+      },
+      "equity_cash_w0.6_band0.05": {
+        "return_twr": -0.0786889576600972,
+        "max_drawdown": -0.099914946296224
+      },
+      "equity_cash_w0.6_band0.1": {
+        "return_twr": -0.0786889576600972,
+        "max_drawdown": -0.099914946296224
+      },
+      "equity_cash_w0.8_band0.05": {
+        "return_twr": -0.10521869894482838,
+        "max_drawdown": -0.131205970769514
+      },
+      "equity_cash_w0.8_band0.1": {
+        "return_twr": -0.10521869894482838,
+        "max_drawdown": -0.131205970769514
+      },
+      "equity_cash_w1.0_band0.05": {
+        "return_twr": -0.129518666431218,
+        "max_drawdown": -0.1623396066974686
+      },
+      "equity_cash_w1.0_band0.1": {
+        "return_twr": -0.129518666431218,
+        "max_drawdown": -0.1623396066974686
+      }
+    }
+  },
+  "finalists": [
+    "momentum_l12_n1_core0.8",
+    "trend_ma12_mom12_volNone",
+    "equity_cash_w0.8_band0.05"
+  ],
+  "macro_status": "not_evaluated_no_real_vintages_or_filter",
+  "conclusion": "Aucune stratégie promue automatiquement ; confirmer les cours bruts, produits et résultats prospectifs.",
+  "limitations": [
+    "Cours ajustés : approximation des parts historiques et événements sur titres.",
+    "Véhicules exclus pour trous de cotation : {'WPEA.PA': 'Historique incomplet : 2025-12-22, 2025-12-29, 2025-12-30, 2025-12-31, 2026-01-02'}",
+    "Tarifs actuels appliqués à toute la période : étude contrefactuelle.",
+    "Historique déjà examiné : aucun test final totalement indépendant revendiqué.",
+    "Sensibilités choisies après le classement : diagnostics exploratoires.",
+    "Bootstrap extrême peu résolu : ne pas revendiquer de significativité familiale.",
+    "Les configurations ont été définies après examen historique : validation prospective encore nécessaire."
+  ]
+}

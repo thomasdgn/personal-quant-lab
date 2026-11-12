@@ -1,0 +1,173 @@
+# Plans d'investissement types (versionnés, génériques). Chaque plan répartit le versement mensuel
+# entre des poches ; chaque poche vit dans une enveloppe (pea, assurance_vie, cto, crypto).
+# Types de poche :
+#   etf        : allocation fixe d'ETF de l'univers (rééquilibrée par les versements)
+#   strategie  : une stratégie du registre (src/strategies.py), frais de rotation inclus
+#   fonds_euros: fonds euros d'assurance-vie, rendement constant (hypothèse ci-dessous)
+#   crypto     : cryptomonnaies (hors PEA), rendement recentré sur l'hypothèse ci-dessous
+# Simulation : `python main.py plans` (profil : config/profil.yaml). Aucun ordre, aucun conseil.
+
+hypotheses:
+  inflation_pct: 2.0               # pour exprimer les montants en euros d'aujourd'hui
+  fonds_euros_taux_pct: 2.5        # net de frais de gestion, avant prélèvements sociaux
+  av_frais_gestion_uc_pct: 0.6     # frais annuels des unités de compte en assurance-vie
+  crypto_frais_achat_pct: 1.0      # frais d'achat moyens d'une plateforme crypto
+  crypto_rendement_annuel_pct: 5.0 # hypothèse centrale : la hausse 2015-2026 n'est PAS extrapolée
+  # esperance : 5 %/an en MOYENNE ; avec ~68 %/an de volatilité, la médiane est une forte perte (prudent).
+  # geometrique : 5 %/an en MÉDIANE ; la moyenne dépasse alors 25 %/an (hypothèse très optimiste).
+  crypto_hypothese: esperance
+  taux_retrait_pct: 3.5            # revenu soutenable = capital net × taux / 12 (règle prudente)
+  ajustement_prudent_pct: -2.0     # scénario prudent : rendement annuel des actifs risqués réduit
+  bloc_mois: 12                    # bootstrap par blocs de 12 mois (préserve les crises)
+  simulations: 2000
+  ordre_minimum_eur: 30            # en dessous, regrouper les achats d'une ligne sur plusieurs mois
+  # Seuils d'adéquation « risque » : CONVENTIONS affichées comme telles, pas des résultats calibrés.
+  seuil_risque_ok: 0.35            # P(baisse > ta tolérance) <= 35 % : adapté
+  seuil_risque_reserve: 0.65       # <= 65 % : avec réserves ; au-delà : peu adapté
+
+# Scénarios de rendement (v6). Mêmes chocs que l'historique (krachs, volatilité, corrélations,
+# écarts entre zones), rendement moyen recentré. actions_pct : rendement annuel moyen visé du
+# MSCI World en EUR (frais des ETF inclus) ; obligations_pct : actif défensif (OBLI.PA, monétaire
+# depuis ~2024-11). null = moyenne historique conservée. surperformance : historique (les stratégies
+# gardent leur avance passée) ou nulle (même Sharpe que le Buy & Hold, volatilité et krachs propres).
+# Ordres de grandeur publiés pour 2026 (10-15 ans, en USD) : actions mondiales ~6 % (Invesco),
+# ACWI ~7 % (J.P. Morgan LTCMA), marchés développés hors US 4,5-6,5 % (Vanguard). Sources :
+# https://www.invesco.com/apac/en/institutional/insights/multi-asset/long-term-capital-market-assumptions.html
+# https://am.jpmorgan.com/content/dam/jpm-am-aem/americas/us/en/institutional/insights/portfolio-insights/ltcma-full-report.pdf
+# https://corporate.vanguard.com/content/corporatesite/us/en/corp/vemo/vemo-return-forecasts.html
+# À réviser chaque année ; ce ne sont pas des prévisions du laboratoire.
+scenario_defaut: central
+scenarios:
+  historique:
+    label: "Historique 2005-2026"
+    actions_pct: null
+    obligations_pct: null
+    description: "Rejoue les rendements moyens passés (~9 %/an pour le MSCI World en EUR) : période très favorable aux actions."
+  central:
+    label: "Central"
+    actions_pct: 6.0
+    obligations_pct: 2.5
+    surperformance: nulle   # aucune avance des stratégies actives (non démontrée par `main.py robustness`)
+    description: "Proche des hypothèses de long terme publiées par de grands gérants pour 2026 ; stratégies actives sans surperformance supposée."
+  defavorable:
+    label: "Défavorable"
+    actions_pct: 3.5
+    obligations_pct: 2.0
+    surperformance: nulle
+    description: "Décennies décevantes (valorisations élevées qui se normalisent), sans catastrophe extrême."
+
+plans:
+  - id: monde_passif
+    nom: "Passif Monde"
+    resume: "100 % ETF MSCI World dans le PEA, acheté chaque mois, jamais vendu."
+    pour_qui: "Qui veut la méthode la plus simple et la moins chère, et supporte de fortes baisses."
+    temps: 5min
+    complexite: 1
+    horizon_min_ans: 8
+    zones: [monde]
+    poches:
+      - {nom: "ETF Monde", enveloppe: pea, part: 1.0, type: etf, allocation: {CW8.PA: 1.0}}
+    routine:
+      - "Programmer un virement mensuel vers le PEA le jour de la paie."
+      - "Acheter des parts de WPEA.PA (petite part) ou CW8.PA quand le montant accumulé suffit."
+      - "Ne rien vendre ; relire ce plan une fois par an."
+    esg: "Équivalent ISR possible : un ETF MSCI World SRI éligible PEA (à vérifier chez l'émetteur)."
+
+  - id: monde_emergents
+    nom: "Monde + émergents"
+    resume: "85 % MSCI World et 15 % marchés émergents dans le PEA, rééquilibrés par les versements."
+    pour_qui: "Qui veut une diversification mondiale plus complète (Chine, Inde, Taïwan…) sans gestion active."
+    temps: 5min
+    complexite: 1
+    horizon_min_ans: 8
+    zones: [monde, emergents]
+    poches:
+      - {nom: "ETF Monde et émergents", enveloppe: pea, part: 1.0, type: etf,
+         allocation: {CW8.PA: 0.85, PAEEM.PA: 0.15}}
+    routine:
+      - "Chaque mois : acheter l'ETF Monde (WPEA.PA)."
+      - "Un mois sur trois environ : acheter l'ETF émergents (PAEEM.PA) pour rester proche de 15 %."
+      - "Une fois par an : vérifier l'écart aux cibles et orienter les versements pour le corriger."
+    esg: "Équivalents ISR Monde et émergents éligibles PEA à vérifier chez les émetteurs."
+
+  - id: prudent_fonds_euros
+    nom: "Prudent (PEA + fonds euros)"
+    resume: "60 % ETF Monde dans le PEA, 40 % fonds euros en assurance-vie (capital garanti)."
+    pour_qui: "Horizon de 3 à 10 ans, projet précis, ou qui ne supporterait pas une baisse de plus de 25 %."
+    temps: 5min
+    complexite: 1
+    horizon_min_ans: 3
+    zones: [monde]
+    necessite: [assurance_vie]
+    poches:
+      - {nom: "ETF Monde", enveloppe: pea, part: 0.6, type: etf, allocation: {CW8.PA: 1.0}}
+      - {nom: "Fonds euros", enveloppe: assurance_vie, part: 0.4, type: fonds_euros}
+    routine:
+      - "Deux virements programmés : 60 % vers le PEA, 40 % vers l'assurance-vie (fonds euros)."
+      - "Acheter l'ETF Monde dans le PEA quand le montant le permet."
+      - "Une fois par an : vérifier la répartition 60/40."
+
+  - id: coeur_satellite_dual
+    nom: "Cœur mondial + satellite actif"
+    resume: "75 % Monde + émergents en Buy & Hold, 25 % en dual momentum (une seule ligne active)."
+    pour_qui: "Qui veut rester surtout passif tout en pratiquant une stratégie active sur une petite part."
+    temps: 30min
+    complexite: 3
+    horizon_min_ans: 8
+    zones: [monde, emergents]
+    poches:
+      - {nom: "Cœur Monde + émergents", enveloppe: pea, part: 0.75, type: etf,
+         allocation: {CW8.PA: 0.85, PAEEM.PA: 0.15}}
+      - {nom: "Satellite dual momentum", enveloppe: pea, part: 0.25, type: strategie, strategie: dual_momentum}
+    routine:
+      - "Début de mois : lancer `python main.py run-month` et lire le signal du dual momentum."
+      - "Satellite : détenir l'unique ligne désignée (action, obligataire ou cash) ; changer si le signal change."
+      - "Cœur : versements sur l'ETF Monde, émergents un mois sur trois ; jamais vendu."
+      - "Noter chaque décision dans le journal (`paper-decision`) pendant au moins 6 mois avant d'y mettre de l'argent réel."
+
+  - id: defensif_momentum_vt
+    nom: "Défensif tactique (Momentum + VT)"
+    resume: "100 % stratégie Momentum + ciblage de volatilité : la stratégie actuellement suivie par le laboratoire."
+    pour_qui: "Qui privilégie des baisses limitées et accepte un rendement plus faible et une gestion mensuelle."
+    temps: 30min
+    complexite: 4
+    horizon_min_ans: 5
+    zones: [monde, europe, us, emergents]
+    poches:
+      - {nom: "Momentum + VT", enveloppe: pea, part: 1.0, type: strategie, strategie: momentum_vt}
+    routine:
+      - "Début de mois : `python main.py run-month --refresh-data --html`, lire l'allocation proposée."
+      - "Ajuster l'ETF détenu et la part en cash (fonds monétaire) selon le rapport."
+      - "Enregistrer la décision : `python main.py paper-decision ...`."
+
+  - id: tendance_top3
+    nom: "Tendance diversifiée (top 3)"
+    resume: "Les trois ETF les plus forts de l'univers, à parts égales, s'ils sont en tendance haussière."
+    pour_qui: "Investisseur actif avec au moins 300 € par mois, prêt à gérer trois lignes chaque mois."
+    temps: 1-2h
+    complexite: 3
+    horizon_min_ans: 5
+    zones: [monde, europe, us, emergents]
+    poches:
+      - {nom: "Top 3 + tendance", enveloppe: pea, part: 1.0, type: strategie, strategie: top3_trend}
+    routine:
+      - "Début de mois : classer les ETF (rapport mensuel) et garder les trois premiers en tendance."
+      - "Remplacer les lignes sorties du top 3 ; la part d'une ligne hors tendance reste en cash."
+
+  - id: monde_emergents_crypto
+    nom: "Monde + émergents + crypto (5 %)"
+    resume: "95 % Monde + émergents dans le PEA, 5 % bitcoin sur une plateforme agréée, sans rééquilibrage croisé."
+    pour_qui: "Qui veut une petite exposition crypto en acceptant qu'elle puisse tomber à zéro."
+    temps: 30min
+    complexite: 2
+    horizon_min_ans: 8
+    zones: [monde, emergents]
+    necessite: [crypto]
+    poches:
+      - {nom: "ETF Monde et émergents", enveloppe: pea, part: 0.95, type: etf,
+         allocation: {CW8.PA: 0.85, PAEEM.PA: 0.15}}
+      - {nom: "Bitcoin", enveloppe: crypto, part: 0.05, type: crypto, allocation: {BTC-EUR: 1.0}}
+    routine:
+      - "PEA : comme le plan Monde + émergents."
+      - "Crypto : acheter du bitcoin une fois par trimestre (frais fixes) sur une plateforme agréée (PSAN/CASP)."
+      - "Ne jamais renforcer la poche crypto au-delà de 5 % des versements, même après une forte hausse."

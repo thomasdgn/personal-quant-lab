@@ -1,0 +1,6 @@
+date,enveloppe,type,ticker,parts,prix,montant,frais,commentaire
+2026-07-01,pea,VERSEMENT,,,,400,0,Versement mensuel
+2026-07-03,pea,ACHAT,WPEA.PA,55,7.10,,0.39,Ordre passé à la main chez le courtier
+2026-08-01,pea,VERSEMENT,,,,400,0,Versement mensuel
+2026-08-04,pea,ACHAT,WPEA.PA,56,7.05,,0.39,
+2026-08-31,pea,FRAIS,,,,1.50,0,Droits de garde (exemple)

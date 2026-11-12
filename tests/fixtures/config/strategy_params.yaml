@@ -1,0 +1,50 @@
+# COPIE FIGÉE pour les tests (config du 2026-09-25) : les tests ne dépendent jamais des choix personnels
+# faits dans config/. Ne pas modifier sans raison ; voir tests/conftest.py.
+# Paramètres des stratégies pour le pipeline mensuel (Projet 4).
+# Ces valeurs reprennent les conventions validées aux Projets 2 et 3.
+
+benchmark:
+  ticker: CW8.PA
+
+momentum:
+  lookback_months: 12
+  skip_months: 1
+  moving_average_window: 10
+  top_n: 1
+  require_positive_momentum: false
+
+volatility_targeting:
+  enabled: true
+  volatility_window: 3
+  target_volatility: 0.10
+  min_exposure: 0.0
+  max_exposure: 1.0
+
+# Rôles des actifs (champ role de config/assets.yaml).
+universe:
+  # true = comportement historique : l'obligataire (OBLI.PA) est classé avec les
+  # actions par le Momentum. false = actions seules (obligataire ignoré).
+  defensive_as_candidates: true
+  # true = la poche cash est rémunérée au rendement mensuel du proxy monétaire
+  # (CSH2.PA, disponible depuis 2025-03) ; avant, backtest.cash_return s'applique.
+  use_cash_proxy_return: true
+
+# Frais d'ordre réels (planificateur de versement, simulation DCA).
+# Renseigne le barème de ton courtier ; par défaut : 0,10 % sans forfait.
+# frais d'un ordre = max(minimum_per_order, fixed_per_order + proportional x montant)
+#                    + demi-spread x montant
+costs:
+  proportional: 0.001        # 0,10 %
+  fixed_per_order: 0.0       # ex. 1.0 pour un forfait de 1 € par ordre
+  minimum_per_order: 0.0     # ex. 0.99 pour une commission minimale
+  spread_bps:                # fourchette achat/vente estimée, en points de base
+    default: 0
+
+backtest:
+  initial_capital: 10000
+  transaction_cost: 0.001
+  cash_return: 0.0
+
+reporting:
+  stale_data_days_warning: 7
+  stale_data_days_critical: 30

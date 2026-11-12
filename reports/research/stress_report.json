@@ -1,0 +1,718 @@
+{
+  "generated": "2026-09-25",
+  "start": "2003-12-31",
+  "end": "2026-08-31",
+  "followed": "momentum_vt",
+  "drawdown_limit": 0.25,
+  "labels": {
+    "benchmark": "Buy & Hold CW8.PA",
+    "momentum": "Momentum défensif",
+    "momentum_vt": "Momentum + Volatility Targeting",
+    "inverse_vol": "Inverse volatilité (actions)",
+    "static_80_20": "80/20 CW8.PA / OBLI.PA",
+    "static_60_40": "60/40 CW8.PA / OBLI.PA",
+    "dual_momentum": "Dual momentum (actions / obligataire / cash)",
+    "top3_trend": "Top 3 équipondéré + tendance",
+    "core_satellite": "Cœur / satellite (80% CW8.PA + 20% momentum_vt)"
+  },
+  "windows": [
+    {
+      "fenêtre": "Crise financière 2008-09",
+      "stratégie": "benchmark",
+      "actif": true,
+      "rendement": -0.4339415035950126,
+      "drawdown_max": -0.494117649155563,
+      "mois_recuperation": 49.0,
+      "part_synthetique": 1.0
+    },
+    {
+      "fenêtre": "Crise financière 2008-09",
+      "stratégie": "momentum",
+      "actif": true,
+      "rendement": -0.21255708320374622,
+      "drawdown_max": -0.29484468671164443,
+      "mois_recuperation": 41.0,
+      "part_synthetique": 1.0
+    },
+    {
+      "fenêtre": "Crise financière 2008-09",
+      "stratégie": "momentum_vt",
+      "actif": true,
+      "rendement": -0.14239199939799452,
+      "drawdown_max": -0.20399970759567698,
+      "mois_recuperation": 37.0,
+      "part_synthetique": 1.0
+    },
+    {
+      "fenêtre": "Crise financière 2008-09",
+      "stratégie": "inverse_vol",
+      "actif": true,
+      "rendement": -0.422155950120483,
+      "drawdown_max": -0.4905301575771105,
+      "mois_recuperation": 41.0,
+      "part_synthetique": 1.0
+    },
+    {
+      "fenêtre": "Crise financière 2008-09",
+      "stratégie": "static_80_20",
+      "actif": false,
+      "rendement": null,
+      "drawdown_max": null,
+      "mois_recuperation": null,
+      "part_synthetique": 1.0
+    },
+    {
+      "fenêtre": "Crise financière 2008-09",
+      "stratégie": "static_60_40",
+      "actif": false,
+      "rendement": null,
+      "drawdown_max": null,
+      "mois_recuperation": null,
+      "part_synthetique": 1.0
+    },
+    {
+      "fenêtre": "Crise financière 2008-09",
+      "stratégie": "dual_momentum",
+      "actif": true,
+      "rendement": -0.22012109294523197,
+      "drawdown_max": -0.30161825917664864,
+      "mois_recuperation": 36.0,
+      "part_synthetique": 1.0
+    },
+    {
+      "fenêtre": "Crise financière 2008-09",
+      "stratégie": "top3_trend",
+      "actif": true,
+      "rendement": -0.15173311024110958,
+      "drawdown_max": -0.221478451086344,
+      "mois_recuperation": 12.0,
+      "part_synthetique": 1.0
+    },
+    {
+      "fenêtre": "Crise financière 2008-09",
+      "stratégie": "core_satellite",
+      "actif": true,
+      "rendement": -0.3822310821704261,
+      "drawdown_max": -0.431601717575008,
+      "mois_recuperation": 48.0,
+      "part_synthetique": 1.0
+    },
+    {
+      "fenêtre": "Crise de la dette euro 2011",
+      "stratégie": "benchmark",
+      "actif": true,
+      "rendement": -0.018404968719572645,
+      "drawdown_max": -0.27963547770721897,
+      "mois_recuperation": 18.0,
+      "part_synthetique": 1.0
+    },
+    {
+      "fenêtre": "Crise de la dette euro 2011",
+      "stratégie": "momentum",
+      "actif": true,
+      "rendement": -0.06710391084416245,
+      "drawdown_max": -0.21419559785106834,
+      "mois_recuperation": 9.0,
+      "part_synthetique": 1.0
+    },
+    {
+      "fenêtre": "Crise de la dette euro 2011",
+      "stratégie": "momentum_vt",
+      "actif": true,
+      "rendement": -0.05842714219729295,
+      "drawdown_max": -0.1506361938868408,
+      "mois_recuperation": 5.0,
+      "part_synthetique": 1.0
+    },
+    {
+      "fenêtre": "Crise de la dette euro 2011",
+      "stratégie": "inverse_vol",
+      "actif": true,
+      "rendement": -0.04339574058371232,
+      "drawdown_max": -0.2243776132165699,
+      "mois_recuperation": 10.0,
+      "part_synthetique": 1.0
+    },
+    {
+      "fenêtre": "Crise de la dette euro 2011",
+      "stratégie": "static_80_20",
+      "actif": true,
+      "rendement": -0.014571298617916617,
+      "drawdown_max": -0.11330126441836086,
+      "mois_recuperation": 5.0,
+      "part_synthetique": 1.0
+    },
+    {
+      "fenêtre": "Crise de la dette euro 2011",
+      "stratégie": "static_60_40",
+      "actif": true,
+      "rendement": -0.011358058857631304,
+      "drawdown_max": -0.08097731279533626,
+      "mois_recuperation": 4.0,
+      "part_synthetique": 1.0
+    },
+    {
+      "fenêtre": "Crise de la dette euro 2011",
+      "stratégie": "dual_momentum",
+      "actif": true,
+      "rendement": 0.048942600036103734,
+      "drawdown_max": -0.18775145211638844,
+      "mois_recuperation": 6.0,
+      "part_synthetique": 1.0
+    },
+    {
+      "fenêtre": "Crise de la dette euro 2011",
+      "stratégie": "top3_trend",
+      "actif": true,
+      "rendement": -0.03541437749651899,
+      "drawdown_max": -0.10340146152816065,
+      "mois_recuperation": 5.0,
+      "part_synthetique": 1.0
+    },
+    {
+      "fenêtre": "Crise de la dette euro 2011",
+      "stratégie": "core_satellite",
+      "actif": true,
+      "rendement": -0.026010534419959375,
+      "drawdown_max": -0.23381349160198228,
+      "mois_recuperation": 17.0,
+      "part_synthetique": 1.0
+    },
+    {
+      "fenêtre": "Chine / pétrole 2015-16",
+      "stratégie": "benchmark",
+      "actif": true,
+      "rendement": -0.11161528953733324,
+      "drawdown_max": -0.12238570181775099,
+      "mois_recuperation": 14.0,
+      "part_synthetique": 0.5714285714285714
+    },
+    {
+      "fenêtre": "Chine / pétrole 2015-16",
+      "stratégie": "momentum",
+      "actif": true,
+      "rendement": -0.12929520103227743,
+      "drawdown_max": -0.1487798952078898,
+      "mois_recuperation": 14.0,
+      "part_synthetique": 0.5714285714285714
+    },
+    {
+      "fenêtre": "Chine / pétrole 2015-16",
+      "stratégie": "momentum_vt",
+      "actif": true,
+      "rendement": -0.10688560122108315,
+      "drawdown_max": -0.11111935650619598,
+      "mois_recuperation": 13.0,
+      "part_synthetique": 0.5714285714285714
+    },
+    {
+      "fenêtre": "Chine / pétrole 2015-16",
+      "stratégie": "inverse_vol",
+      "actif": true,
+      "rendement": -0.1346894609844116,
+      "drawdown_max": -0.14088795638300966,
+      "mois_recuperation": 14.0,
+      "part_synthetique": 0.5714285714285714
+    },
+    {
+      "fenêtre": "Chine / pétrole 2015-16",
+      "stratégie": "static_80_20",
+      "actif": true,
+      "rendement": -0.0847279825824373,
+      "drawdown_max": -0.0997384759325799,
+      "mois_recuperation": 14.0,
+      "part_synthetique": 0.5714285714285714
+    },
+    {
+      "fenêtre": "Chine / pétrole 2015-16",
+      "stratégie": "static_60_40",
+      "actif": true,
+      "rendement": -0.05786745201100629,
+      "drawdown_max": -0.08170230615767793,
+      "mois_recuperation": 10.0,
+      "part_synthetique": 0.5714285714285714
+    },
+    {
+      "fenêtre": "Chine / pétrole 2015-16",
+      "stratégie": "dual_momentum",
+      "actif": true,
+      "rendement": -0.04137489605041034,
+      "drawdown_max": -0.11452186971052769,
+      "mois_recuperation": 1.0,
+      "part_synthetique": 0.5714285714285714
+    },
+    {
+      "fenêtre": "Chine / pétrole 2015-16",
+      "stratégie": "top3_trend",
+      "actif": true,
+      "rendement": -0.1439703202645386,
+      "drawdown_max": -0.14582072142779612,
+      "mois_recuperation": 21.0,
+      "part_synthetique": 0.5714285714285714
+    },
+    {
+      "fenêtre": "Chine / pétrole 2015-16",
+      "stratégie": "core_satellite",
+      "actif": true,
+      "rendement": -0.1099021354957831,
+      "drawdown_max": -0.1099021354957831,
+      "mois_recuperation": 9.0,
+      "part_synthetique": 0.5714285714285714
+    },
+    {
+      "fenêtre": "T4 2018",
+      "stratégie": "benchmark",
+      "actif": true,
+      "rendement": -0.11605126510954888,
+      "drawdown_max": -0.11605126510954888,
+      "mois_recuperation": 3.0,
+      "part_synthetique": 0.5357142857142857
+    },
+    {
+      "fenêtre": "T4 2018",
+      "stratégie": "momentum",
+      "actif": true,
+      "rendement": -0.15374122050987005,
+      "drawdown_max": -0.1565352711313217,
+      "mois_recuperation": 11.0,
+      "part_synthetique": 0.5357142857142857
+    },
+    {
+      "fenêtre": "T4 2018",
+      "stratégie": "momentum_vt",
+      "actif": true,
+      "rendement": -0.12913264959136617,
+      "drawdown_max": -0.1319296806585386,
+      "mois_recuperation": 13.0,
+      "part_synthetique": 0.5357142857142857
+    },
+    {
+      "fenêtre": "T4 2018",
+      "stratégie": "inverse_vol",
+      "actif": true,
+      "rendement": -0.10692626162734686,
+      "drawdown_max": -0.10692626162734686,
+      "mois_recuperation": 3.0,
+      "part_synthetique": 0.5357142857142857
+    },
+    {
+      "fenêtre": "T4 2018",
+      "stratégie": "static_80_20",
+      "actif": true,
+      "rendement": -0.09161014682473989,
+      "drawdown_max": -0.09161014682473989,
+      "mois_recuperation": 3.0,
+      "part_synthetique": 0.5357142857142857
+    },
+    {
+      "fenêtre": "T4 2018",
+      "stratégie": "static_60_40",
+      "actif": true,
+      "rendement": -0.06687275890856648,
+      "drawdown_max": -0.06687275890856648,
+      "mois_recuperation": 3.0,
+      "part_synthetique": 0.5357142857142857
+    },
+    {
+      "fenêtre": "T4 2018",
+      "stratégie": "dual_momentum",
+      "actif": true,
+      "rendement": -0.15374122050987016,
+      "drawdown_max": -0.15653527113132193,
+      "mois_recuperation": 4.0,
+      "part_synthetique": 0.5357142857142857
+    },
+    {
+      "fenêtre": "T4 2018",
+      "stratégie": "top3_trend",
+      "actif": true,
+      "rendement": -0.13094184859237534,
+      "drawdown_max": -0.13094184859237534,
+      "mois_recuperation": 11.0,
+      "part_synthetique": 0.5357142857142857
+    },
+    {
+      "fenêtre": "T4 2018",
+      "stratégie": "core_satellite",
+      "actif": true,
+      "rendement": -0.11867363595166602,
+      "drawdown_max": -0.11867363595166602,
+      "mois_recuperation": 4.0,
+      "part_synthetique": 0.5357142857142857
+    },
+    {
+      "fenêtre": "Covid 2020",
+      "stratégie": "benchmark",
+      "actif": true,
+      "rendement": -0.10869518207978146,
+      "drawdown_max": -0.18614744442303677,
+      "mois_recuperation": 8.0,
+      "part_synthetique": 0.0
+    },
+    {
+      "fenêtre": "Covid 2020",
+      "stratégie": "momentum",
+      "actif": true,
+      "rendement": -0.10964785773663743,
+      "drawdown_max": -0.10964785773663743,
+      "mois_recuperation": 4.0,
+      "part_synthetique": 0.0
+    },
+    {
+      "fenêtre": "Covid 2020",
+      "stratégie": "momentum_vt",
+      "actif": true,
+      "rendement": -0.08817435471144008,
+      "drawdown_max": -0.08817435471144008,
+      "mois_recuperation": 4.0,
+      "part_synthetique": 0.0
+    },
+    {
+      "fenêtre": "Covid 2020",
+      "stratégie": "inverse_vol",
+      "actif": true,
+      "rendement": -0.08796564602875434,
+      "drawdown_max": -0.16922639271565454,
+      "mois_recuperation": 5.0,
+      "part_synthetique": 0.0
+    },
+    {
+      "fenêtre": "Covid 2020",
+      "stratégie": "static_80_20",
+      "actif": true,
+      "rendement": -0.08966370620236519,
+      "drawdown_max": -0.15584527537023618,
+      "mois_recuperation": 8.0,
+      "part_synthetique": 0.0
+    },
+    {
+      "fenêtre": "Covid 2020",
+      "stratégie": "static_60_40",
+      "actif": true,
+      "rendement": -0.07106568695666882,
+      "drawdown_max": -0.12499420207733647,
+      "mois_recuperation": 8.0,
+      "part_synthetique": 0.0
+    },
+    {
+      "fenêtre": "Covid 2020",
+      "stratégie": "dual_momentum",
+      "actif": true,
+      "rendement": 0.009037111690507693,
+      "drawdown_max": -0.10875661435098849,
+      "mois_recuperation": 1.0,
+      "part_synthetique": 0.0
+    },
+    {
+      "fenêtre": "Covid 2020",
+      "stratégie": "top3_trend",
+      "actif": true,
+      "rendement": -0.13608450337131006,
+      "drawdown_max": -0.13608450337131006,
+      "mois_recuperation": 7.0,
+      "part_synthetique": 0.0
+    },
+    {
+      "fenêtre": "Covid 2020",
+      "stratégie": "core_satellite",
+      "actif": true,
+      "rendement": -0.10337722675526073,
+      "drawdown_max": -0.16673850876695584,
+      "mois_recuperation": 5.0,
+      "part_synthetique": 0.0
+    },
+    {
+      "fenêtre": "Inflation et taux 2022",
+      "stratégie": "benchmark",
+      "actif": true,
+      "rendement": -0.08698301450255908,
+      "drawdown_max": -0.14146220549842636,
+      "mois_recuperation": 18.0,
+      "part_synthetique": 0.0
+    },
+    {
+      "fenêtre": "Inflation et taux 2022",
+      "stratégie": "momentum",
+      "actif": true,
+      "rendement": -0.18445636746591731,
+      "drawdown_max": -0.19612023652073263,
+      "mois_recuperation": 16.0,
+      "part_synthetique": 0.0
+    },
+    {
+      "fenêtre": "Inflation et taux 2022",
+      "stratégie": "momentum_vt",
+      "actif": true,
+      "rendement": -0.13560500646664242,
+      "drawdown_max": -0.16031447736059246,
+      "mois_recuperation": 17.0,
+      "part_synthetique": 0.0
+    },
+    {
+      "fenêtre": "Inflation et taux 2022",
+      "stratégie": "inverse_vol",
+      "actif": true,
+      "rendement": -0.1642986805622726,
+      "drawdown_max": -0.1642986805622726,
+      "mois_recuperation": 15.0,
+      "part_synthetique": 0.0
+    },
+    {
+      "fenêtre": "Inflation et taux 2022",
+      "stratégie": "static_80_20",
+      "actif": true,
+      "rendement": -0.10360589811293641,
+      "drawdown_max": -0.1373101002794529,
+      "mois_recuperation": 19.0,
+      "part_synthetique": 0.0
+    },
+    {
+      "fenêtre": "Inflation et taux 2022",
+      "stratégie": "static_60_40",
+      "actif": true,
+      "rendement": -0.12049988719861526,
+      "drawdown_max": -0.14259315179482623,
+      "mois_recuperation": 18.0,
+      "part_synthetique": 0.0
+    },
+    {
+      "fenêtre": "Inflation et taux 2022",
+      "stratégie": "dual_momentum",
+      "actif": true,
+      "rendement": -0.09116686986043132,
+      "drawdown_max": -0.18689611496273517,
+      "mois_recuperation": 18.0,
+      "part_synthetique": 0.0
+    },
+    {
+      "fenêtre": "Inflation et taux 2022",
+      "stratégie": "top3_trend",
+      "actif": true,
+      "rendement": -0.14915020576655302,
+      "drawdown_max": -0.14915020576655302,
+      "mois_recuperation": 16.0,
+      "part_synthetique": 0.0
+    },
+    {
+      "fenêtre": "Inflation et taux 2022",
+      "stratégie": "core_satellite",
+      "actif": true,
+      "rendement": -0.09581029767876525,
+      "drawdown_max": -0.12780111620411816,
+      "mois_recuperation": 18.0,
+      "part_synthetique": 0.0
+    }
+  ],
+  "outcomes": {
+    "benchmark": {
+      "history_start": "2004-01-31",
+      "n_sims": 2000,
+      "horizon_months": 360,
+      "monthly_contribution": 400.0,
+      "contributed": 144000.0,
+      "fees_total": 144.0,
+      "final_gross": {
+        "p5": 275511.0812358151,
+        "p50": 750101.3955767343,
+        "p95": 1890029.0963442943
+      },
+      "final_net": {
+        "p5": 251050.02012595345,
+        "p50": 637366.5359994618,
+        "p95": 1565267.6844242555
+      },
+      "prob_loss": 0.0035,
+      "prob_drawdown_beyond_limit": 0.8595,
+      "median_worst_drawdown": -0.38995999239815937
+    },
+    "momentum": {
+      "history_start": "2005-01-31",
+      "n_sims": 2000,
+      "horizon_months": 360,
+      "monthly_contribution": 400.0,
+      "contributed": 144000.0,
+      "fees_total": 144.0,
+      "final_gross": {
+        "p5": 409806.0501470552,
+        "p50": 1164449.823323879,
+        "p95": 3559368.284250034
+      },
+      "final_net": {
+        "p5": 360366.1248197029,
+        "p50": 974646.1561856375,
+        "p95": 2924109.7833795277
+      },
+      "prob_loss": 0.0005,
+      "prob_drawdown_beyond_limit": 0.804,
+      "median_worst_drawdown": -0.3049834650225108
+    },
+    "momentum_vt": {
+      "history_start": "2005-01-31",
+      "n_sims": 2000,
+      "horizon_months": 360,
+      "monthly_contribution": 400.0,
+      "contributed": 144000.0,
+      "fees_total": 144.0,
+      "final_gross": {
+        "p5": 291999.9714451606,
+        "p50": 601567.8206095521,
+        "p95": 1252900.16599623
+      },
+      "final_net": {
+        "p5": 264471.97675636073,
+        "p50": 516460.2059761754,
+        "p95": 1046644.7351209313
+      },
+      "prob_loss": 0.001,
+      "prob_drawdown_beyond_limit": 0.461,
+      "median_worst_drawdown": -0.2437571591932201
+    },
+    "inverse_vol": {
+      "history_start": "2005-01-31",
+      "n_sims": 2000,
+      "horizon_months": 360,
+      "monthly_contribution": 400.0,
+      "contributed": 144000.0,
+      "fees_total": 144.0,
+      "final_gross": {
+        "p5": 325679.0746831985,
+        "p50": 916517.6682800035,
+        "p95": 2492085.310910946
+      },
+      "final_net": {
+        "p5": 291886.76679212356,
+        "p50": 772829.3819799228,
+        "p95": 2055341.4430815105
+      },
+      "prob_loss": 0.0025,
+      "prob_drawdown_beyond_limit": 0.8825,
+      "median_worst_drawdown": -0.40219438033859145
+    },
+    "static_80_20": {
+      "history_start": "2008-02-29",
+      "n_sims": 2000,
+      "horizon_months": 360,
+      "monthly_contribution": 400.0,
+      "contributed": 144000.0,
+      "fees_total": 144.0,
+      "final_gross": {
+        "p5": 295319.6949806904,
+        "p50": 609777.8555252077,
+        "p95": 1226209.450781598
+      },
+      "final_net": {
+        "p5": 267174.23171428195,
+        "p50": 523143.1743975191,
+        "p95": 1024918.4929362207
+      },
+      "prob_loss": 0.0005,
+      "prob_drawdown_beyond_limit": 0.7815,
+      "median_worst_drawdown": -0.31564499080678077
+    },
+    "static_60_40": {
+      "history_start": "2008-02-29",
+      "n_sims": 2000,
+      "horizon_months": 360,
+      "monthly_contribution": 400.0,
+      "contributed": 144000.0,
+      "fees_total": 144.0,
+      "final_gross": {
+        "p5": 254613.81787268614,
+        "p50": 442386.29137856106,
+        "p95": 763716.3482743037
+      },
+      "final_net": {
+        "p5": 234039.64774836652,
+        "p50": 386886.44118214876,
+        "p95": 648449.1074952832
+      },
+      "prob_loss": 0.0005,
+      "prob_drawdown_beyond_limit": 0.4295,
+      "median_worst_drawdown": -0.23949953426233195
+    },
+    "dual_momentum": {
+      "history_start": "2005-01-31",
+      "n_sims": 2000,
+      "horizon_months": 360,
+      "monthly_contribution": 400.0,
+      "contributed": 144000.0,
+      "fees_total": 144.0,
+      "final_gross": {
+        "p5": 670465.5290702834,
+        "p50": 1900797.5125061579,
+        "p95": 5670477.487431817
+      },
+      "final_net": {
+        "p5": 572542.9406632107,
+        "p50": 1574033.1751800124,
+        "p95": 4642552.674769498
+      },
+      "prob_loss": 0.0,
+      "prob_drawdown_beyond_limit": 0.788,
+      "median_worst_drawdown": -0.3004162147156858
+    },
+    "top3_trend": {
+      "history_start": "2005-01-31",
+      "n_sims": 2000,
+      "horizon_months": 360,
+      "monthly_contribution": 400.0,
+      "contributed": 144000.0,
+      "fees_total": 144.0,
+      "final_gross": {
+        "p5": 484405.7513851944,
+        "p50": 1158755.7428212308,
+        "p95": 2828338.1987821595
+      },
+      "final_net": {
+        "p5": 421090.2816275482,
+        "p50": 970011.1746564818,
+        "p95": 2329051.2938086777
+      },
+      "prob_loss": 0.0,
+      "prob_drawdown_beyond_limit": 0.449,
+      "median_worst_drawdown": -0.24094279200352992
+    },
+    "core_satellite": {
+      "history_start": "2004-01-31",
+      "n_sims": 2000,
+      "horizon_months": 360,
+      "monthly_contribution": 400.0,
+      "contributed": 144000.0,
+      "fees_total": 144.0,
+      "final_gross": {
+        "p5": 289722.2999679115,
+        "p50": 720653.3197255507,
+        "p95": 1640996.5373840823
+      },
+      "final_net": {
+        "p5": 262617.95217387995,
+        "p50": 613395.8022565983,
+        "p95": 1362555.181430643
+      },
+      "prob_loss": 0.002,
+      "prob_drawdown_beyond_limit": 0.805,
+      "median_worst_drawdown": -0.3426564488108455
+    }
+  },
+  "conclusion": [
+    "- Crise financière 2008-09 : drawdown le plus limité Momentum + Volatility Targeting (-20.4%), le plus profond Buy & Hold CW8.PA (-49.4%).",
+    "- Crise de la dette euro 2011 : drawdown le plus limité 60/40 CW8.PA / OBLI.PA (-8.1%), le plus profond Buy & Hold CW8.PA (-28.0%).",
+    "- Chine / pétrole 2015-16 : drawdown le plus limité 60/40 CW8.PA / OBLI.PA (-8.2%), le plus profond Momentum défensif (-14.9%).",
+    "- T4 2018 : drawdown le plus limité 60/40 CW8.PA / OBLI.PA (-6.7%), le plus profond Dual momentum (actions / obligataire / cash) (-15.7%).",
+    "- Covid 2020 : drawdown le plus limité Momentum + Volatility Targeting (-8.8%), le plus profond Buy & Hold CW8.PA (-18.6%).",
+    "- Inflation et taux 2022 : drawdown le plus limité Cœur / satellite (80% CW8.PA + 20% momentum_vt) (-12.8%), le plus profond Momentum défensif (-19.6%).",
+    "- Stratégie suivie (momentum_vt) : probabilité simulée de dépasser un drawdown de 25% sur l'horizon = 46%.",
+    "- Résultats indicatifs : données partiellement synthétiques, passé non représentatif du futur."
+  ],
+  "meta": {
+    "kind": "stress",
+    "schema_version": "1.0",
+    "generated": "2026-09-25",
+    "data_window": {
+      "start": "2003-12-31",
+      "end": "2026-08-31"
+    },
+    "synthetic_share": 0.5918367346938775,
+    "notes": []
+  }
+}

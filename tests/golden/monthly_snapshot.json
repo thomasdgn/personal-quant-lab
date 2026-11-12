@@ -1,0 +1,1976 @@
+{
+ "alerts": [
+  {
+   "code": "DATA_NOT_REFRESHED",
+   "context": {},
+   "level": "INFO",
+   "message": "Rapport basé sur les données locales (pas de téléchargement).",
+   "title": "Données locales"
+  },
+  {
+   "code": "HIGH_DRAWDOWN",
+   "context": {
+    "drawdown": -0.47955729748502274
+   },
+   "level": "WARNING",
+   "message": "Drawdown courant de -48.0% (seuil -15%).",
+   "title": "Drawdown important"
+  },
+  {
+   "code": "HIGH_TURNOVER",
+   "context": {
+    "turnover": 1.0
+   },
+   "level": "INFO",
+   "message": "Turnover du dernier mois de 100%.",
+   "title": "Turnover élevé"
+  },
+  {
+   "code": "HIGH_COST",
+   "context": {
+    "cumulative_cost": 0.0627567596650097
+   },
+   "level": "INFO",
+   "message": "Coûts de transaction cumulés de 6.3%.",
+   "title": "Coûts cumulés élevés"
+  }
+ ],
+ "allocation_comparison": {
+  "benchmark": {
+   "CASH": 0.0,
+   "CW8.PA": 1.0
+  },
+  "exposure_difference": 0.0,
+  "momentum_invested_exposure": 1.0,
+  "momentum_target": {
+   "CASH": 0.0,
+   "CW8.PA": 0.0,
+   "ESE.PA": 0.0,
+   "OBLI.PA": 0.0,
+   "PAEEM.PA": 1.0
+  },
+  "volatility_targeted_invested_exposure": 1.0,
+  "volatility_targeted_target": {
+   "CASH": 0.0,
+   "CW8.PA": 0.0,
+   "ESE.PA": 0.0,
+   "OBLI.PA": 0.0,
+   "PAEEM.PA": 1.0
+  },
+  "vt_enabled": true
+ },
+ "benchmark": {
+  "annualized_volatility": 0.15412981274031518,
+  "cagr": 0.081314664121525,
+  "cash_weight": 0.0,
+  "cumulative_cost": 0.0,
+  "description": "Achat et conservation du benchmark, toujours investi à 100 %.",
+  "enabled": true,
+  "executed_weights": {
+   "CASH": 0.0,
+   "CW8.PA": 1.0
+  },
+  "invested_exposure": 1.0,
+  "max_drawdown": -0.3059920846922398,
+  "momentum": null,
+  "name": "Buy & Hold CW8.PA",
+  "realized_volatility": null,
+  "recent_return": 0.023950716136440287,
+  "selected_assets": [
+   "CW8.PA"
+  ],
+  "sharpe": 0.5851363537782058,
+  "signal_date": "2026-08-31",
+  "status": "ACTIVE",
+  "target_volatility": null,
+  "target_weights": {
+   "CASH": 0.0,
+   "CW8.PA": 1.0
+  },
+  "theoretical_capital": 22873.16769500901,
+  "trend_filter": null,
+  "turnover": 0.0
+ },
+ "data_quality": {
+  "anomalies": [],
+  "data_age_days": 0,
+  "excluded_assets": {},
+  "kept_assets": [
+   "CW8.PA",
+   "ESE.PA",
+   "PAEEM.PA",
+   "OBLI.PA"
+  ],
+  "last_date_per_asset": {
+   "CW8.PA": "2026-08-31",
+   "ESE.PA": "2026-08-31",
+   "OBLI.PA": "2026-08-31",
+   "PAEEM.PA": "2026-08-31"
+  },
+  "missing_values_monthly": {
+   "CW8.PA": 0,
+   "ESE.PA": 0,
+   "OBLI.PA": 36,
+   "PAEEM.PA": 0
+  },
+  "n_kept": 4,
+  "n_requested": 5,
+  "partial_month": null,
+  "requested_assets": [
+   "CW8.PA",
+   "ESE.PA",
+   "PAEEM.PA",
+   "OBLI.PA",
+   "CSH2.PA"
+  ],
+  "warnings": []
+ },
+ "figures": {},
+ "freshness_reference": "2026-08-31",
+ "manual_decision": {
+  "approved_weights": null,
+  "comment": null,
+  "selected_strategy": null,
+  "status": "PENDING",
+  "validated_at": null
+ },
+ "metadata": {
+  "data_mode": "local",
+  "freshness_reference": "2026-08-31",
+  "history_end": "2026-08-31",
+  "history_start": "2016-01-31",
+  "last_observation": "2026-08-31",
+  "pipeline_status": "OK_WITH_WARNINGS",
+  "reference_currency": "EUR",
+  "report_date": "2026-08-31",
+  "report_month": "2026-08",
+  "schema_version": "1.4",
+  "signal_date": "2026-08-31"
+ },
+ "momentum_strategy": {
+  "annualized_volatility": 0.1776622315070419,
+  "cagr": -0.05236184714734937,
+  "cash_weight": 0.0,
+  "cumulative_cost": 0.077,
+  "description": "Sélection mensuelle du meilleur ETF au-dessus de sa moyenne mobile ; sinon cash.",
+  "enabled": true,
+  "executed_weights": {
+   "CASH": 0.0,
+   "CW8.PA": 0.0,
+   "ESE.PA": 0.0,
+   "OBLI.PA": 1.0,
+   "PAEEM.PA": 0.0
+  },
+  "invested_exposure": 1.0,
+  "max_drawdown": -0.5987432049904033,
+  "momentum": {
+   "CW8.PA": -0.21364765563946153,
+   "ESE.PA": -0.007926955954037251,
+   "OBLI.PA": 0.015194556332295495,
+   "PAEEM.PA": 0.02066459251782815
+  },
+  "name": "Momentum défensif 12-1 + MA10",
+  "realized_volatility": 0.08699572974372327,
+  "recent_return": -0.005059768244119911,
+  "selected_assets": [
+   "PAEEM.PA"
+  ],
+  "sharpe": -0.2142690189129065,
+  "signal_date": "2026-08-31",
+  "status": "ACTIVE",
+  "target_volatility": null,
+  "target_weights": {
+   "CASH": 0.0,
+   "CW8.PA": 0.0,
+   "ESE.PA": 0.0,
+   "OBLI.PA": 0.0,
+   "PAEEM.PA": 1.0
+  },
+  "theoretical_capital": 5634.478598575415,
+  "trend_filter": {
+   "CW8.PA": false,
+   "ESE.PA": false,
+   "OBLI.PA": true,
+   "PAEEM.PA": true
+  },
+  "turnover": 0.3203125
+ },
+ "partial_month": null,
+ "policy": {
+  "band_tolerance_pct": 5.0,
+  "core_weight": null,
+  "crash_rule": null,
+  "drawdown_within_limit": false,
+  "followed": "momentum_vt",
+  "historical_max_drawdown": -0.551305276680174,
+  "invested_exposure": 1.0,
+  "label": "Momentum + Volatility Targeting",
+  "max_drawdown_limit": 0.25,
+  "plan": null,
+  "rebalancing": "mensuel",
+  "satellite": null,
+  "target_weights": {
+   "CASH": 0.0,
+   "CW8.PA": 0.0,
+   "ESE.PA": 0.0,
+   "OBLI.PA": 0.0,
+   "PAEEM.PA": 1.0
+  }
+ },
+ "previous_comparison": null,
+ "risk": {
+  "momentum_max_drawdown": -0.5987432049904033,
+  "realized_volatility": 0.08699572974372327,
+  "target_volatility": 0.1,
+  "vt_cash_weight": 0.0,
+  "vt_current_drawdown": -0.47955729748502274,
+  "vt_invested_exposure": 1.0,
+  "vt_max_drawdown": -0.551305276680174
+ },
+ "schema_version": "1.4",
+ "series": [
+  {
+   "benchmark_drawdown": 0.0,
+   "benchmark_equity": 10000.0,
+   "date": "2016-01-31",
+   "exposure": 0.0,
+   "held": "CASH",
+   "momentum_drawdown": 0.0,
+   "momentum_equity": 10000.0,
+   "momentum_vt_drawdown": 0.0,
+   "momentum_vt_equity": 10000.0
+  },
+  {
+   "benchmark_drawdown": 0.0,
+   "benchmark_equity": 10509.86304023484,
+   "date": "2016-02-29",
+   "exposure": 0.0,
+   "held": "CASH",
+   "momentum_drawdown": 0.0,
+   "momentum_equity": 10000.0,
+   "momentum_vt_drawdown": 0.0,
+   "momentum_vt_equity": 10000.0
+  },
+  {
+   "benchmark_drawdown": 0.0,
+   "benchmark_equity": 11080.72879414381,
+   "date": "2016-03-31",
+   "exposure": 0.0,
+   "held": "CASH",
+   "momentum_drawdown": 0.0,
+   "momentum_equity": 10000.0,
+   "momentum_vt_drawdown": 0.0,
+   "momentum_vt_equity": 10000.0
+  },
+  {
+   "benchmark_drawdown": 0.0,
+   "benchmark_equity": 11193.812407774823,
+   "date": "2016-04-30",
+   "exposure": 0.0,
+   "held": "CASH",
+   "momentum_drawdown": 0.0,
+   "momentum_equity": 10000.0,
+   "momentum_vt_drawdown": 0.0,
+   "momentum_vt_equity": 10000.0
+  },
+  {
+   "benchmark_drawdown": 0.0,
+   "benchmark_equity": 12252.485593616015,
+   "date": "2016-05-31",
+   "exposure": 0.0,
+   "held": "CASH",
+   "momentum_drawdown": 0.0,
+   "momentum_equity": 10000.0,
+   "momentum_vt_drawdown": 0.0,
+   "momentum_vt_equity": 10000.0
+  },
+  {
+   "benchmark_drawdown": -0.036150827383624295,
+   "benchmark_equity": 11809.548101900858,
+   "date": "2016-06-30",
+   "exposure": 0.0,
+   "held": "CASH",
+   "momentum_drawdown": 0.0,
+   "momentum_equity": 10000.0,
+   "momentum_vt_drawdown": 0.0,
+   "momentum_vt_equity": 10000.0
+  },
+  {
+   "benchmark_drawdown": -0.0357978465124007,
+   "benchmark_equity": 11813.872994940348,
+   "date": "2016-07-31",
+   "exposure": 0.0,
+   "held": "CASH",
+   "momentum_drawdown": 0.0,
+   "momentum_equity": 10000.0,
+   "momentum_vt_drawdown": 0.0,
+   "momentum_vt_equity": 10000.0
+  },
+  {
+   "benchmark_drawdown": -0.025153844029141892,
+   "benchmark_equity": 11944.28848202489,
+   "date": "2016-08-31",
+   "exposure": 0.0,
+   "held": "CASH",
+   "momentum_drawdown": 0.0,
+   "momentum_equity": 10000.0,
+   "momentum_vt_drawdown": 0.0,
+   "momentum_vt_equity": 10000.0
+  },
+  {
+   "benchmark_drawdown": -0.030696779585960288,
+   "benchmark_equity": 11876.37374396863,
+   "date": "2016-09-30",
+   "exposure": 0.0,
+   "held": "CASH",
+   "momentum_drawdown": 0.0,
+   "momentum_equity": 10000.0,
+   "momentum_vt_drawdown": 0.0,
+   "momentum_vt_equity": 10000.0
+  },
+  {
+   "benchmark_drawdown": -0.10081580577325056,
+   "benchmark_equity": 11017.241385770472,
+   "date": "2016-10-31",
+   "exposure": 0.0,
+   "held": "CASH",
+   "momentum_drawdown": 0.0,
+   "momentum_equity": 10000.0,
+   "momentum_vt_drawdown": 0.0,
+   "momentum_vt_equity": 10000.0
+  },
+  {
+   "benchmark_drawdown": -0.0178232853718161,
+   "benchmark_equity": 12034.106046366931,
+   "date": "2016-11-30",
+   "exposure": 0.0,
+   "held": "CASH",
+   "momentum_drawdown": 0.0,
+   "momentum_equity": 10000.0,
+   "momentum_vt_drawdown": 0.0,
+   "momentum_vt_equity": 10000.0
+  },
+  {
+   "benchmark_drawdown": 0.0,
+   "benchmark_equity": 12701.74760893158,
+   "date": "2016-12-31",
+   "exposure": 0.0,
+   "held": "CASH",
+   "momentum_drawdown": 0.0,
+   "momentum_equity": 10000.0,
+   "momentum_vt_drawdown": 0.0,
+   "momentum_vt_equity": 10000.0
+  },
+  {
+   "benchmark_drawdown": 0.0,
+   "benchmark_equity": 12798.075645738765,
+   "date": "2017-01-31",
+   "exposure": 0.0,
+   "held": "CASH",
+   "momentum_drawdown": 0.0,
+   "momentum_equity": 10000.0,
+   "momentum_vt_drawdown": 0.0,
+   "momentum_vt_equity": 10000.0
+  },
+  {
+   "benchmark_drawdown": -0.014985842289938156,
+   "benchmark_equity": 12606.285702497025,
+   "date": "2017-02-28",
+   "exposure": 1.0,
+   "held": "CW8.PA",
+   "momentum_drawdown": -0.015970856447648063,
+   "momentum_equity": 9840.291435523519,
+   "momentum_vt_drawdown": -0.015970856447648063,
+   "momentum_vt_equity": 9840.291435523519
+  },
+  {
+   "benchmark_drawdown": -0.04042220298648502,
+   "benchmark_equity": 12280.749234150322,
+   "date": "2017-03-31",
+   "exposure": 1.0,
+   "held": "CW8.PA",
+   "momentum_drawdown": -0.04138178078349852,
+   "momentum_equity": 9586.182192165015,
+   "momentum_vt_drawdown": -0.04138178078349852,
+   "momentum_vt_equity": 9586.182192165015
+  },
+  {
+   "benchmark_drawdown": -0.08704034360109791,
+   "benchmark_equity": 11684.12674410082,
+   "date": "2017-04-30",
+   "exposure": 1.0,
+   "held": "CW8.PA",
+   "momentum_drawdown": -0.0879533032574965,
+   "momentum_equity": 9120.466967425034,
+   "momentum_vt_drawdown": -0.0879533032574965,
+   "momentum_vt_equity": 9120.466967425034
+  },
+  {
+   "benchmark_drawdown": -0.0235429090097089,
+   "benchmark_equity": 12496.771715311766,
+   "date": "2017-05-31",
+   "exposure": 1.0,
+   "held": "ESE.PA",
+   "momentum_drawdown": -0.11181116712072858,
+   "momentum_equity": 8881.888328792715,
+   "momentum_vt_drawdown": -0.11181116712072858,
+   "momentum_vt_equity": 8881.888328792715
+  },
+  {
+   "benchmark_drawdown": -0.03259538599021006,
+   "benchmark_equity": 12380.917430134003,
+   "date": "2017-06-30",
+   "exposure": 1.0,
+   "held": "CW8.PA",
+   "momentum_drawdown": -0.1218052416213905,
+   "momentum_equity": 8781.947583786095,
+   "momentum_vt_drawdown": -0.1218052416213905,
+   "momentum_vt_equity": 8781.947583786095
+  },
+  {
+   "benchmark_drawdown": -0.03203594208259153,
+   "benchmark_equity": 12388.077235583252,
+   "date": "2017-07-31",
+   "exposure": 1.0,
+   "held": "CW8.PA",
+   "momentum_drawdown": -0.1212973872033295,
+   "momentum_equity": 8787.026127966705,
+   "momentum_vt_drawdown": -0.1212973872033295,
+   "momentum_vt_equity": 8787.026127966705
+  },
+  {
+   "benchmark_drawdown": -0.07401131693171592,
+   "benchmark_equity": 11850.873213005918,
+   "date": "2017-08-31",
+   "exposure": 1.0,
+   "held": "CW8.PA",
+   "momentum_drawdown": -0.15940197512821763,
+   "momentum_equity": 8405.980248717824,
+   "momentum_vt_drawdown": -0.15940197512821763,
+   "momentum_vt_equity": 8405.980248717824
+  },
+  {
+   "benchmark_drawdown": -0.0883633466579199,
+   "benchmark_equity": 11667.194850900069,
+   "date": "2017-09-30",
+   "exposure": 1.0,
+   "held": "ESE.PA",
+   "momentum_drawdown": -0.2011391141889376,
+   "momentum_equity": 7988.608858110624,
+   "momentum_vt_drawdown": -0.2011391141889376,
+   "momentum_vt_equity": 7988.608858110624
+  },
+  {
+   "benchmark_drawdown": -0.05647989079564453,
+   "benchmark_equity": 12075.241730873042,
+   "date": "2017-10-31",
+   "exposure": 1.0,
+   "held": "ESE.PA",
+   "momentum_drawdown": -0.23067208853000243,
+   "momentum_equity": 7693.279114699976,
+   "momentum_vt_drawdown": -0.23067208853000243,
+   "momentum_vt_equity": 7693.279114699976
+  },
+  {
+   "benchmark_drawdown": -0.012537147189739306,
+   "benchmark_equity": 12637.62428762272,
+   "date": "2017-11-30",
+   "exposure": 1.0,
+   "held": "ESE.PA",
+   "momentum_drawdown": -0.215188200306219,
+   "momentum_equity": 7848.11799693781,
+   "momentum_vt_drawdown": -0.215188200306219,
+   "momentum_vt_equity": 7848.11799693781
+  },
+  {
+   "benchmark_drawdown": 0.0,
+   "benchmark_equity": 14020.64700463701,
+   "date": "2017-12-31",
+   "exposure": 0.7914158197588379,
+   "held": "ESE.PA",
+   "momentum_drawdown": -0.2382059594400232,
+   "momentum_equity": 7617.9404055997675,
+   "momentum_vt_drawdown": -0.23356471864751172,
+   "momentum_vt_equity": 7664.352813524883
+  },
+  {
+   "benchmark_drawdown": 0.0,
+   "benchmark_equity": 14110.709772517594,
+   "date": "2018-01-31",
+   "exposure": 0.9313637349578082,
+   "held": "ESE.PA",
+   "momentum_drawdown": -0.3174347719173236,
+   "momentum_equity": 6825.652280826764,
+   "momentum_vt_drawdown": -0.30790543524374436,
+   "momentum_vt_equity": 6920.945647562557
+  },
+  {
+   "benchmark_drawdown": 0.0,
+   "benchmark_equity": 14323.523844935264,
+   "date": "2018-02-28",
+   "exposure": 0.46195254255235274,
+   "held": "PAEEM.PA",
+   "momentum_drawdown": -0.2712810859460507,
+   "momentum_equity": 7287.189140539493,
+   "momentum_vt_drawdown": -0.2865930487771069,
+   "momentum_vt_equity": 7134.069512228931
+  },
+  {
+   "benchmark_drawdown": 0.0,
+   "benchmark_equity": 14750.50542826391,
+   "date": "2018-03-31",
+   "exposure": 0.3311802319640798,
+   "held": "PAEEM.PA",
+   "momentum_drawdown": -0.2603836794149512,
+   "momentum_equity": 7396.163205850487,
+   "momentum_vt_drawdown": -0.2831656746202281,
+   "momentum_vt_equity": 7168.343253797719
+  },
+  {
+   "benchmark_drawdown": 0.0,
+   "benchmark_equity": 16147.046993625718,
+   "date": "2018-04-30",
+   "exposure": 0.32496701693102065,
+   "held": "PAEEM.PA",
+   "momentum_drawdown": -0.2634855798512996,
+   "momentum_equity": 7365.144201487004,
+   "momentum_vt_drawdown": -0.2841494478719122,
+   "momentum_vt_equity": 7158.5055212808775
+  },
+  {
+   "benchmark_drawdown": -0.0004799160849966455,
+   "benchmark_equity": 16139.29776604828,
+   "date": "2018-05-31",
+   "exposure": 0.7521192331015278,
+   "held": "PAEEM.PA",
+   "momentum_drawdown": -0.2522205918687873,
+   "momentum_equity": 7477.794081312127,
+   "momentum_vt_drawdown": -0.2762245057075515,
+   "momentum_vt_equity": 7237.754942924485
+  },
+  {
+   "benchmark_drawdown": 0.0,
+   "benchmark_equity": 16674.71632775057,
+   "date": "2018-06-30",
+   "exposure": 1.0,
+   "held": "PAEEM.PA",
+   "momentum_drawdown": -0.2866559733668226,
+   "momentum_equity": 7133.440266331774,
+   "momentum_vt_drawdown": -0.30972370420694606,
+   "momentum_vt_equity": 6902.762957930539
+  },
+  {
+   "benchmark_drawdown": 0.0,
+   "benchmark_equity": 16772.063125036504,
+   "date": "2018-07-31",
+   "exposure": 0.9209652141907161,
+   "held": "PAEEM.PA",
+   "momentum_drawdown": -0.3062222384354629,
+   "momentum_equity": 6937.777615645371,
+   "momentum_vt_drawdown": -0.3272140153214641,
+   "momentum_vt_equity": 6727.859846785359
+  },
+  {
+   "benchmark_drawdown": 0.0,
+   "benchmark_equity": 17764.569003137916,
+   "date": "2018-08-31",
+   "exposure": 0.9178316425366939,
+   "held": "PAEEM.PA",
+   "momentum_drawdown": -0.4004611785503156,
+   "momentum_equity": 5995.388214496844,
+   "momentum_vt_drawdown": -0.41109302405248416,
+   "momentum_vt_equity": 5889.069759475158
+  },
+  {
+   "benchmark_drawdown": 0.0,
+   "benchmark_equity": 17810.139979537493,
+   "date": "2018-09-30",
+   "exposure": 0.498015226028241,
+   "held": "CW8.PA",
+   "momentum_drawdown": -0.4001253511617937,
+   "momentum_equity": 5998.746488382063,
+   "momentum_vt_drawdown": -0.41116863513601953,
+   "momentum_vt_equity": 5888.313648639804
+  },
+  {
+   "benchmark_drawdown": 0.0,
+   "benchmark_equity": 18647.940956712366,
+   "date": "2018-10-31",
+   "exposure": 0.3964889765244059,
+   "held": "CW8.PA",
+   "momentum_drawdown": -0.3719068437521662,
+   "momentum_equity": 6280.931562478338,
+   "momentum_vt_drawdown": -0.40024755851332505,
+   "momentum_vt_equity": 5997.52441486675
+  },
+  {
+   "benchmark_drawdown": -0.004650092410141804,
+   "benchmark_equity": 18561.226308004785,
+   "date": "2018-11-30",
+   "exposure": 0.3026806478659576,
+   "held": "CW8.PA",
+   "momentum_drawdown": -0.3748275349708964,
+   "momentum_equity": 6251.724650291037,
+   "momentum_vt_drawdown": -0.40115450642141426,
+   "momentum_vt_equity": 5988.454935785858
+  },
+  {
+   "benchmark_drawdown": 0.0,
+   "benchmark_equity": 18721.359966698557,
+   "date": "2018-12-31",
+   "exposure": 1.0,
+   "held": "CW8.PA",
+   "momentum_drawdown": -0.36943397139495193,
+   "momentum_equity": 6305.660286050481,
+   "momentum_vt_drawdown": -0.3964098569420873,
+   "momentum_vt_equity": 6035.901430579127
+  },
+  {
+   "benchmark_drawdown": 0.0,
+   "benchmark_equity": 19294.92207025232,
+   "date": "2019-01-31",
+   "exposure": 1.0,
+   "held": "CW8.PA",
+   "momentum_drawdown": -0.350115461498257,
+   "momentum_equity": 6498.84538501743,
+   "momentum_vt_drawdown": -0.37791780119654184,
+   "momentum_vt_equity": 6220.821988034581
+  },
+  {
+   "benchmark_drawdown": 0.0,
+   "benchmark_equity": 19571.244204316965,
+   "date": "2019-02-28",
+   "exposure": 1.0,
+   "held": "ESE.PA",
+   "momentum_drawdown": -0.38860647374683643,
+   "momentum_equity": 6113.935262531636,
+   "momentum_vt_drawdown": -0.4147621514083032,
+   "momentum_vt_equity": 5852.378485916968
+  },
+  {
+   "benchmark_drawdown": 0.0,
+   "benchmark_equity": 20023.09918576442,
+   "date": "2019-03-31",
+   "exposure": 0.6305246038824945,
+   "held": "ESE.PA",
+   "momentum_drawdown": -0.4436190379512762,
+   "momentum_equity": 5563.809620487238,
+   "momentum_vt_drawdown": -0.44816897486374896,
+   "momentum_vt_equity": 5518.310251362511
+  },
+  {
+   "benchmark_drawdown": 0.0,
+   "benchmark_equity": 20076.97396319889,
+   "date": "2019-04-30",
+   "exposure": 0.46270901342088533,
+   "held": "CW8.PA",
+   "momentum_drawdown": -0.44323777787505203,
+   "momentum_equity": 5567.6222212494795,
+   "momentum_vt_drawdown": -0.4480737095544156,
+   "momentum_vt_equity": 5519.262904455843
+  },
+  {
+   "benchmark_drawdown": -0.023392259662619264,
+   "benchmark_equity": 19607.328175012095,
+   "date": "2019-05-31",
+   "exposure": 0.6141386238184435,
+   "held": "CW8.PA",
+   "momentum_drawdown": -0.45626170434533575,
+   "momentum_equity": 5437.382956546642,
+   "momentum_vt_drawdown": -0.45608474626127093,
+   "momentum_vt_equity": 5439.152537387291
+  },
+  {
+   "benchmark_drawdown": 0.0,
+   "benchmark_equity": 20466.405725884848,
+   "date": "2019-06-30",
+   "exposure": 0.6040831925707427,
+   "held": "ESE.PA",
+   "momentum_drawdown": -0.4290728186016357,
+   "momentum_equity": 5709.271813983643,
+   "momentum_vt_drawdown": -0.43964398118613945,
+   "momentum_vt_equity": 5603.560188138606
+  },
+  {
+   "benchmark_drawdown": 0.0,
+   "benchmark_equity": 21205.515648729146,
+   "date": "2019-07-31",
+   "exposure": 0.7528104718397027,
+   "held": "ESE.PA",
+   "momentum_drawdown": -0.44743099785252016,
+   "momentum_equity": 5525.690021474798,
+   "momentum_vt_drawdown": -0.4532830348506456,
+   "momentum_vt_equity": 5467.169651493544
+  },
+  {
+   "benchmark_drawdown": -0.0141952591315474,
+   "benchmark_equity": 20904.497859077353,
+   "date": "2019-08-31",
+   "exposure": 0.6231217294415969,
+   "held": "ESE.PA",
+   "momentum_drawdown": -0.4559430738563661,
+   "momentum_equity": 5440.569261436339,
+   "momentum_vt_drawdown": -0.4585978233214909,
+   "momentum_vt_equity": 5414.021766785091
+  },
+  {
+   "benchmark_drawdown": -0.06754841773233078,
+   "benchmark_equity": 19773.116619459313,
+   "date": "2019-09-30",
+   "exposure": 0.6471514039349656,
+   "held": "ESE.PA",
+   "momentum_drawdown": -0.48396996472164444,
+   "momentum_equity": 5160.300352783555,
+   "momentum_vt_drawdown": -0.47666144932531274,
+   "momentum_vt_equity": 5233.385506746873
+  },
+  {
+   "benchmark_drawdown": -0.08623254993199148,
+   "benchmark_equity": 19376.909961716483,
+   "date": "2019-10-31",
+   "exposure": 1.0,
+   "held": "PAEEM.PA",
+   "momentum_drawdown": -0.5366021252809512,
+   "momentum_equity": 4633.978747190487,
+   "momentum_vt_drawdown": -0.529867149605955,
+   "momentum_vt_equity": 4701.32850394045
+  },
+  {
+   "benchmark_drawdown": -0.1263011790436268,
+   "benchmark_equity": 18527.234020066575,
+   "date": "2019-11-30",
+   "exposure": 0.6784356055011324,
+   "held": "PAEEM.PA",
+   "momentum_drawdown": -0.5561936002996655,
+   "momentum_equity": 4438.063997003345,
+   "momentum_vt_drawdown": -0.543498723641038,
+   "momentum_vt_equity": 4565.01276358962
+  },
+  {
+   "benchmark_drawdown": -0.06108434773799032,
+   "benchmark_equity": 19910.19055687878,
+   "date": "2019-12-31",
+   "exposure": 0.9277220374131651,
+   "held": "ESE.PA",
+   "momentum_drawdown": -0.5420866836427636,
+   "momentum_equity": 4579.1331635723645,
+   "momentum_vt_drawdown": -0.5299131529062547,
+   "momentum_vt_equity": 4700.868470937453
+  },
+  {
+   "benchmark_drawdown": -0.11704597325906851,
+   "benchmark_equity": 18723.495431163235,
+   "date": "2020-01-31",
+   "exposure": 0.42938265465296355,
+   "held": "ESE.PA",
+   "momentum_drawdown": -0.5418557074624537,
+   "momentum_equity": 4581.442925375463,
+   "momentum_vt_drawdown": -0.5300466875066987,
+   "momentum_vt_equity": 4699.533124933014
+  },
+  {
+   "benchmark_drawdown": -0.17646505072840135,
+   "benchmark_equity": 17463.48325405425,
+   "date": "2020-02-29",
+   "exposure": 0.7564236406609034,
+   "held": "ESE.PA",
+   "momentum_drawdown": -0.5259813837028611,
+   "momentum_equity": 4740.1861629713885,
+   "momentum_vt_drawdown": -0.5178871283598064,
+   "momentum_vt_equity": 4821.128716401936
+  },
+  {
+   "benchmark_drawdown": -0.16818183571619238,
+   "benchmark_equity": 17639.133099617433,
+   "date": "2020-03-31",
+   "exposure": 1.0,
+   "held": "PAEEM.PA",
+   "momentum_drawdown": -0.5262033452227486,
+   "momentum_equity": 4737.966547772515,
+   "momentum_vt_drawdown": -0.5179982723271743,
+   "momentum_vt_equity": 4820.0172767282575
+  },
+  {
+   "benchmark_drawdown": -0.17660871994287308,
+   "benchmark_equity": 17460.436674278528,
+   "date": "2020-04-30",
+   "exposure": 1.0,
+   "held": "PAEEM.PA",
+   "momentum_drawdown": -0.5161484222807808,
+   "momentum_equity": 4838.515777192191,
+   "momentum_vt_drawdown": -0.5077692211492506,
+   "momentum_vt_equity": 4922.3077885074945
+  },
+  {
+   "benchmark_drawdown": -0.24386357265319902,
+   "benchmark_equity": 16034.262842676737,
+   "date": "2020-05-31",
+   "exposure": 1.0,
+   "held": "PAEEM.PA",
+   "momentum_drawdown": -0.48806349401391624,
+   "momentum_equity": 5119.365059860837,
+   "momentum_vt_drawdown": -0.4791979262494156,
+   "momentum_vt_equity": 5208.020737505844
+  },
+  {
+   "benchmark_drawdown": -0.2704915155140898,
+   "benchmark_equity": 15469.603583646653,
+   "date": "2020-06-30",
+   "exposure": 1.0,
+   "held": "PAEEM.PA",
+   "momentum_drawdown": -0.5144782042126685,
+   "momentum_equity": 4855.217957873314,
+   "momentum_vt_drawdown": -0.5060700787296002,
+   "momentum_vt_equity": 4939.299212703999
+  },
+  {
+   "benchmark_drawdown": -0.24501748551634484,
+   "benchmark_equity": 16009.79352540003,
+   "date": "2020-07-31",
+   "exposure": 0.5173644800117019,
+   "held": "PAEEM.PA",
+   "momentum_drawdown": -0.5327997481145088,
+   "momentum_equity": 4672.002518854912,
+   "momentum_vt_drawdown": -0.5159468819156539,
+   "momentum_vt_equity": 4840.531180843461
+  },
+  {
+   "benchmark_drawdown": -0.24112920479302224,
+   "benchmark_equity": 16092.246523125099,
+   "date": "2020-08-31",
+   "exposure": 0.48351044779000246,
+   "held": "PAEEM.PA",
+   "momentum_drawdown": -0.5111596095630806,
+   "momentum_equity": 4888.403904369194,
+   "momentum_vt_drawdown": -0.5051182167993659,
+   "momentum_vt_equity": 4948.817832006342
+  },
+  {
+   "benchmark_drawdown": -0.21706962314891876,
+   "benchmark_equity": 16602.44235818101,
+   "date": "2020-09-30",
+   "exposure": 0.5448165572782507,
+   "held": "PAEEM.PA",
+   "momentum_drawdown": -0.5451438096985219,
+   "momentum_equity": 4548.561903014781,
+   "momentum_vt_drawdown": -0.5238859967551451,
+   "momentum_vt_equity": 4761.1400324485485
+  },
+  {
+   "benchmark_drawdown": -0.23601319422138411,
+   "benchmark_equity": 16200.734165361033,
+   "date": "2020-10-31",
+   "exposure": 0.4823097627012061,
+   "held": "OBLI.PA",
+   "momentum_drawdown": -0.5415300670800669,
+   "momentum_equity": 4584.699329199331,
+   "momentum_vt_drawdown": -0.522080558197666,
+   "momentum_vt_equity": 4779.19441802334
+  },
+  {
+   "benchmark_drawdown": -0.29089457487663894,
+   "benchmark_equity": 15036.946189052167,
+   "date": "2020-11-30",
+   "exposure": 0.48727677562807326,
+   "held": "PAEEM.PA",
+   "momentum_drawdown": -0.5900463316737236,
+   "momentum_equity": 4099.536683262764,
+   "momentum_vt_drawdown": -0.5467480274520287,
+   "momentum_vt_equity": 4532.519725479713
+  },
+  {
+   "benchmark_drawdown": -0.27731800091364367,
+   "benchmark_equity": 15324.844440680592,
+   "date": "2020-12-31",
+   "exposure": 0.4938211872720915,
+   "held": "OBLI.PA",
+   "momentum_drawdown": -0.5925273513045135,
+   "momentum_equity": 4074.7264869548653,
+   "momentum_vt_drawdown": -0.5480881831817854,
+   "momentum_vt_equity": 4519.118168182146
+  },
+  {
+   "benchmark_drawdown": -0.2676720687943511,
+   "benchmark_equity": 15529.391405182829,
+   "date": "2021-01-31",
+   "exposure": 0.464382868142518,
+   "held": "ESE.PA",
+   "momentum_drawdown": -0.5987432049904033,
+   "momentum_equity": 4012.5679500959673,
+   "momentum_vt_drawdown": -0.551305276680174,
+   "momentum_vt_equity": 4486.947233198259
+  },
+  {
+   "benchmark_drawdown": -0.28885750247645103,
+   "benchmark_equity": 15080.143359711945,
+   "date": "2021-02-28",
+   "exposure": 0.5225024039851731,
+   "held": "ESE.PA",
+   "momentum_drawdown": -0.5793725085862542,
+   "momentum_equity": 4206.274914137457,
+   "momentum_vt_drawdown": -0.5400157395123029,
+   "momentum_vt_equity": 4599.842604876972
+  },
+  {
+   "benchmark_drawdown": -0.2887416495288311,
+   "benchmark_equity": 15082.600081205652,
+   "date": "2021-03-31",
+   "exposure": 0.8695211162771527,
+   "held": "OBLI.PA",
+   "momentum_drawdown": -0.5774926603719936,
+   "momentum_equity": 4225.073396280063,
+   "momentum_vt_drawdown": -0.5380724654688769,
+   "momentum_vt_equity": 4619.275345311231
+  },
+  {
+   "benchmark_drawdown": -0.2873024052821994,
+   "benchmark_equity": 15113.119997599943,
+   "date": "2021-04-30",
+   "exposure": 0.9185207756041527,
+   "held": "ESE.PA",
+   "momentum_drawdown": -0.5186130714625137,
+   "momentum_equity": 4813.8692853748635,
+   "momentum_vt_drawdown": -0.4789094536378745,
+   "momentum_vt_equity": 5210.905463621255
+  },
+  {
+   "benchmark_drawdown": -0.255331264360245,
+   "benchmark_equity": 15791.084526728171,
+   "date": "2021-05-31",
+   "exposure": 0.417161637471908,
+   "held": "ESE.PA",
+   "momentum_drawdown": -0.5263653353989313,
+   "momentum_equity": 4736.3466460106865,
+   "momentum_vt_drawdown": -0.48267448226966947,
+   "momentum_vt_equity": 5173.255177303306
+  },
+  {
+   "benchmark_drawdown": -0.3059920846922398,
+   "benchmark_equity": 14716.795708400601,
+   "date": "2021-06-30",
+   "exposure": 0.3384043358906013,
+   "held": "ESE.PA",
+   "momentum_drawdown": -0.5332075581927149,
+   "momentum_equity": 4667.924418072851,
+   "momentum_vt_drawdown": -0.48524202443206754,
+   "momentum_vt_equity": 5147.579755679325
+  },
+  {
+   "benchmark_drawdown": -0.22960176599402427,
+   "benchmark_equity": 16336.691806967017,
+   "date": "2021-07-31",
+   "exposure": 0.31862859520017034,
+   "held": "ESE.PA",
+   "momentum_drawdown": -0.47163590384997034,
+   "momentum_equity": 5283.640961500297,
+   "momentum_vt_drawdown": -0.4636164893478719,
+   "momentum_vt_equity": 5363.835106521281
+  },
+  {
+   "benchmark_drawdown": -0.24492171022679587,
+   "benchmark_equity": 16011.824489801322,
+   "date": "2021-08-31",
+   "exposure": 0.33970663230670983,
+   "held": "PAEEM.PA",
+   "momentum_drawdown": -0.47045298370458866,
+   "momentum_equity": 5295.470162954113,
+   "momentum_vt_drawdown": -0.4632109622208922,
+   "momentum_vt_equity": 5367.890377791078
+  },
+  {
+   "benchmark_drawdown": -0.29525776548991967,
+   "benchmark_equity": 14944.422482223854,
+   "date": "2021-09-30",
+   "exposure": 0.3624335410227986,
+   "held": "ESE.PA",
+   "momentum_drawdown": -0.4793067140872268,
+   "momentum_equity": 5206.932859127732,
+   "momentum_vt_drawdown": -0.4664557679253808,
+   "momentum_vt_equity": 5335.442320746192
+  },
+  {
+   "benchmark_drawdown": -0.27934354684775775,
+   "benchmark_equity": 15281.891694677515,
+   "date": "2021-10-31",
+   "exposure": 0.3619578581871748,
+   "held": "ESE.PA",
+   "momentum_drawdown": -0.42630204509851477,
+   "momentum_equity": 5736.979549014853,
+   "momentum_vt_drawdown": -0.4467984380731962,
+   "momentum_vt_equity": 5532.015619268038
+  },
+  {
+   "benchmark_drawdown": -0.24439053583984616,
+   "benchmark_equity": 16023.088316575986,
+   "date": "2021-11-30",
+   "exposure": 0.4616639038285741,
+   "held": "ESE.PA",
+   "momentum_drawdown": -0.4232518525012071,
+   "momentum_equity": 5767.481474987929,
+   "momentum_vt_drawdown": -0.4454833023700441,
+   "momentum_vt_equity": 5545.166976299559
+  },
+  {
+   "benchmark_drawdown": -0.22944225798724394,
+   "benchmark_equity": 16340.074256500895,
+   "date": "2021-12-31",
+   "exposure": 0.4633032155722998,
+   "held": "ESE.PA",
+   "momentum_drawdown": -0.38876175683104963,
+   "momentum_equity": 6112.382431689503,
+   "momentum_vt_drawdown": -0.43012005726460023,
+   "momentum_vt_equity": 5698.799427353998
+  },
+  {
+   "benchmark_drawdown": -0.2299549418457979,
+   "benchmark_equity": 16329.202530915478,
+   "date": "2022-01-31",
+   "exposure": 0.5967526200270684,
+   "held": "ESE.PA",
+   "momentum_drawdown": -0.3987512003886875,
+   "momentum_equity": 6012.487996113125,
+   "momentum_vt_drawdown": -0.43574507191389533,
+   "momentum_vt_equity": 5642.549280861047
+  },
+  {
+   "benchmark_drawdown": -0.22550926670908955,
+   "benchmark_equity": 16423.475364596114,
+   "date": "2022-02-28",
+   "exposure": 0.7357886711381438,
+   "held": "ESE.PA",
+   "momentum_drawdown": -0.373924646824883,
+   "momentum_equity": 6260.75353175117,
+   "momentum_vt_drawdown": -0.41868506445226406,
+   "momentum_vt_equity": 5813.14935547736
+  },
+  {
+   "benchmark_drawdown": -0.20813709547331527,
+   "benchmark_equity": 16791.861213588727,
+   "date": "2022-03-31",
+   "exposure": 0.7269223235636011,
+   "held": "PAEEM.PA",
+   "momentum_drawdown": -0.3715162500392821,
+   "momentum_equity": 6284.837499607179,
+   "momentum_vt_drawdown": -0.4170678843134129,
+   "momentum_vt_equity": 5829.321156865871
+  },
+  {
+   "benchmark_drawdown": -0.20357036924853422,
+   "benchmark_equity": 16888.700998011784,
+   "date": "2022-04-30",
+   "exposure": 0.9930569582333991,
+   "held": "ESE.PA",
+   "momentum_drawdown": -0.41546967787277855,
+   "momentum_equity": 5845.303221272215,
+   "momentum_vt_drawdown": -0.4574091016591578,
+   "momentum_vt_equity": 5425.908983408422
+  },
+  {
+   "benchmark_drawdown": -0.18794112008633734,
+   "benchmark_equity": 17220.127285698636,
+   "date": "2022-05-31",
+   "exposure": 0.5173427458358191,
+   "held": "ESE.PA",
+   "momentum_drawdown": -0.44107232446656464,
+   "momentum_equity": 5589.276755334354,
+   "momentum_vt_drawdown": -0.4699561083148073,
+   "momentum_vt_equity": 5300.438916851927
+  },
+  {
+   "benchmark_drawdown": -0.15929412832452605,
+   "benchmark_equity": 17827.60151779274,
+   "date": "2022-06-30",
+   "exposure": 0.7660280932142346,
+   "held": "PAEEM.PA",
+   "momentum_drawdown": -0.38233819943659186,
+   "momentum_equity": 6176.618005634082,
+   "momentum_vt_drawdown": -0.4271197219942966,
+   "momentum_vt_equity": 5728.802780057034
+  },
+  {
+   "benchmark_drawdown": -0.16035438655891943,
+   "benchmark_equity": 17805.118195211617,
+   "date": "2022-07-31",
+   "exposure": 0.3037998161437461,
+   "held": "ESE.PA",
+   "momentum_drawdown": -0.3633016691819363,
+   "momentum_equity": 6366.983308180637,
+   "momentum_vt_drawdown": -0.4220254857937884,
+   "momentum_vt_equity": 5779.745142062116
+  },
+  {
+   "benchmark_drawdown": -0.14216670312453927,
+   "benchmark_equity": 18190.797400893498,
+   "date": "2022-08-31",
+   "exposure": 0.38208734732557126,
+   "held": "PAEEM.PA",
+   "momentum_drawdown": -0.3120809076080807,
+   "momentum_equity": 6879.190923919193,
+   "momentum_vt_drawdown": -0.404194614198787,
+   "momentum_vt_equity": 5958.05385801213
+  },
+  {
+   "benchmark_drawdown": -0.09370904640420086,
+   "benchmark_equity": 19218.36699877738,
+   "date": "2022-09-30",
+   "exposure": 0.7616400842636432,
+   "held": "PAEEM.PA",
+   "momentum_drawdown": -0.3161999488929629,
+   "momentum_equity": 6838.000511070371,
+   "momentum_vt_drawdown": -0.407125654652559,
+   "momentum_vt_equity": 5928.74345347441
+  },
+  {
+   "benchmark_drawdown": -0.16028676919191853,
+   "benchmark_equity": 17806.55205634568,
+   "date": "2022-10-31",
+   "exposure": 0.6500107255255182,
+   "held": "PAEEM.PA",
+   "momentum_drawdown": -0.26463753115856636,
+   "momentum_equity": 7353.624688414337,
+   "momentum_vt_drawdown": -0.3781349559330136,
+   "momentum_vt_equity": 6218.650440669864
+  },
+  {
+   "benchmark_drawdown": -0.17424592883325407,
+   "benchmark_equity": 17510.54087812823,
+   "date": "2022-11-30",
+   "exposure": 0.5866773445318466,
+   "held": "PAEEM.PA",
+   "momentum_drawdown": -0.22934521753876702,
+   "momentum_equity": 7706.547824612329,
+   "momentum_vt_drawdown": -0.36067638977414807,
+   "momentum_vt_equity": 6393.236102258519
+  },
+  {
+   "benchmark_drawdown": -0.1609644774745963,
+   "benchmark_equity": 17792.180902752083,
+   "date": "2022-12-31",
+   "exposure": 0.6970627992123065,
+   "held": "PAEEM.PA",
+   "momentum_drawdown": -0.2328648087822055,
+   "momentum_equity": 7671.3519121779445,
+   "momentum_vt_drawdown": -0.3627748075830909,
+   "momentum_vt_equity": 6372.251924169092
+  },
+  {
+   "benchmark_drawdown": -0.18781438430151953,
+   "benchmark_equity": 17222.814783366844,
+   "date": "2023-01-31",
+   "exposure": 0.7103229712813156,
+   "held": "PAEEM.PA",
+   "momentum_drawdown": -0.2958544934376405,
+   "momentum_equity": 7041.455065623595,
+   "momentum_vt_drawdown": -0.3999493880187991,
+   "momentum_vt_equity": 6000.506119812009
+  },
+  {
+   "benchmark_drawdown": -0.17196527551833107,
+   "benchmark_equity": 17558.903307687156,
+   "date": "2023-02-28",
+   "exposure": 0.44106043422832625,
+   "held": "PAEEM.PA",
+   "momentum_drawdown": -0.2864569731244555,
+   "momentum_equity": 7135.430268755445,
+   "momentum_vt_drawdown": -0.39656894952724575,
+   "momentum_vt_equity": 6034.310504727542
+  },
+  {
+   "benchmark_drawdown": -0.1490781698931689,
+   "benchmark_equity": 18044.23618417565,
+   "date": "2023-03-31",
+   "exposure": 0.5689586893009244,
+   "held": "PAEEM.PA",
+   "momentum_drawdown": -0.3124240157332071,
+   "momentum_equity": 6875.759842667929,
+   "momentum_vt_drawdown": -0.40913686141023087,
+   "momentum_vt_equity": 5908.631385897691
+  },
+  {
+   "benchmark_drawdown": -0.11906083227108721,
+   "benchmark_equity": 18680.76930685389,
+   "date": "2023-04-30",
+   "exposure": 0.6046535798536454,
+   "held": "ESE.PA",
+   "momentum_drawdown": -0.36309045153039754,
+   "momentum_equity": 6369.095484696025,
+   "momentum_vt_drawdown": -0.43545833081348084,
+   "momentum_vt_equity": 5645.416691865192
+  },
+  {
+   "benchmark_drawdown": -0.07960355534720509,
+   "benchmark_equity": 19517.481210119513,
+   "date": "2023-05-31",
+   "exposure": 0.6746544785481776,
+   "held": "ESE.PA",
+   "momentum_drawdown": -0.3634620255673361,
+   "momentum_equity": 6365.379744326639,
+   "momentum_vt_drawdown": -0.43573016426130395,
+   "momentum_vt_equity": 5642.69835738696
+  },
+  {
+   "benchmark_drawdown": -0.07996736620330813,
+   "benchmark_equity": 19509.76641331724,
+   "date": "2023-06-30",
+   "exposure": 0.8103267568473633,
+   "held": "ESE.PA",
+   "momentum_drawdown": -0.33334630927736675,
+   "momentum_equity": 6666.536907226333,
+   "momentum_vt_drawdown": -0.4141767727597895,
+   "momentum_vt_equity": 5858.232272402105
+  },
+  {
+   "benchmark_drawdown": -0.10241016561351357,
+   "benchmark_equity": 19033.85527922284,
+   "date": "2023-07-31",
+   "exposure": 0.4815088535971927,
+   "held": "ESE.PA",
+   "momentum_drawdown": -0.31268169185875483,
+   "momentum_equity": 6873.183081412451,
+   "momentum_vt_drawdown": -0.4056326865981522,
+   "momentum_vt_equity": 5943.673134018478
+  },
+  {
+   "benchmark_drawdown": -0.1354503800027932,
+   "benchmark_equity": 18333.220495953607,
+   "date": "2023-08-31",
+   "exposure": 1.0,
+   "held": "ESE.PA",
+   "momentum_drawdown": -0.33634041143654825,
+   "momentum_equity": 6636.595885634518,
+   "momentum_vt_drawdown": -0.42638505773587765,
+   "momentum_vt_equity": 5736.149422641223
+  },
+  {
+   "benchmark_drawdown": -0.12803868162721488,
+   "benchmark_equity": 18490.389381840592,
+   "date": "2023-09-30",
+   "exposure": 0.6673727670012732,
+   "held": "ESE.PA",
+   "momentum_drawdown": -0.2944787295467568,
+   "momentum_equity": 7055.212704532432,
+   "momentum_vt_drawdown": -0.40243705337145175,
+   "momentum_vt_equity": 5975.6294662854825
+  },
+  {
+   "benchmark_drawdown": -0.10410034094705622,
+   "benchmark_equity": 18998.014239738306,
+   "date": "2023-10-31",
+   "exposure": 0.5809477779687409,
+   "held": "ESE.PA",
+   "momentum_drawdown": -0.32551759249661627,
+   "momentum_equity": 6744.824075033837,
+   "momentum_vt_drawdown": -0.4177679238119104,
+   "momentum_vt_equity": 5822.320761880896
+  },
+  {
+   "benchmark_drawdown": -0.10010575425122037,
+   "benchmark_equity": 19082.721510427058,
+   "date": "2023-11-30",
+   "exposure": 0.48723238977110994,
+   "held": "ESE.PA",
+   "momentum_drawdown": -0.2600097853510629,
+   "momentum_equity": 7399.902146489371,
+   "momentum_vt_drawdown": -0.3902662671871959,
+   "momentum_vt_equity": 6097.337328128041
+  },
+  {
+   "benchmark_drawdown": -0.10656821670810068,
+   "benchmark_equity": 18945.681661668357,
+   "date": "2023-12-31",
+   "exposure": 0.3920062839532582,
+   "held": "ESE.PA",
+   "momentum_drawdown": -0.26448913068601465,
+   "momentum_equity": 7355.108693139853,
+   "momentum_vt_drawdown": -0.39178512948880095,
+   "momentum_vt_equity": 6082.14870511199
+  },
+  {
+   "benchmark_drawdown": -0.09223953098983195,
+   "benchmark_equity": 19249.52883089283,
+   "date": "2024-01-31",
+   "exposure": 0.3952910948327445,
+   "held": "ESE.PA",
+   "momentum_drawdown": -0.2752654837341667,
+   "momentum_equity": 7247.345162658333,
+   "momentum_vt_drawdown": -0.3953105371355422,
+   "momentum_vt_equity": 6046.894628644578
+  },
+  {
+   "benchmark_drawdown": -0.05151734198911684,
+   "benchmark_equity": 20113.063846997997,
+   "date": "2024-02-29",
+   "exposure": 0.4641098766159142,
+   "held": "ESE.PA",
+   "momentum_drawdown": -0.3235557481513208,
+   "momentum_equity": 6764.442518486791,
+   "momentum_vt_drawdown": -0.414052594461503,
+   "momentum_vt_equity": 5859.47405538497
+  },
+  {
+   "benchmark_drawdown": -0.028307484390309057,
+   "benchmark_equity": 20605.24084551429,
+   "date": "2024-03-31",
+   "exposure": 0.8807507465458356,
+   "held": "CW8.PA",
+   "momentum_drawdown": -0.3083888043975873,
+   "momentum_equity": 6916.111956024127,
+   "momentum_vt_drawdown": -0.40221877322969757,
+   "momentum_vt_equity": 5977.812267703024
+  },
+  {
+   "benchmark_drawdown": -0.02056588690128658,
+   "benchmark_equity": 20769.40541221392,
+   "date": "2024-04-30",
+   "exposure": 0.6316456590619056,
+   "held": "CW8.PA",
+   "momentum_drawdown": -0.3028786503012618,
+   "momentum_equity": 6971.213496987381,
+   "momentum_vt_drawdown": -0.39936166958865105,
+   "momentum_vt_equity": 6006.383304113489
+  },
+  {
+   "benchmark_drawdown": -0.08486751210010002,
+   "benchmark_equity": 19405.856292821765,
+   "date": "2024-05-31",
+   "exposure": 0.5947126647297989,
+   "held": "ESE.PA",
+   "momentum_drawdown": -0.3479737801007622,
+   "momentum_equity": 6520.262198992378,
+   "momentum_vt_drawdown": -0.4225091674448024,
+   "momentum_vt_equity": 5774.908325551976
+  },
+  {
+   "benchmark_drawdown": -0.016433619346527206,
+   "benchmark_equity": 20857.032276511105,
+   "date": "2024-06-30",
+   "exposure": 0.6225563553852396,
+   "held": "ESE.PA",
+   "momentum_drawdown": -0.3488609393694193,
+   "momentum_equity": 6511.390606305807,
+   "momentum_vt_drawdown": -0.42302347855805444,
+   "momentum_vt_equity": 5769.765214419455
+  },
+  {
+   "benchmark_drawdown": -0.04670461307933493,
+   "benchmark_equity": 20215.12024520747,
+   "date": "2024-07-31",
+   "exposure": 0.7506586549282392,
+   "held": "ESE.PA",
+   "momentum_drawdown": -0.4107971569271187,
+   "momentum_equity": 5892.028430728813,
+   "momentum_vt_drawdown": -0.4642898514640901,
+   "momentum_vt_equity": 5357.1014853591
+  },
+  {
+   "benchmark_drawdown": -0.07084202291055064,
+   "benchmark_equity": 19703.274023311835,
+   "date": "2024-08-31",
+   "exposure": 0.6060956990514348,
+   "held": "CW8.PA",
+   "momentum_drawdown": -0.4268643232542041,
+   "momentum_equity": 5731.356767457959,
+   "momentum_vt_drawdown": -0.4732165928397082,
+   "momentum_vt_equity": 5267.834071602918
+  },
+  {
+   "benchmark_drawdown": -0.03339886469772246,
+   "benchmark_equity": 20497.275500731805,
+   "date": "2024-09-30",
+   "exposure": 0.5926223574382317,
+   "held": "PAEEM.PA",
+   "momentum_drawdown": -0.4156510931014368,
+   "momentum_equity": 5843.489068985632,
+   "momentum_vt_drawdown": -0.4671072294091747,
+   "momentum_vt_equity": 5328.927705908253
+  },
+  {
+   "benchmark_drawdown": 0.0,
+   "benchmark_equity": 21754.120604779662,
+   "date": "2024-10-31",
+   "exposure": 0.49147788728033154,
+   "held": "PAEEM.PA",
+   "momentum_drawdown": -0.48873198558913666,
+   "momentum_equity": 5112.680144108634,
+   "momentum_vt_drawdown": -0.4999152267550975,
+   "momentum_vt_equity": 5000.847732449025
+  },
+  {
+   "benchmark_drawdown": -0.011292098943687656,
+   "benchmark_equity": 21508.470922477576,
+   "date": "2024-11-30",
+   "exposure": 0.3853935124170256,
+   "held": "CW8.PA",
+   "momentum_drawdown": -0.4955162640454176,
+   "momentum_equity": 5044.837359545824,
+   "momentum_vt_drawdown": -0.5025115658922344,
+   "momentum_vt_equity": 4974.884341077655
+  },
+  {
+   "benchmark_drawdown": -0.04649125196594184,
+   "benchmark_equity": 20742.744302445364,
+   "date": "2024-12-31",
+   "exposure": 0.37508732096163494,
+   "held": "CW8.PA",
+   "momentum_drawdown": -0.5134764727179004,
+   "momentum_equity": 4865.235272820996,
+   "momentum_vt_drawdown": -0.5091585405042238,
+   "momentum_vt_equity": 4908.414594957762
+  },
+  {
+   "benchmark_drawdown": -0.016316054077085917,
+   "benchmark_equity": 21399.179196592628,
+   "date": "2025-01-31",
+   "exposure": 0.4818117139570962,
+   "held": "PAEEM.PA",
+   "momentum_drawdown": -0.4354935122114866,
+   "momentum_equity": 5645.064877885135,
+   "momentum_vt_drawdown": -0.47115115152700426,
+   "momentum_vt_equity": 5288.488484729957
+  },
+  {
+   "benchmark_drawdown": 0.0,
+   "benchmark_equity": 22314.722101739186,
+   "date": "2025-02-28",
+   "exposure": 0.2670295538209246,
+   "held": "PAEEM.PA",
+   "momentum_drawdown": -0.4338716120881625,
+   "momentum_equity": 5661.283879118375,
+   "momentum_vt_drawdown": -0.4708790136761173,
+   "momentum_vt_equity": 5291.209863238827
+  },
+  {
+   "benchmark_drawdown": 0.0,
+   "benchmark_equity": 25018.04821161544,
+   "date": "2025-03-31",
+   "exposure": 0.2746490973121083,
+   "held": "PAEEM.PA",
+   "momentum_drawdown": -0.451732518942653,
+   "momentum_equity": 5482.6748105734705,
+   "momentum_vt_drawdown": -0.4754675298118608,
+   "momentum_vt_equity": 5245.324701881392
+  },
+  {
+   "benchmark_drawdown": 0.0,
+   "benchmark_equity": 26120.657129845993,
+   "date": "2025-04-30",
+   "exposure": 0.27864017573612754,
+   "held": "PAEEM.PA",
+   "momentum_drawdown": -0.38860031954865015,
+   "momentum_equity": 6113.996804513498,
+   "momentum_vt_drawdown": -0.4583879317323184,
+   "momentum_vt_equity": 5416.120682676816
+  },
+  {
+   "benchmark_drawdown": 0.0,
+   "benchmark_equity": 27553.376665348427,
+   "date": "2025-05-31",
+   "exposure": 0.37629688938900147,
+   "held": "PAEEM.PA",
+   "momentum_drawdown": -0.3801751468339628,
+   "momentum_equity": 6198.248531660372,
+   "momentum_vt_drawdown": -0.4548938633313212,
+   "momentum_vt_equity": 5451.061366686788
+  },
+  {
+   "benchmark_drawdown": 0.0,
+   "benchmark_equity": 28800.836545544884,
+   "date": "2025-06-30",
+   "exposure": 0.3843281881018834,
+   "held": "PAEEM.PA",
+   "momentum_drawdown": -0.444636557443322,
+   "momentum_equity": 5553.63442556678,
+   "momentum_vt_drawdown": -0.47601849321179324,
+   "momentum_vt_equity": 5239.8150678820675
+  },
+  {
+   "benchmark_drawdown": 0.0,
+   "benchmark_equity": 28957.041048634896,
+   "date": "2025-07-31",
+   "exposure": 0.2632064045646897,
+   "held": "PAEEM.PA",
+   "momentum_drawdown": -0.40348842259059725,
+   "momentum_equity": 5965.115774094027,
+   "momentum_vt_drawdown": -0.46521629510916185,
+   "momentum_vt_equity": 5347.837048908382
+  },
+  {
+   "benchmark_drawdown": -0.018984447998011134,
+   "benchmark_equity": 28407.307608670813,
+   "date": "2025-08-31",
+   "exposure": 0.3187034742987146,
+   "held": "CW8.PA",
+   "momentum_drawdown": -0.41598323988091335,
+   "momentum_equity": 5840.167601190867,
+   "momentum_vt_drawdown": -0.46838813255673595,
+   "momentum_vt_equity": 5316.118674432641
+  },
+  {
+   "benchmark_drawdown": -0.025330374646502007,
+   "benchmark_equity": 28223.548350218836,
+   "date": "2025-09-30",
+   "exposure": 0.3240764836075221,
+   "held": "CW8.PA",
+   "momentum_drawdown": -0.4197610877586986,
+   "momentum_equity": 5802.389122413014,
+   "momentum_vt_drawdown": -0.4691421735040886,
+   "momentum_vt_equity": 5308.578264959114
+  },
+  {
+   "benchmark_drawdown": 0.0,
+   "benchmark_equity": 29646.516601993917,
+   "date": "2025-10-31",
+   "exposure": 0.5714753817914742,
+   "held": "CW8.PA",
+   "momentum_drawdown": -0.3905067381525309,
+   "momentum_equity": 6094.9326184746915,
+   "momentum_vt_drawdown": -0.4535182866154598,
+   "momentum_vt_equity": 5464.817133845402
+  },
+  {
+   "benchmark_drawdown": -0.08226735231087434,
+   "benchmark_equity": 27207.5761759075,
+   "date": "2025-11-30",
+   "exposure": 0.7804223802102548,
+   "held": "PAEEM.PA",
+   "momentum_drawdown": -0.4243303451709547,
+   "momentum_equity": 5756.696548290453,
+   "momentum_vt_drawdown": -0.47694902766157654,
+   "momentum_vt_equity": 5230.509723384234
+  },
+  {
+   "benchmark_drawdown": -0.13268800703954553,
+   "benchmark_equity": 25712.779398410545,
+   "date": "2025-12-31",
+   "exposure": 0.5542283316800702,
+   "held": "ESE.PA",
+   "momentum_drawdown": -0.43295435699394025,
+   "momentum_equity": 5670.456430060597,
+   "momentum_vt_drawdown": -0.48080604919968506,
+   "momentum_vt_equity": 5191.939508003149
+  },
+  {
+   "benchmark_drawdown": -0.23377845746775072,
+   "benchmark_equity": 22715.799681487715,
+   "date": "2026-01-31",
+   "exposure": 0.5506368589861921,
+   "held": "ESE.PA",
+   "momentum_drawdown": -0.4412575682726215,
+   "momentum_equity": 5587.424317273785,
+   "momentum_vt_drawdown": -0.4842323703637942,
+   "momentum_vt_equity": 5157.676296362059
+  },
+  {
+   "benchmark_drawdown": -0.2803582423660409,
+   "benchmark_equity": 21334.871315183253,
+   "date": "2026-02-28",
+   "exposure": 0.0,
+   "held": "CASH",
+   "momentum_drawdown": -0.44152120725484933,
+   "momentum_equity": 5584.787927451506,
+   "momentum_vt_drawdown": -0.4842415416054271,
+   "momentum_vt_equity": 5157.584583945729
+  },
+  {
+   "benchmark_drawdown": -0.2153678112008519,
+   "benchmark_equity": 23261.61121169277,
+   "date": "2026-03-31",
+   "exposure": 0.0,
+   "held": "CASH",
+   "momentum_drawdown": -0.4407533076507735,
+   "momentum_equity": 5592.466923492265,
+   "momentum_vt_drawdown": -0.48353238179283475,
+   "momentum_vt_equity": 5164.676182071653
+  },
+  {
+   "benchmark_drawdown": -0.20216140462405674,
+   "benchmark_equity": 23653.13516352441,
+   "date": "2026-04-30",
+   "exposure": 1.0,
+   "held": "ESE.PA",
+   "momentum_drawdown": -0.44722549258241007,
+   "momentum_equity": 5527.745074175899,
+   "momentum_vt_drawdown": -0.4895094827430382,
+   "momentum_vt_equity": 5104.905172569618
+  },
+  {
+   "benchmark_drawdown": -0.20311547164405308,
+   "benchmark_equity": 23624.85039977667,
+   "date": "2026-05-31",
+   "exposure": 1.0,
+   "held": "OBLI.PA",
+   "momentum_drawdown": -0.4569563250645342,
+   "momentum_equity": 5430.436749354658,
+   "momentum_vt_drawdown": -0.49849596392204043,
+   "momentum_vt_equity": 5015.040360779596
+  },
+  {
+   "benchmark_drawdown": -0.26693272992620765,
+   "benchmark_equity": 21732.890992621044,
+   "date": "2026-06-30",
+   "exposure": 0.0,
+   "held": "CASH",
+   "momentum_drawdown": -0.4559084685740673,
+   "momentum_equity": 5440.915314259327,
+   "momentum_vt_drawdown": -0.4975282622739877,
+   "momentum_vt_equity": 5024.717377260123
+  },
+  {
+   "benchmark_drawdown": -0.2465167751429227,
+   "benchmark_equity": 22338.152935049256,
+   "date": "2026-07-31",
+   "exposure": 1.0,
+   "held": "ESE.PA",
+   "momentum_drawdown": -0.43368672622358095,
+   "momentum_equity": 5663.13273776419,
+   "momentum_vt_drawdown": -0.477006352173888,
+   "momentum_vt_equity": 5229.93647826112
+  },
+  {
+   "benchmark_drawdown": -0.22847031231080128,
+   "benchmark_equity": 22873.16769500901,
+   "date": "2026-08-31",
+   "exposure": 0.9706356831959447,
+   "held": "OBLI.PA",
+   "momentum_drawdown": -0.43655214014245847,
+   "momentum_equity": 5634.478598575415,
+   "momentum_vt_drawdown": -0.47955729748502274,
+   "momentum_vt_equity": 5204.427025149773
+  }
+ ],
+ "strategies": {
+  "benchmark": {
+   "annualized_volatility": 0.15351122934691555,
+   "cagr": 0.08055308217340418,
+   "cash_weight": 0.0,
+   "cumulative_cost": 0.001,
+   "current_drawdown": -0.22847031231080128,
+   "description": "100 % benchmark, toujours investi.",
+   "executed_weights": {
+    "CASH": 0.0,
+    "CW8.PA": 1.0
+   },
+   "invested_exposure": 1.0,
+   "label": "Buy & Hold CW8.PA",
+   "max_drawdown": -0.3059920846922395,
+   "selected_assets": [
+    "CW8.PA"
+   ],
+   "sharpe": 0.5822625579310136,
+   "target_weights": {
+    "CASH": 0.0,
+    "CW8.PA": 1.0
+   },
+   "turnover": 0.0078125
+  },
+  "core_satellite": {
+   "annualized_volatility": 0.12706029721477002,
+   "cagr": 0.05394515338299333,
+   "cash_weight": 0.0,
+   "cumulative_cost": 0.013962679770978273,
+   "current_drawdown": -0.1928398602917203,
+   "description": "Part cœur en benchmark, part satellite dans une autre stratégie du registre.",
+   "executed_weights": {
+    "CASH": 0.005872863360811052,
+    "CW8.PA": 0.8,
+    "ESE.PA": 0.0,
+    "OBLI.PA": 0.1941271366391889,
+    "PAEEM.PA": 0.0
+   },
+   "invested_exposure": 1.0,
+   "label": "Cœur / satellite (80% CW8.PA + 20% momentum_vt)",
+   "max_drawdown": -0.2653024021570157,
+   "selected_assets": [
+    "CW8.PA",
+    "PAEEM.PA"
+   ],
+   "sharpe": 0.4773659974614411,
+   "target_weights": {
+    "CASH": 0.0,
+    "CW8.PA": 0.8,
+    "ESE.PA": 0.0,
+    "OBLI.PA": 0.0,
+    "PAEEM.PA": 0.19999999999999996
+   },
+   "turnover": 0.07353374384785541
+  },
+  "dual_momentum": {
+   "annualized_volatility": 0.1983358681754895,
+   "cagr": 0.026304168258657112,
+   "cash_weight": 0.0,
+   "cumulative_cost": 0.061,
+   "current_drawdown": -0.1183185884360568,
+   "description": "Meilleure action si elle bat l'obligataire et zéro, sinon obligataire ou cash.",
+   "executed_weights": {
+    "CASH": 0.0,
+    "CW8.PA": 0.0,
+    "ESE.PA": 0.0,
+    "OBLI.PA": 1.0,
+    "PAEEM.PA": 0.0
+   },
+   "invested_exposure": 1.0,
+   "label": "Dual momentum (actions / obligataire / cash)",
+   "max_drawdown": -0.41098790580801037,
+   "selected_assets": [
+    "PAEEM.PA"
+   ],
+   "sharpe": 0.22823387326844358,
+   "target_weights": {
+    "CASH": 0.0,
+    "CW8.PA": 0.0,
+    "ESE.PA": 0.0,
+    "OBLI.PA": 0.0,
+    "PAEEM.PA": 1.0
+   },
+   "turnover": 0.25
+  },
+  "inverse_vol": {
+   "annualized_volatility": 0.10402939441879622,
+   "cagr": 0.11374291678265669,
+   "cash_weight": 0.0,
+   "cumulative_cost": 0.008680766285868034,
+   "current_drawdown": -0.0928527452134611,
+   "description": "Actions pondérées par l'inverse de leur volatilité 12 mois.",
+   "executed_weights": {
+    "CASH": 0.0,
+    "CW8.PA": 0.24486364903210728,
+    "ESE.PA": 0.515523012129867,
+    "PAEEM.PA": 0.23961333883802582
+   },
+   "invested_exposure": 1.0,
+   "label": "Inverse volatilité (actions)",
+   "max_drawdown": -0.12510183494162774,
+   "selected_assets": [
+    "CW8.PA",
+    "ESE.PA",
+    "PAEEM.PA"
+   ],
+   "sharpe": 1.0912232948037468,
+   "target_weights": {
+    "CASH": 0.0,
+    "CW8.PA": 0.2530761510029436,
+    "ESE.PA": 0.4951720881573978,
+    "PAEEM.PA": 0.25175176083965844
+   },
+   "turnover": 0.03781549330417201
+  },
+  "momentum": {
+   "annualized_volatility": 0.1776622315070419,
+   "cagr": -0.05236184714734937,
+   "cash_weight": 0.0,
+   "cumulative_cost": 0.077,
+   "current_drawdown": -0.43655214014245847,
+   "description": "Meilleur(s) ETF au-dessus de leur moyenne mobile, sinon cash.",
+   "executed_weights": {
+    "CASH": 0.0,
+    "CW8.PA": 0.0,
+    "ESE.PA": 0.0,
+    "OBLI.PA": 1.0,
+    "PAEEM.PA": 0.0
+   },
+   "invested_exposure": 1.0,
+   "label": "Momentum défensif",
+   "max_drawdown": -0.5987432049904033,
+   "selected_assets": [
+    "PAEEM.PA"
+   ],
+   "sharpe": -0.2142690189129065,
+   "target_weights": {
+    "CASH": 0.0,
+    "CW8.PA": 0.0,
+    "ESE.PA": 0.0,
+    "OBLI.PA": 0.0,
+    "PAEEM.PA": 1.0
+   },
+   "turnover": 0.3203125
+  },
+  "momentum_vt": {
+   "annualized_volatility": 0.11921587322588902,
+   "cagr": -0.059389198697561874,
+   "cash_weight": 0.0,
+   "cumulative_cost": 0.0627567596650097,
+   "current_drawdown": -0.47955729748502274,
+   "description": "Momentum dont l'exposition est ajustée par la volatilité réalisée.",
+   "executed_weights": {
+    "CASH": 0.029364316804055268,
+    "CW8.PA": 0.0,
+    "ESE.PA": 0.0,
+    "OBLI.PA": 0.9706356831959447,
+    "PAEEM.PA": 0.0
+   },
+   "invested_exposure": 1.0,
+   "label": "Momentum + Volatility Targeting",
+   "max_drawdown": -0.551305276680174,
+   "selected_assets": [
+    "PAEEM.PA"
+   ],
+   "sharpe": -0.45253411827469897,
+   "target_weights": {
+    "CASH": 0.0,
+    "CW8.PA": 0.0,
+    "ESE.PA": 0.0,
+    "OBLI.PA": 0.0,
+    "PAEEM.PA": 1.0
+   },
+   "turnover": 0.3216751846794746
+  },
+  "static_60_40": {
+   "annualized_volatility": 0.07880275834475732,
+   "cagr": 0.015297086672720006,
+   "cash_weight": 0.0,
+   "cumulative_cost": 0.0026505710314910715,
+   "current_drawdown": -0.13644236732480586,
+   "description": "60 % benchmark, 40 % obligataire, rebalancés chaque mois.",
+   "executed_weights": {
+    "CASH": 0.0,
+    "CW8.PA": 0.6,
+    "OBLI.PA": 0.4
+   },
+   "invested_exposure": 1.0,
+   "label": "60/40 CW8.PA / OBLI.PA",
+   "max_drawdown": -0.19280823560658644,
+   "selected_assets": [
+    "CW8.PA",
+    "OBLI.PA"
+   ],
+   "sharpe": 0.23201481513361244,
+   "target_weights": {
+    "CASH": 0.0,
+    "CW8.PA": 0.6,
+    "OBLI.PA": 0.4
+   },
+   "turnover": 0.014260043091761997
+  },
+  "static_80_20": {
+   "annualized_volatility": 0.10398220335576216,
+   "cagr": 0.016001863304576203,
+   "cash_weight": 0.0,
+   "cumulative_cost": 0.0021009810846361276,
+   "current_drawdown": -0.1831007894352238,
+   "description": "80 % benchmark, 20 % obligataire, rebalancés chaque mois.",
+   "executed_weights": {
+    "CASH": 0.0,
+    "CW8.PA": 0.8,
+    "OBLI.PA": 0.2
+   },
+   "invested_exposure": 1.0,
+   "label": "80/20 CW8.PA / OBLI.PA",
+   "max_drawdown": -0.2492671569853685,
+   "selected_assets": [
+    "CW8.PA",
+    "OBLI.PA"
+   ],
+   "sharpe": 0.20454966584767453,
+   "target_weights": {
+    "CASH": 0.0,
+    "CW8.PA": 0.8,
+    "OBLI.PA": 0.2
+   },
+   "turnover": 0.01211320736185987
+  },
+  "top3_trend": {
+   "annualized_volatility": 0.08527086904639831,
+   "cagr": 0.06254581803235548,
+   "cash_weight": 0.33333333333333337,
+   "cumulative_cost": 0.029994303837961974,
+   "current_drawdown": -0.09668292783400922,
+   "description": "Trois meilleurs ETF (momentum 12-1) au-dessus de leur MA 10 mois.",
+   "executed_weights": {
+    "CASH": 0.0,
+    "CW8.PA": 0.0,
+    "ESE.PA": 0.3333333333333333,
+    "OBLI.PA": 0.3333333333333333,
+    "PAEEM.PA": 0.3333333333333333
+   },
+   "invested_exposure": 0.6666666666666666,
+   "label": "Top 3 équipondéré + tendance",
+   "max_drawdown": -0.10864907289724413,
+   "selected_assets": [
+    "PAEEM.PA",
+    "OBLI.PA"
+   ],
+   "sharpe": 0.7548927841395533,
+   "target_weights": {
+    "CASH": 0.33333333333333337,
+    "CW8.PA": 0.0,
+    "ESE.PA": 0.0,
+    "OBLI.PA": 0.3333333333333333,
+    "PAEEM.PA": 0.3333333333333333
+   },
+   "turnover": 0.18672604626754685
+  }
+ },
+ "universe": {
+  "assets": [
+   "CW8.PA",
+   "ESE.PA",
+   "PAEEM.PA",
+   "OBLI.PA"
+  ],
+  "benchmark": "CW8.PA",
+  "cash_proxy": "CSH2.PA",
+  "defensive_as_candidates": true,
+  "excluded_by_role": [],
+  "ignored_not_configured": [],
+  "missing_from_data": [],
+  "n_assets": 4,
+  "n_months": 128,
+  "period_end": "2026-08-31",
+  "period_start": "2016-01-31",
+  "roles": {
+   "CSH2.PA": "cash_proxy",
+   "CW8.PA": "candidate",
+   "ESE.PA": "candidate",
+   "OBLI.PA": "defensive",
+   "PAEEM.PA": "candidate"
+  }
+ },
+ "volatility_targeted_strategy": {
+  "annualized_volatility": 0.11921587322588902,
+  "cagr": -0.059389198697561874,
+  "cash_weight": 0.0,
+  "cumulative_cost": 0.0627567596650097,
+  "description": "Momentum défensif dont l'exposition est ajustée par la volatilité réalisée.",
+  "enabled": true,
+  "executed_weights": {
+   "CASH": 0.029364316804055268,
+   "CW8.PA": 0.0,
+   "ESE.PA": 0.0,
+   "OBLI.PA": 0.9706356831959447,
+   "PAEEM.PA": 0.0
+  },
+  "invested_exposure": 1.0,
+  "max_drawdown": -0.551305276680174,
+  "momentum": {
+   "CW8.PA": -0.21364765563946153,
+   "ESE.PA": -0.007926955954037251,
+   "OBLI.PA": 0.015194556332295495,
+   "PAEEM.PA": 0.02066459251782815
+  },
+  "name": "Momentum + Volatility Targeting",
+  "realized_volatility": 0.08699572974372327,
+  "recent_return": -0.00487758373689251,
+  "selected_assets": [
+   "PAEEM.PA"
+  ],
+  "sharpe": -0.45253411827469897,
+  "signal_date": "2026-08-31",
+  "status": "ACTIVE",
+  "target_volatility": 0.1,
+  "target_weights": {
+   "CASH": 0.0,
+   "CW8.PA": 0.0,
+   "ESE.PA": 0.0,
+   "OBLI.PA": 0.0,
+   "PAEEM.PA": 1.0
+  },
+  "theoretical_capital": 5204.427025149773,
+  "trend_filter": {
+   "CW8.PA": false,
+   "ESE.PA": false,
+   "OBLI.PA": true,
+   "PAEEM.PA": true
+  },
+  "turnover": 0.3216751846794746
+ }
+}

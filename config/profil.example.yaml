@@ -1,0 +1,22 @@
+# Profil investisseur — MODÈLE versionné. Copier en config/profil.yaml (personnel, ignoré par Git)
+# ou répondre au questionnaire : `python main.py profile --questionnaire` / page Profil du tableau de bord.
+# Sert uniquement à confronter les plans simulés à tes préférences : aucun ordre, aucun conseil.
+capital_initial_eur: 1000
+versement_mensuel_eur: 200
+objectif: retraite            # retraite | independance | projet | mixte
+horizon_ans: 25
+objectif_capital_eur: null    # capital visé à l'horizon, en euros d'aujourd'hui (optionnel)
+reaction_baisse: ne_rien_faire  # acheter_plus | ne_rien_faire | reduire | tout_vendre
+temps_mensuel: 30min          # 5min | 30min | 1-2h | hobby
+zones: [monde]                # monde | europe | us | emergents
+options:
+  crypto: false
+  part_crypto_max_pct: 5      # 0 à 20
+  esg: false
+  securite: false             # poche obligataire / fonds euros souhaitée
+experience: debutant          # debutant | intermediaire | avance
+enveloppes:
+  pea: {ouvert: true, date_ouverture: null}
+  assurance_vie: {ouvert: false}
+  cto: {ouvert: false}
+epargne_precaution_ok: true

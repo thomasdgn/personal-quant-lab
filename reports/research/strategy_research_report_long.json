@@ -1,0 +1,311 @@
+{
+  "generated": "2026-09-25",
+  "start": "2008-02-29",
+  "end": "2026-08-31",
+  "n_months": 223,
+  "benchmark": "CW8.PA",
+  "base_cost": 0.001,
+  "high_cost": 0.003,
+  "realistic_cost": 0.001,
+  "n_strategies_tested": 80,
+  "strategies": [
+    {
+      "key": "benchmark",
+      "label": "Buy & Hold CW8.PA",
+      "cagr": 0.09872647599771267,
+      "volatility": 0.13243554085640116,
+      "sharpe": 0.7799580545992107,
+      "max_drawdown": -0.3908737712498249,
+      "turnover_per_year": 0.0,
+      "n_months": 223,
+      "cagr_high_cost": 0.09872647599771267,
+      "cagr_realistic_cost": 0.09872647599771267,
+      "sharpe_diff": null,
+      "sharpe_diff_low": null,
+      "sharpe_diff_high": null,
+      "prob_positive": null
+    },
+    {
+      "key": "momentum",
+      "label": "Momentum 12-1 MA10 top 1 (défaut)",
+      "cagr": 0.0995966608084573,
+      "volatility": 0.1452442198320227,
+      "sharpe": 0.7284724919556779,
+      "max_drawdown": -0.24317854745757705,
+      "turnover_per_year": 3.9820627802690582,
+      "n_months": 223,
+      "cagr_high_cost": 0.09089302887286399,
+      "cagr_realistic_cost": 0.0995966608084573,
+      "sharpe_diff": -0.05148556264353288,
+      "sharpe_diff_low": -0.3835899719767376,
+      "sharpe_diff_high": 0.2695927903307743,
+      "prob_positive": 0.3765
+    },
+    {
+      "key": "momentum_vt",
+      "label": "Momentum + Volatility Targeting",
+      "cagr": 0.07151304183423224,
+      "volatility": 0.11550317825365647,
+      "sharpe": 0.6574082008552118,
+      "max_drawdown": -0.2094688213417255,
+      "turnover_per_year": 4.182815097696665,
+      "n_months": 223,
+      "cagr_high_cost": 0.06258163459567467,
+      "cagr_realistic_cost": 0.07151304183423224,
+      "sharpe_diff": -0.12254985374399896,
+      "sharpe_diff_low": -0.44822286962048247,
+      "sharpe_diff_high": 0.18847523063131744,
+      "prob_positive": 0.2595
+    },
+    {
+      "key": "inverse_vol",
+      "label": "Inverse volatilité (actions)",
+      "cagr": 0.10196214883874033,
+      "volatility": 0.13619705459613532,
+      "sharpe": 0.783854198561456,
+      "max_drawdown": -0.4003629037366434,
+      "turnover_per_year": 0.3029696508834183,
+      "n_months": 223,
+      "cagr_high_cost": 0.10129872228257497,
+      "cagr_realistic_cost": 0.10196214883874033,
+      "sharpe_diff": 0.0038961439622452465,
+      "sharpe_diff_low": -0.12162109267019196,
+      "sharpe_diff_high": 0.12491422285283883,
+      "prob_positive": 0.5245
+    },
+    {
+      "key": "static_80_20",
+      "label": "80/20 CW8.PA / OBLI.PA",
+      "cagr": 0.08272523686701039,
+      "volatility": 0.10830550478092128,
+      "sharpe": 0.7904118859226599,
+      "max_drawdown": -0.32434345775603113,
+      "turnover_per_year": 0.053811659192825115,
+      "n_months": 223,
+      "cagr_high_cost": 0.08260560495972258,
+      "cagr_realistic_cost": 0.08272523686701039,
+      "sharpe_diff": 0.010453831323449125,
+      "sharpe_diff_low": -0.03413765372563983,
+      "sharpe_diff_high": 0.05213613767967393,
+      "prob_positive": 0.6665
+    },
+    {
+      "key": "static_60_40",
+      "label": "60/40 CW8.PA / OBLI.PA",
+      "cagr": 0.0662354879738456,
+      "volatility": 0.08567169720858292,
+      "sharpe": 0.7933957613438936,
+      "max_drawdown": -0.2520029690875565,
+      "turnover_per_year": 0.053811659192825115,
+      "n_months": 223,
+      "cagr_high_cost": 0.06611829198732866,
+      "cagr_realistic_cost": 0.0662354879738456,
+      "sharpe_diff": 0.013437706744682809,
+      "sharpe_diff_low": -0.09836899153229708,
+      "sharpe_diff_high": 0.11979968376683661,
+      "prob_positive": 0.6
+    },
+    {
+      "key": "dual_momentum",
+      "label": "Dual momentum (actions / obligataire / cash)",
+      "cagr": 0.1295897734548186,
+      "volatility": 0.15630542689876406,
+      "sharpe": 0.8607223744302186,
+      "max_drawdown": -0.20059724652302968,
+      "turnover_per_year": 3.551569506726458,
+      "n_months": 223,
+      "cagr_high_cost": 0.12160819703006465,
+      "cagr_realistic_cost": 0.1295897734548186,
+      "sharpe_diff": 0.08076431983100785,
+      "sharpe_diff_low": -0.2867721817721469,
+      "sharpe_diff_high": 0.4326700770740801,
+      "prob_positive": 0.641
+    },
+    {
+      "key": "top3_trend",
+      "label": "Top 3 équipondéré + tendance",
+      "cagr": 0.10708811717411515,
+      "volatility": 0.11687943811678957,
+      "sharpe": 0.9321173323882851,
+      "max_drawdown": -0.16590526294907004,
+      "turnover_per_year": 2.4394618834080712,
+      "n_months": 223,
+      "cagr_high_cost": 0.10173318744656368,
+      "cagr_realistic_cost": 0.10708811717411515,
+      "sharpe_diff": 0.15215927778907434,
+      "sharpe_diff_low": -0.16046921551935167,
+      "sharpe_diff_high": 0.49763705405563385,
+      "prob_positive": 0.771
+    },
+    {
+      "key": "momentum_walk_forward",
+      "label": "Momentum, paramètres choisis en walk-forward",
+      "cagr": 0.07755083331784185,
+      "volatility": 0.10685245230673635,
+      "sharpe": 0.7546523865024671,
+      "max_drawdown": -0.19585518702374327,
+      "turnover_per_year": 4.769802093654817,
+      "n_months": 223,
+      "cagr_high_cost": 0.06735556075589355,
+      "sharpe_diff": -0.025305668096743617,
+      "sharpe_diff_low": -0.35972660822397234,
+      "sharpe_diff_high": 0.31903049720818144,
+      "prob_positive": 0.434
+    }
+  ],
+  "walk_forward": [
+    {
+      "test_start": "2008-02-29",
+      "test_end": "2009-01-31",
+      "config": "L12-MA6-top3-noVT",
+      "train_sharpe": 1.2538802021290572,
+      "train_months": 37
+    },
+    {
+      "test_start": "2009-02-28",
+      "test_end": "2010-01-31",
+      "config": "L12-MA12-top2-noVT",
+      "train_sharpe": 0.9403498221114377,
+      "train_months": 49
+    },
+    {
+      "test_start": "2010-02-28",
+      "test_end": "2011-01-31",
+      "config": "L3-MA12-top3-VT",
+      "train_sharpe": 1.072261412536012,
+      "train_months": 58
+    },
+    {
+      "test_start": "2011-02-28",
+      "test_end": "2012-01-31",
+      "config": "L3-MA12-top3-VT",
+      "train_sharpe": 1.3253435702533194,
+      "train_months": 70
+    },
+    {
+      "test_start": "2012-02-29",
+      "test_end": "2013-01-31",
+      "config": "L3-MA12-top3-VT",
+      "train_sharpe": 1.0987646326356224,
+      "train_months": 82
+    },
+    {
+      "test_start": "2013-02-28",
+      "test_end": "2014-01-31",
+      "config": "L3-MA12-top3-VT",
+      "train_sharpe": 1.1589256774747483,
+      "train_months": 94
+    },
+    {
+      "test_start": "2014-02-28",
+      "test_end": "2015-01-31",
+      "config": "L3-MA12-top3-VT",
+      "train_sharpe": 1.2304469903958382,
+      "train_months": 106
+    },
+    {
+      "test_start": "2015-02-28",
+      "test_end": "2016-01-31",
+      "config": "L3-MA12-top3-VT",
+      "train_sharpe": 1.442195942595832,
+      "train_months": 118
+    },
+    {
+      "test_start": "2016-02-29",
+      "test_end": "2017-01-31",
+      "config": "L3-MA10-top3-VT",
+      "train_sharpe": 1.181182010376619,
+      "train_months": 132
+    },
+    {
+      "test_start": "2017-02-28",
+      "test_end": "2018-01-31",
+      "config": "L3-MA10-top3-VT",
+      "train_sharpe": 1.2051792995023527,
+      "train_months": 144
+    },
+    {
+      "test_start": "2018-02-28",
+      "test_end": "2019-01-31",
+      "config": "L3-MA10-top3-VT",
+      "train_sharpe": 1.2653179832187402,
+      "train_months": 156
+    },
+    {
+      "test_start": "2019-02-28",
+      "test_end": "2020-01-31",
+      "config": "L3-MA6-top2-VT",
+      "train_sharpe": 1.0975888207940492,
+      "train_months": 172
+    },
+    {
+      "test_start": "2020-02-29",
+      "test_end": "2021-01-31",
+      "config": "L3-MA10-top2-noVT",
+      "train_sharpe": 1.1513740285260696,
+      "train_months": 183
+    },
+    {
+      "test_start": "2021-02-28",
+      "test_end": "2022-01-31",
+      "config": "L3-MA10-top2-noVT",
+      "train_sharpe": 1.1771574182327118,
+      "train_months": 195
+    },
+    {
+      "test_start": "2022-02-28",
+      "test_end": "2023-01-31",
+      "config": "L3-MA10-top2-noVT",
+      "train_sharpe": 1.1756515751586345,
+      "train_months": 207
+    },
+    {
+      "test_start": "2023-02-28",
+      "test_end": "2024-01-31",
+      "config": "L3-MA10-top2-noVT",
+      "train_sharpe": 1.0791443597801345,
+      "train_months": 219
+    },
+    {
+      "test_start": "2024-02-29",
+      "test_end": "2025-01-31",
+      "config": "L3-MA10-top2-noVT",
+      "train_sharpe": 1.083738481149114,
+      "train_months": 231
+    },
+    {
+      "test_start": "2025-02-28",
+      "test_end": "2026-01-31",
+      "config": "L3-MA10-top2-noVT",
+      "train_sharpe": 1.088853906677147,
+      "train_months": 243
+    },
+    {
+      "test_start": "2026-02-28",
+      "test_end": "2026-08-31",
+      "config": "L3-MA12-top3-VT",
+      "train_sharpe": 1.0400485181723504,
+      "train_months": 250
+    }
+  ],
+  "rank_correlation": 0.3078333011769246,
+  "conclusion": [
+    "- Aucune stratégie ne bat le Buy & Hold CW8.PA en Sharpe de façon statistiquement robuste sur cette période (tous les intervalles à 90 % contiennent zéro ou sont négatifs).",
+    "- Stabilité de la grille Momentum : corrélation de rang 0.31 entre les deux moitiés de la période (classement instable : les « meilleurs » paramètres d'hier ne le restent pas).",
+    "- 80 variantes testées : le meilleur résultat observé est probablement surestimé (tests multiples) ; ne retenir que des écarts robustes et explicables.",
+    "- Le choix de la stratégie à suivre reste une décision humaine (`paper-decision`)."
+  ],
+  "meta": {
+    "kind": "research",
+    "schema_version": "1.0",
+    "generated": "2026-09-25",
+    "data_window": {
+      "start": "2008-02-29",
+      "end": "2026-08-31"
+    },
+    "synthetic_share": null,
+    "notes": [
+      "historique long partiellement SYNTHÉTIQUE (proxys de même exposition avant la cotation des ETF PEA, voir config/long_history.yaml) ; cash non rémunéré."
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+# Objectifs confirmés le 22/10/2026. Recherche uniquement : la politique ne change pas.
+drawdown_objective: 0.30
+max_variants: 80
+initial_capital_from_profile: true
+cash_annual_return: 0.0
+execution_delay_sessions: 1
+max_trades_per_month: 4
+inflation_annual: 0.02
+train_months: 36
+test_months: 12
+bootstrap_samples: 1000
+sources:
+  broker: https://www.boursobank.com/content/brochure_tarifaire/boursorama_bt.pdf
+  macro_vintages: https://fred.stlouisfed.org/docs/api/fred/alfred.html

@@ -1,0 +1,95 @@
+{
+  "date": "2026-10-22",
+  "tests": {
+    "fast": 529,
+    "slow": 26,
+    "total": 555,
+    "streamlit_pages": 17,
+    "ruff": "passed",
+    "mypy_source_files": 64
+  },
+  "campaign": {
+    "id": "bcba8a04fd4244e6",
+    "variants": 64,
+    "code_and_inputs_match": true,
+    "walk_forward": {
+      "choices": [
+        {
+          "test_start": "2022-05-31",
+          "test_end": "2023-04-30",
+          "config": "momentum_l6_n1_core0.5",
+          "train_sharpe": 1.062809729009219,
+          "train_max_drawdown_daily": -0.1983455070677862,
+          "eligible_candidates": 59
+        },
+        {
+          "test_start": "2023-05-31",
+          "test_end": "2024-04-30",
+          "config": "momentum_l6_n1_core0.8",
+          "train_sharpe": 0.6779398004515544,
+          "train_max_drawdown_daily": -0.25948874753550777,
+          "eligible_candidates": 59
+        },
+        {
+          "test_start": "2024-05-31",
+          "test_end": "2025-04-30",
+          "config": "momentum_l6_n1_core0.8",
+          "train_sharpe": 0.8988140349768416,
+          "train_max_drawdown_daily": -0.25948874753550777,
+          "eligible_candidates": 59
+        },
+        {
+          "test_start": "2025-05-31",
+          "test_end": "2026-04-30",
+          "config": "trend_ma12_mom12_volNone",
+          "train_sharpe": 0.8595066063198888,
+          "train_max_drawdown_daily": -0.1661423622888597,
+          "eligible_candidates": 59
+        },
+        {
+          "test_start": "2026-05-31",
+          "test_end": "2026-09-30",
+          "config": "trend_ma12_mom12_volNone",
+          "train_sharpe": 0.9436256289109662,
+          "train_max_drawdown_daily": -0.1661423622888597,
+          "eligible_candidates": 59
+        }
+      ],
+      "account": {
+        "final_value": 8466.618700642586,
+        "contributed": 6300.0,
+        "cagr_twr": 0.09079628034603049,
+        "volatility": 0.10846377792215588,
+        "sharpe": 0.8424121040513081,
+        "max_drawdown": -0.20386595892806358,
+        "recovery_days": 498,
+        "cash_fraction": 0.20753704069857665,
+        "orders": 26,
+        "fees": 133.43439422130587
+      },
+      "benchmark": {
+        "final_value": 9161.239481002807,
+        "contributed": 6300.0,
+        "cagr_twr": 0.12928919109771653,
+        "volatility": 0.12398524944976674,
+        "sharpe": 1.026667349723783,
+        "max_drawdown": -0.20938193456214282,
+        "recovery_days": 318,
+        "cash_fraction": 0.0752245387122667,
+        "orders": 12,
+        "fees": 33.70055195617677
+      },
+      "gap_ci90": {
+        "diff": -0.16752841331273904,
+        "low": -0.3916374756446068,
+        "high": -0.00023365028502520473,
+        "prob_positive": 0.05,
+        "level": 0.9
+      }
+    }
+  },
+  "policy_unchanged": "allocation_fixe",
+  "notifications_sent": 0,
+  "live_readiness": "requires_real_statement_and_product_confirmation",
+  "data_updated_through": "2026-10-21"
+}

@@ -1,0 +1,45 @@
+# Politique d'investissement (IPS) — choix HUMAIN, jamais modifié par le laboratoire de lui-même.
+# Elle décide quelle stratégie est suivie par le rapport mensuel, le journal de paper trading,
+# le plan de versement et le tableau de bord. Contrôles : python main.py policy
+#
+# 2026-09-26 : choix de l'investisseur après lecture des études (robustesse, plans, scénarios) :
+# plan « Monde + émergents » (85/15), à la place de momentum_vt. Aucun ordre n'est passé par le lab.
+objectif: "Indépendance financière à 15 ans : versements réguliers, sans vente, décision finale humaine."
+horizon_ans: 15
+
+# Stratégies possibles : benchmark, momentum, momentum_vt, inverse_vol, static_80_20,
+# static_60_40, dual_momentum, top3_trend, core_satellite, allocation_fixe.
+strategie_suivie: allocation_fixe
+plan_suivi: monde_emergents          # plan de config/plans.yaml correspondant (information)
+
+# Utilisé si strategie_suivie vaut allocation_fixe : poids cibles (somme = 1), rééquilibrés par
+# les versements. CW8.PA désigne l'exposition MSCI World : le plan de versement achète WPEA.PA
+# (part moins chère) quand une part de CW8.PA dépasse le budget.
+allocation_fixe:
+  CW8.PA: 0.85
+  PAEEM.PA: 0.15
+
+# Utilisé seulement si strategie_suivie vaut core_satellite :
+# part_coeur en Buy & Hold du benchmark, le reste dans la stratégie satellite.
+coeur_satellite:
+  part_coeur: 0.8
+  satellite: momentum_vt
+
+# Baisse maximale (depuis un plus haut) jugée supportable : 40 % = tolérance déclarée (45 %)
+# moins la marge débutant, comme dans le profil. Un portefeuille 100 % actions l'a déjà dépassée
+# (2008-09) : c'est précisément le rôle de la règle de krach ci-dessous.
+drawdown_max_accepte: 0.40
+
+# Règle écrite À FROID, relue automatiquement (rapport, résumé, tableau de bord) quand la stratégie
+# suivie baisse de plus de seuil_baisse depuis son plus haut. À réécrire avec tes propres mots.
+regle_krach:
+  texte: >-
+    Si mon portefeuille baisse de 30 % ou plus, je ne vends rien et je continue mes versements
+    mensuels comme prévu. Si j'ai besoin d'argent, c'est mon épargne de précaution qui paie, pas le PEA.
+  seuil_baisse: 0.30
+
+# mensuel : suivre l'allocation cible chaque mois ; bandes : ne rééquilibrer que si
+# un poids s'écarte de plus de bande_tolerance_pct points de la cible.
+reequilibrage: mensuel
+bande_tolerance_pct: 5
+revue: annuelle

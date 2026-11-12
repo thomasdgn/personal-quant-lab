@@ -1,0 +1,4 @@
+series_id,observation_date,release_at,acquired_at,value,source,vintage,availability_note
+ECB_DFR_ANNOUNCED,2026-09-16,2026-09-11T00:00:00+02:00,2026-10-22T11:47:11.772984+00:00,2.5,https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260910~314e508016.en.html,2026-09-10_release,Borne conservatrice : lendemain de publication ; taux annonces effectifs au 16 septembre.
+ECB_MRO_ANNOUNCED,2026-09-16,2026-09-11T00:00:00+02:00,2026-10-22T11:47:11.772984+00:00,2.65,https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260910~314e508016.en.html,2026-09-10_release,Borne conservatrice : lendemain de publication ; taux annonces effectifs au 16 septembre.
+ECB_MLF_ANNOUNCED,2026-09-16,2026-09-11T00:00:00+02:00,2026-10-22T11:47:11.772984+00:00,2.9,https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260910~314e508016.en.html,2026-09-10_release,Borne conservatrice : lendemain de publication ; taux annonces effectifs au 16 septembre.

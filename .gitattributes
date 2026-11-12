@@ -1,0 +1,10 @@
+# Fins de ligne homogènes quel que soit le poste (core.autocrlf) : LF dans le dépôt
+# et dans la copie de travail, sauf les scripts PowerShell (CRLF, convention Windows).
+* text=auto eol=lf
+*.ps1 text eol=crlf
+
+# Binaires
+*.png binary
+*.jpg binary
+*.parquet binary
+*.xlsx binary

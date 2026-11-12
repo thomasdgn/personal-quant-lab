@@ -1,0 +1,49 @@
+[project]
+name = "personal-quant-lab"
+version = "2.0.0"
+description = "Laboratoire quantitatif personnel (PEA) — recherche et aide à la décision, sans exécution d'ordres."
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+# Avertissement interne pandas <-> Matplotlib 3.11 (tiers, sans effet sur les résultats).
+filterwarnings = ["ignore:The locs attribute was deprecated"]
+markers = ["slow: tests longs (walk-forward, AppTest Streamlit, CLI de bout en bout) ; exclure avec -m \"not slow\""]
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+extend-exclude = ["notebooks", ".venv"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "B"]
+ignore = ["E501"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["E712"]
+
+[tool.coverage.run]
+source = ["src"]
+
+[tool.coverage.report]
+# Objectif documenté (non bloquant) : >= 85 % sur src/.
+show_missing = false
+
+[tool.mypy]
+# Mode souple : on vérifie les annotations existantes sans exiger un typage complet.
+python_version = "3.12"
+files = ["src"]
+explicit_package_bases = true
+mypy_path = "."
+ignore_missing_imports = true
+check_untyped_defs = false
+warn_unused_ignores = false
+no_implicit_optional = true
+
+# Modules historiques : champs Optional des dataclasses de rapport et objets pandas
+# non typés produisent des faux positifs (None exclu par la logique en amont).
+# Ne pas étendre cette liste aux nouveaux modules (pipeline_alerts = code déplacé depuis monthly_pipeline).
+[[tool.mypy.overrides]]
+module = ["src.monthly_pipeline", "src.pipeline_alerts", "src.market_regime", "src.portfolio", "src.data_quality"]
+disable_error_code = ["index", "operator", "union-attr", "arg-type", "attr-defined", "misc"]

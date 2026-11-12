@@ -1,0 +1,28 @@
+# COPIE FIGÉE pour les tests (config du 2026-09-25) : les tests ne dépendent jamais des choix personnels
+# faits dans config/. Ne pas modifier sans raison ; voir tests/conftest.py.
+# Politique d'investissement (IPS) — choix HUMAIN, jamais modifié par le laboratoire.
+# Elle décide quelle stratégie du registre (src/strategies.py) est suivie par le rapport
+# mensuel, le journal de paper trading, le plan de versement et le tableau de bord.
+# Voir reports/research/strategy_research_report.md avant de la changer, puis :
+#   python main.py policy     (contrôles informatifs)
+objectif: "Croissance long terme du PEA ; décision finale humaine, aucun ordre automatique."
+horizon_ans: 30
+
+# Stratégies possibles : benchmark, momentum, momentum_vt, inverse_vol, static_80_20,
+# static_60_40, dual_momentum, top3_trend, core_satellite.
+strategie_suivie: momentum_vt
+
+# Utilisé seulement si strategie_suivie vaut core_satellite :
+# part_coeur en Buy & Hold du benchmark, le reste dans la stratégie satellite.
+coeur_satellite:
+  part_coeur: 0.8
+  satellite: momentum_vt
+
+# Baisse maximale (depuis un plus haut) jugée supportable psychologiquement.
+drawdown_max_accepte: 0.25
+
+# mensuel : suivre l'allocation cible chaque mois ; bandes : ne rééquilibrer que si
+# un poids s'écarte de plus de bande_tolerance_pct points de la cible.
+reequilibrage: mensuel
+bande_tolerance_pct: 5
+revue: mensuelle

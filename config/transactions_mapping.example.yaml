@@ -1,0 +1,16 @@
+# EXEMPLE FICTIF : ne prétend pas décrire un export BoursoBank réel.
+# Adapter à l'en-tête observé de votre fichier avant toute application.
+separator: ";"
+decimal: ","
+date_format: "%d/%m/%Y"
+columns:
+  operation_id: Identifiant
+  date: Date
+  enveloppe: Enveloppe
+  type: Type
+  ticker: Ticker
+  parts: Quantite
+  prix: Prix
+  montant: Montant
+  frais: Frais
+  commentaire: Commentaire
